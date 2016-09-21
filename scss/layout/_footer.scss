@@ -1,0 +1,43 @@
+footer {
+  background: $theme-blue;
+}
+
+.copyright {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+}
+
+.copyright h4 {
+  margin: 0;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 2px #555;
+}
+
+.footer-menu {
+  position: relative;
+  top: 20px;
+}
+
+.footer-menu-items,
+.mobile-menu-items {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-menu-items {
+  padding: 20px;
+}
+
+.footer-menu-items ul {
+
+}
+
+.footer-menu-items li {
+  color: #FFF;
+  margin: 8px 0 0;
+}

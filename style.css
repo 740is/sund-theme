@@ -1,0 +1,335 @@
+/* #58B7E7 */
+li.opid {
+  border-left: 4px solid #3344B4;
+  background: rgba(51, 68, 180, 0.1); }
+  li.opid a {
+    color: #3344B4; }
+
+li.sundlaugar {
+  border-left: 4px solid #B45533;
+  background: rgba(180, 85, 51, 0.1); }
+  li.sundlaugar a {
+    color: #B45533; }
+
+li.stadsetningar {
+  border-left: 4px solid #9A621C;
+  background: rgba(154, 98, 28, 0.1); }
+  li.stadsetningar a {
+    color: #9A621C; }
+
+li.tilkynningar {
+  border-left: 4px solid #9A9733;
+  background: rgba(154, 151, 51, 0.1); }
+  li.tilkynningar a {
+    color: #9A9733; }
+
+/*
+Theme Name: Webpage for sundlaugar.is
+Theme URI: http://sundlaugar.is/
+Description: A custom WordPress information website for sundlaugar.is.
+Author: Steingrimur
+Author URI: http://740.is
+Version: 1.0
+Tags: clean, light, responsive, swimming, swim, pool
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+p {
+  font-size: .85em; }
+
+p, li,
+.latest-post-title,
+.latest-post-excerpt {
+  font-family: 'Raleway', arial, sans-serif;
+  font-weight: 400;
+  font-size: .85em;
+  margin-top: 0.8em; }
+
+p {
+  margin-top: 0.1em;
+  line-height: 1.83em;
+  margin-bottom: 1.6em; }
+
+li {
+  margin-top: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 1.45em; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poiret One', cursive, arial, sans-serif; }
+
+h1 {
+  font-size: 4.254em; }
+
+h2 {
+  font-size: 2.636em;
+  margin-top: 0.98em;
+  margin-bottom: 0.45em; }
+
+h3 {
+  color: blue;
+  font-size: 1.618em; }
+
+h4 {
+  font-size: 1em; }
+
+img {
+  display: block; }
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1em; }
+
+  h1 {
+    font-size: 6.854em; }
+
+  h2 {
+    font-size: 4.236em; }
+
+  h3 {
+    font-size: 2.618em; }
+
+  h4 {
+    font-size: 1.618em; } }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: inline-flex;
+  justify-content: space-around;
+  height: 65px;
+  z-index: 1000; }
+
+.menu-button svg,
+.search svg,
+.search-field svg {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: #3344B4; }
+
+.logo svg {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: #3344B4;
+  padding: 0 0 0 5px;
+  height: 40px; }
+
+.close-search-field svg {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: #3344B4;
+  height: 35px;
+  margin-left: 10px; }
+
+.nav-flex-item {
+  align-self: center; }
+
+.display-search-form {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  height: 65px;
+  width: 100%;
+  background: #fff; }
+
+#nav-close-icon {
+  margin-right: 15px; }
+
+/* Search form overwrite for mobile */
+label.screen-reader-text,
+.close-search-form {
+  display: none; }
+
+input#s {
+  border: 1px solid #3344B4;
+  height: 30px; }
+
+input#s:focus {
+  box-shadow: 0px 0px 4px #58b7e7;
+  outline: none; }
+
+#mobile-menu {
+  display: none; }
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  background: #58b7e7;
+  color: #FFF;
+  z-index: 999; }
+
+.mobile-menu-items {
+  padding-top: 10px; }
+
+.mobile-menu-items ul {
+  margin: 0; }
+
+.mobile-menu-items li {
+  margin: 0; }
+
+.mobile-menu-items li:hover {
+  background: #3344B4; }
+
+.mobile-menu-items a {
+  display: block;
+  padding: 10px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center; }
+
+#wrapper {
+  min-height: calc(100vh - 150px);
+  margin-top: 65px; }
+
+section#selection-buttons-clearfix {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px; }
+
+.selection-buttons {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 260px;
+  width: 260px; }
+
+.selection-button {
+  position: relative;
+  background: #58b7e7;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  box-shadow: 0px 0px 4px #58b7e7; }
+
+.selection-buttons-icon {
+  position: relative;
+  top: 20px;
+  text-align: center; }
+
+.selection-buttons-icon svg {
+  height: 40px;
+  fill: #fff; }
+
+.buttons-text-banner {
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  bottom: 0; }
+
+.buttons-text-banner p {
+  line-height: 1em;
+  color: #fff;
+  margin: 6px 0;
+  text-align: center; }
+
+.swimming-pools-text-banner {
+  background: #B45533; }
+
+.opening-hours-text-banner {
+  background: #3344B4; }
+
+.locations-text-banner {
+  background: #9A621C; }
+
+.announcements-text-banner {
+  background: #9A9733; }
+
+/* Ad banner one */
+.ads-banners {
+  position: relative; }
+
+.ads-banners img {
+  max-width: 100%; }
+
+.ad-banner-two {
+  margin-bottom: -16px; }
+
+/* Latest posts section */
+.latest-posts {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px; }
+
+.latest-posts h2 {
+  color: #58b7e7;
+  text-align: center;
+  font-size: 2.136em; }
+
+.latest-posts ul,
+.footer-menu-items ul,
+.mobile-menu-items ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em; }
+
+.latest-posts li {
+  padding: 7px;
+  box-shadow: 3px 3px 6px #c0c0c0; }
+
+.latest-posts li p {
+  margin-bottom: 0; }
+
+.latest-posts a {
+  text-decoration: none;
+  color: #3344B4;
+  font-weight: bold; }
+
+.latest-post-title {
+  font-weight: bold; }
+
+i.latest-post-date {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-align: right;
+  color: #777; }
+
+footer {
+  background: #58b7e7; }
+
+.copyright {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0; }
+
+.copyright h4 {
+  margin: 0;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 2px #555; }
+
+.footer-menu {
+  position: relative;
+  top: 20px; }
+
+.footer-menu-items,
+.mobile-menu-items {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.footer-menu-items {
+  padding: 20px; }
+
+.footer-menu-items li {
+  color: #FFF;
+  margin: 8px 0 0; }
+
+/*# sourceMappingURL=style.css.map */

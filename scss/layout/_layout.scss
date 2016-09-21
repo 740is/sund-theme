@@ -1,0 +1,154 @@
+#wrapper {
+  min-height: calc(100vh - 150px);
+  margin-top: $mobile-nav-height;
+}
+
+section#selection-buttons-clearfix {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.selection-buttons {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 260px;
+  width: 260px;
+}
+
+.selection-button {
+  position: relative;
+  background: $theme-blue;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  @include theme-color-box-shadow;
+}
+
+.selection-buttons-icon {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+.selection-buttons-icon svg {
+  height: 40px;
+  fill: #fff;
+}
+
+.buttons-text-banner {
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  bottom: 0;
+}
+
+.buttons-text-banner p {
+  line-height: 1em;
+  color: #fff;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.swimming-pools-text-banner {
+  background: $orange;
+}
+
+.opening-hours-text-banner {
+  background: $blue;
+}
+
+.locations-text-banner {
+  background: $brown;
+}
+
+.announcements-text-banner {
+  background: $green;
+}
+
+/* Ad banner one */
+.ads-banners {
+  position: relative;
+}
+
+.ads-banners img {
+  max-width: 100%;
+}
+
+.ad-banner-two {
+  margin-bottom: -16px;
+}
+
+/* Latest posts section */
+.latest-posts {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.latest-posts p {
+
+}
+
+.latest-posts h2 {
+  color: $theme-blue;
+  text-align: center;
+  font-size: 2.136em;
+}
+
+.latest-posts ul,
+.footer-menu-items ul,
+.mobile-menu-items ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.latest-posts li {
+  padding: 7px;
+  box-shadow: 3px 3px 6px #c0c0c0;
+}
+
+.latest-posts li p {
+  margin-bottom: 0;
+}
+
+li.tilkynningar {
+  @extend %li-border-green;
+}
+
+li.opid {
+  @extend %li-border-blue;
+}
+
+li.sundlaugar {
+  @extend %li-border-orange;
+}
+
+li.stadsetningar {
+  @extend %li-border-brown;
+}
+
+.latest-posts a {
+  text-decoration: none;
+  color: $blue;
+  font-weight: bold;
+}
+
+.latest-post-title {
+  font-weight: bold;
+}
+
+.latest-post-excerpt {
+
+}
+
+i.latest-post-date {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-align: right;
+  color: #777;
+}

@@ -1,0 +1,31 @@
+%li-border-blue {
+  border-left: 4px solid $blue;
+  background: $transparent-blue;
+  & a {
+    color: $blue;
+  }
+}
+
+%li-border-orange {
+  border-left: 4px solid $orange;
+  background: $transparent-orange;
+  & a {
+    color: $orange;
+  }
+}
+
+%li-border-brown {
+  border-left: 4px solid $brown;
+  background: $transparent-brown;
+  & a {
+    color: $brown;
+  }
+}
+
+%li-border-green {
+  border-left: 4px solid $green;
+  background: $transparent-green;
+  & a {
+    color: $green;
+  }
+}

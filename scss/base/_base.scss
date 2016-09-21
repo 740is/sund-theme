@@ -1,0 +1,101 @@
+/*
+Theme Name: Webpage for sundlaugar.is
+Theme URI: http://sundlaugar.is/
+Description: A custom WordPress information website for sundlaugar.is.
+Author: Steingrimur
+Author URI: http://740.is
+Version: 1.0
+Tags: clean, light, responsive, swimming, swim, pool
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+p {
+  font-size: .85em;
+}
+p, li,
+.latest-post-title,
+.latest-post-excerpt {
+  font-family: 'Raleway', arial, sans-serif;
+	font-weight: 400;
+  font-size: .85em;
+  margin-top: 0.8em;
+
+}
+
+p {
+  margin-top: 0.1em;
+  line-height: 1.83em;
+  margin-bottom: 1.6em;
+}
+
+li {
+  margin-top: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 1.45em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Poiret One', cursive, arial, sans-serif;
+}
+
+h1 {
+  font-size: 4.254em;
+}
+
+h2 {
+  font-size: 2.636em;
+  margin-top: 0.98em;
+  margin-bottom: 0.45em;
+}
+
+h3 {
+  color: blue;
+  font-size: 1.618em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+img {
+  display: block;
+}
+
+@include tablets {
+  p {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 6.854em;
+  }
+
+  h2 {
+    font-size: 4.236em;
+  }
+
+  h3 {
+    font-size: 2.618em;
+  }
+
+  h4 {
+    font-size: 1.618em;
+  }
+}
+
+@include displays {
+
+}
