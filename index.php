@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 
-<section id="selection-buttons-clearfix">
+<div id="selection-buttons-clearfix">
 
   <?php
     $swimming_pools = "field_57deba9e10726";
@@ -58,7 +58,7 @@
       </div>
     </a>
   </div>
-</section>
+</div>
 
 <?php
   $mobile_ad1_key = "field_57debfd2e7395";
@@ -68,13 +68,13 @@
   $ad1_customer_url = get_field($ad1_customer_url_key, $post_id);
 ?>
 
-<section class="ads-banners">
+<div class="ads-banners">
   <div class="ad-banner-one">
     <a href="<?php echo $ad1_customer_url ?>">
       <img src="<?php echo $mobile_ad1['url']; ?>" alt="<?php echo $mobile_ad1['alt']; ?>">
     </a>
   </div>
-</section>
+</div>
 
 <section class="latest-posts">
   <h2>Nýtt &amp; Uppfært</h2>
@@ -103,9 +103,9 @@
             echo '<h1 class="latest-post-title">';
               echo get_the_title();
             echo '</h1>';
-            echo '<span class="latest-post-excerpt">';
+            echo '<div class="latest-post-excerpt">';
               echo the_excerpt();
-            echo '</span>';
+            echo '</div>';
             echo '<i class="latest-post-date">';
               echo get_the_date('d/m/Y | G:i');
             echo '</i>';
@@ -132,12 +132,12 @@
   $ad_customer_url = get_field($ad2_customer_url_key, $post_id);
 ?>
 
-<section class="ads-banners">
+<div class="ads-banners">
   <div class="ad-banner-two">
     <a href="<?php echo $ad_customer_url ?>">
       <img src="<?php echo $mobile_ad['url']; ?>" alt="<?php echo $mobile_ad['alt']; ?>">
     </a>
   </div>
-</section>
+</div>
 
 <?php include('footer.php'); ?>
