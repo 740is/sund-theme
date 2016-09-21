@@ -89,20 +89,20 @@
 
   // The Loop
   if ( $the_query->have_posts() ) {
-  	echo '<ul>';
+  	echo '<ul id="latest-flex-container">';
   	while ( $the_query->have_posts() ) {
   		$the_query->the_post();
       $categories = get_the_category();
 
       if ( ! empty( $categories ) ) {
-    		echo '<li class="' . esc_html( $categories[0]->slug ) . '">';
+    		echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item">';
           echo '<a href="';
             echo get_permalink();
           echo '">';
             echo '<div>';
-            echo '<span class="latest-post-title">';
+            echo '<h1 class="latest-post-title">';
               echo get_the_title();
-            echo '</span>';
+            echo '</h1>';
             echo '<span class="latest-post-excerpt">';
               echo the_excerpt();
             echo '</span>';

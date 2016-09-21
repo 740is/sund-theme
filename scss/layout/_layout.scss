@@ -96,6 +96,18 @@ section#selection-buttons-clearfix {
   color: $theme-blue;
   text-align: center;
   font-size: 2.136em;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 5px #c0c0c0;
+}
+
+#latest-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.latest-flex-item {
+  flex-grow: 1;
 }
 
 .latest-posts ul,
@@ -139,6 +151,7 @@ li.stadsetningar {
 
 .latest-post-title {
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .latest-post-excerpt {
