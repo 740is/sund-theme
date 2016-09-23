@@ -3,6 +3,10 @@
   margin-top: $mobile-nav-height;
 }
 
+.hero-image {
+  display: none;
+}
+
 div#selection-buttons-clearfix {
   display: flex;
   justify-content: center;
@@ -74,7 +78,7 @@ div#selection-buttons-clearfix {
 }
 
 .ads-banners img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .ad-banner-two {
@@ -82,6 +86,10 @@ div#selection-buttons-clearfix {
 }
 
 /* Latest posts section */
+.latest-posts-area {
+  background: #FFF;
+}
+
 .latest-posts {
   margin-left: 20px;
   margin-right: 20px;
@@ -96,7 +104,9 @@ div#selection-buttons-clearfix {
   color: $theme-blue;
   text-align: center;
   font-size: 2.136em;
+  padding-top: 2rem;
   padding-bottom: 20px;
+  margin-top: 0;
   text-shadow: 2px 2px 5px #c0c0c0;
 }
 
@@ -179,6 +189,56 @@ i.latest-post-date {
 }
 
 @include tablets {
+  .hero-image-area {
+    height: 370px;
+    border-bottom: 4px solid #58b7e7;
+  }
+
+  .hero-image {
+    position: absolute;
+    display: block;
+    z-index: -5;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .selection-buttons {
+    top: 10px;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+
+  .selection-button {
+    box-shadow: 0px 0px 18px 9px #fff;
+  }
+
+  #swimming-pools {
+    border: 1px solid $orange;
+  }
+
+  #opening-hours {
+    border: 1px solid $blue;
+  }
+
+  #locations {
+    border: 1px solid $brown;
+  }
+
+  #announcements {
+    border: 1px solid $green;
+  }
+
+  .buttons-text-banner p {
+    line-height: 0.9em;
+  }
+
+  .latest-posts-area {
+    padding: 50px 0 60px;
+  }
+
   .latest-posts h2 {
     font-size: 3.136em;
   }

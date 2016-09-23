@@ -1,5 +1,10 @@
 <?php include('header.php'); ?>
 
+<div class="hero-image-area">
+  <div class="hero-image">
+    <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero1.jpg" alt="Strákur að stökkva út í laug.">
+  </div>
+
 <div id="selection-buttons-clearfix">
 
   <?php
@@ -59,6 +64,7 @@
     </a>
   </div>
 </div>
+</div>
 
 <?php
   $mobile_ad1_key = "field_57debfd2e7395";
@@ -76,53 +82,55 @@
   </div>
 </div>
 
-<section class="latest-posts">
-  <h2>Nýtt &amp; Uppfært</h2>
-  <?php
-  $number_of_posts = 4;
+<div class="latest-posts-area">
+  <div class="latest-posts">
+    <h2>Nýtt &amp; Uppfært</h2>
+    <?php
+    $number_of_posts = 4;
 
-  // The Query
-  $the_query = new WP_Query( array(
-    'post_type' => 'post',
-    'posts_per_page' => $number_of_posts
-  ));
+    // The Query
+    $the_query = new WP_Query( array(
+      'post_type' => 'post',
+      'posts_per_page' => $number_of_posts
+    ));
 
-  // The Loop
-  if ( $the_query->have_posts() ) {
-  	echo '<ul id="latest-flex-container">';
-  	while ( $the_query->have_posts() ) {
-  		$the_query->the_post();
-      $categories = get_the_category();
+    // The Loop
+    if ( $the_query->have_posts() ) {
+    	echo '<ul id="latest-flex-container">';
+    	while ( $the_query->have_posts() ) {
+    		$the_query->the_post();
+        $categories = get_the_category();
 
-      if ( ! empty( $categories ) ) {
-    		echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item">';
-          echo '<a href="';
-            echo get_permalink();
-          echo '">';
-            echo '<div>';
-            echo '<h1 class="latest-post-title">';
-              echo get_the_title();
-            echo '</h1>';
-            echo '<div class="latest-post-excerpt">';
-              echo the_excerpt();
-            echo '</div>';
-            echo '<i class="latest-post-date">';
-              echo get_the_date('d/m/Y | G:i');
-            echo '</i>';
-            echo '</div>';
-          echo '</a>';
-        echo '</li>';
-      }
-  	}
-  	echo '</ul>';
-  	/* Restore original Post Data */
-  	wp_reset_postdata();
-  } else {
-  	// no posts found
-  }
-  ?>
+        if ( ! empty( $categories ) ) {
+      		echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item">';
+            echo '<a href="';
+              echo get_permalink();
+            echo '">';
+              echo '<div>';
+              echo '<h1 class="latest-post-title">';
+                echo get_the_title();
+              echo '</h1>';
+              echo '<div class="latest-post-excerpt">';
+                echo the_excerpt();
+              echo '</div>';
+              echo '<i class="latest-post-date">';
+                echo get_the_date('d/m/Y | G:i');
+              echo '</i>';
+              echo '</div>';
+            echo '</a>';
+          echo '</li>';
+        }
+    	}
+    	echo '</ul>';
+    	/* Restore original Post Data */
+    	wp_reset_postdata();
+    } else {
+    	// no posts found
+    }
+    ?>
 
-</section>
+  </div>
+</div>
 
 <?php
   $mobile_ad2_key = "field_57dec202e7396";
