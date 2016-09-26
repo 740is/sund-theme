@@ -1,26 +1,26 @@
 /* #58B7E7 */
-li.opid {
+.opid {
   border-left: 4px solid #3344B4;
   background: rgba(51, 68, 180, 0.1); }
-  li.opid a {
+  .opid a {
     color: #3344B4; }
 
-li.sundlaugar {
+.sundlaugar {
   border-left: 4px solid #B45533;
   background: rgba(180, 85, 51, 0.1); }
-  li.sundlaugar a {
+  .sundlaugar a {
     color: #B45533; }
 
-li.stadsetningar {
+.stadsetningar {
   border-left: 4px solid #9A621C;
   background: rgba(154, 98, 28, 0.1); }
-  li.stadsetningar a {
+  .stadsetningar a {
     color: #9A621C; }
 
-li.tilkynningar {
+.tilkynningar {
   border-left: 4px solid #9A9733;
   background: rgba(154, 151, 51, 0.1); }
-  li.tilkynningar a {
+  .tilkynningar a {
     color: #9A9733; }
 
 /*
@@ -191,6 +191,12 @@ input#s:focus {
   text-decoration: none;
   text-align: center; }
 
+@media screen and (min-width: 768px) {
+  nav {
+    height: 115px; }
+
+  .logo svg {
+    height: 50px; } }
 #wrapper {
   min-height: calc(100vh - 150px);
   margin-top: 65px; }
@@ -330,6 +336,9 @@ i.latest-post-date {
   .latest-flex-item:nth-child(2n) {
     margin-right: 0; } }
 @media screen and (min-width: 768px) {
+  #wrapper {
+    margin-top: 115px; }
+
   .hero-image-area {
     height: 370px;
     border-bottom: 4px solid #58b7e7; }
@@ -374,6 +383,65 @@ i.latest-post-date {
 
   #latest-flex-container {
     width: 680px; } }
+.single-posts-area {
+  min-height: 100vh; }
+
+.single-post {
+  max-width: 34em;
+  margin: 0 auto;
+  padding: 7px 16px 30px; }
+
+.single-post h2 {
+  font-size: 1.636em;
+  line-height: 1.85em;
+  margin-top: 1.15em;
+  margin-bottom: 1.6em; }
+
+.single-post p {
+  margin-bottom: 1.8em; }
+
+.single-post i {
+  margin-bottom: 0.8em; }
+
+.previous-link,
+.next-link {
+  display: inline; }
+
+.previous-link a,
+.next-link a {
+  text-decoration: none; }
+
+.next-link {
+  float: right; }
+
+img.size-thumbnail.alignleft,
+img.size-thumbnail.alignright {
+  position: relative;
+  box-shadow: 2px 2px 2px #888; }
+
+img.size-thumbnail.alignleft {
+  float: left;
+  margin-right: 5px;
+  left: -10px; }
+
+img.size-thumbnail.alignright {
+  float: right;
+  margin-left: 5px;
+  right: -10px; }
+
+@media screen and (min-width: 768px) {
+  .single-post h2 {
+    font-size: 2.636em;
+    line-height: 1.85em;
+    margin-top: 0.97em;
+    margin-bottom: 2.3em; }
+
+  .single-post p {
+    line-height: 1.65em;
+    margin-bottom: 1.63em; }
+
+  .single-post i {
+    margin-bottom: 0.4em; } }
 footer {
   background: #58b7e7; }
 

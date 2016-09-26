@@ -97,3 +97,13 @@ input#s:focus {
   text-decoration: none;
   text-align: center;
 }
+
+@include tablets {
+  nav {
+    height: 115px;
+  }
+
+  .logo svg {
+    height: 50px;
+  }
+}

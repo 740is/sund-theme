@@ -137,19 +137,19 @@ div#selection-buttons-clearfix {
   margin-bottom: 0;
 }
 
-li.tilkynningar {
+.tilkynningar {
   @extend %li-border-green;
 }
 
-li.opid {
+.opid {
   @extend %li-border-blue;
 }
 
-li.sundlaugar {
+.sundlaugar {
   @extend %li-border-orange;
 }
 
-li.stadsetningar {
+.stadsetningar {
   @extend %li-border-brown;
 }
 
@@ -189,6 +189,10 @@ i.latest-post-date {
 }
 
 @include tablets {
+  #wrapper {
+    margin-top: 115px;
+  }
+
   .hero-image-area {
     height: 370px;
     border-bottom: 4px solid #58b7e7;

@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
     <title>sundlaugar.is</title>
 
-    <!-- <link rel="stylesheet" href="http://basehold.it/21"> -->
+    <!-- <link rel="stylesheet" href="http://basehold.it/26"> -->
 
   </head>
   <body>
