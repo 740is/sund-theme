@@ -277,7 +277,8 @@ div#selection-buttons-clearfix {
   margin-right: 20px;
   padding-bottom: 20px; }
 
-.latest-posts h2 {
+.latest-posts h2,
+.search-results-list h2 {
   color: #58b7e7;
   text-align: center;
   font-size: 2.136em;
@@ -286,22 +287,32 @@ div#selection-buttons-clearfix {
   margin-top: 0;
   text-shadow: 2px 2px 5px #c0c0c0; }
 
-#latest-flex-container {
+.latest-flex-container,
+.search-results-flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.latest-flex-item,
+.search-results-flex-item {
+  flex-grow: 1; }
+
+.latest-flex-container {
   justify-content: space-between; }
 
-.latest-flex-item {
-  flex-grow: 1; }
+.search-results-flex-container {
+  max-width: 34em;
+  margin: 0 auto; }
 
 .latest-posts ul,
 .footer-menu-items ul,
-.mobile-menu-items ul {
+.mobile-menu-items ul,
+.search-results-list ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 2em; }
 
-.latest-posts li {
+.latest-posts li,
+.search-results-list li {
   padding: 7px;
   box-shadow: 3px 3px 6px #c0c0c0; }
 

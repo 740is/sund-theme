@@ -96,7 +96,7 @@
 
     // The Loop
     if ( $the_query->have_posts() ) {
-    	echo '<ul id="latest-flex-container">';
+    	echo '<ul class="latest-flex-container">';
     	while ( $the_query->have_posts() ) {
     		$the_query->the_post();
         $categories = get_the_category();
@@ -107,15 +107,15 @@
               echo get_permalink();
             echo '">';
               echo '<div>';
-              echo '<h1 class="latest-post-title">';
-                echo get_the_title();
-              echo '</h1>';
-              echo '<div class="latest-post-excerpt">';
-                echo the_excerpt();
-              echo '</div>';
-              echo '<i class="latest-post-date">';
-                echo get_the_date('d/m/Y | G:i');
-              echo '</i>';
+                echo '<h1 class="latest-post-title">';
+                  echo get_the_title();
+                echo '</h1>';
+                echo '<div class="latest-post-excerpt">';
+                  echo the_excerpt();
+                echo '</div>';
+                echo '<i class="latest-post-date">';
+                  echo get_the_date('d/m/Y | G:i');
+                echo '</i>';
               echo '</div>';
             echo '</a>';
           echo '</li>';
