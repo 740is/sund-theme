@@ -6,6 +6,7 @@ nav {
   display: inline-flex;
   justify-content: space-around;
   height: $mobile-nav-height;
+  border-bottom: 4px solid #E7A758;
   z-index: 1000;
 }
 
@@ -35,7 +36,7 @@ nav {
   position: absolute;
   display: inline-flex;
   justify-content: center;
-  height: 65px;
+  height: 61px;
   width: 100%;
   background: #fff;
 }

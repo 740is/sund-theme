@@ -1,5 +1,7 @@
 .single-posts-area {
+  position: relative;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .single-post {

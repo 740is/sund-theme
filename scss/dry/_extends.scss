@@ -1,7 +1,7 @@
 %li-border-blue {
   border-left: 4px solid $blue;
   background: $transparent-blue;
-  & a {
+  & a, h2 {
     color: $blue;
   }
 }
@@ -9,7 +9,7 @@
 %li-border-orange {
   border-left: 4px solid $orange;
   background: $transparent-orange;
-  & a {
+  & a, h2 {
     color: $orange;
   }
 }
@@ -17,7 +17,7 @@
 %li-border-brown {
   border-left: 4px solid $brown;
   background: $transparent-brown;
-  & a {
+  & a, h2 {
     color: $brown;
   }
 }
@@ -25,7 +25,16 @@
 %li-border-green {
   border-left: 4px solid $green;
   background: $transparent-green;
-  & a {
+  & a, h2 {
     color: $green;
+  }
+}
+
+%li-border-blue,
+%li-border-orange,
+%li-border-brown,
+%li-border-green {
+  & h2 {
+    font-weight: bold;
   }
 }

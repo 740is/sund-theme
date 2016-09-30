@@ -5,7 +5,7 @@
   </div>
 
   <div class="logo nav-flex-item">
-    <?php get_template_part('assets/logo/inline', 'logo.svg'); ?>
+    <a href="<?php bloginfo('url'); ?>"><?php get_template_part('assets/logo/inline', 'logo.svg'); ?></a>
   </div>
 
   <div id="magnifier-tool" class="search nav-flex-item">

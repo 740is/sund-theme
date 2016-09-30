@@ -12,7 +12,8 @@
     $open_now = "field_57debe3774a7b";
     $locations = "field_57debeac74a7d";
     $announcements = "field_57debe7c74a7c";
-    $post_id = "13";
+    $latestHeadline = "field_57ec215cd1882";
+    $post_id_buttons_latest = "13";
     // $mobile_ad1 = get_field($mobile_ad1_key, $post_id);
     // $ad1_customer_url = get_field($ad1_customer_url_key, $post_id);
   ?>
@@ -25,7 +26,7 @@
           <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
         </div>
         <div class="buttons-text-banner swimming-pools-text-banner">
-            <p><?php echo get_field($swimming_pools, $post_id); ?></p>
+            <p><?php echo get_field($swimming_pools, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a>
@@ -36,7 +37,7 @@
           <?php get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
         </div>
         <div class="buttons-text-banner opening-hours-text-banner">
-          <p><?php echo get_field($open_now, $post_id); ?></p>
+          <p><?php echo get_field($open_now, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a>
@@ -47,7 +48,7 @@
           <?php get_template_part('assets/icons/inline', 'location.svg'); ?>
         </div>
         <div class="buttons-text-banner locations-text-banner">
-          <p><?php echo get_field($locations, $post_id); ?></p>
+          <p><?php echo get_field($locations, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a>
@@ -58,7 +59,7 @@
           <?php get_template_part('assets/icons/inline', 'loudspeaker.svg'); ?>
         </div>
         <div class="buttons-text-banner announcements-text-banner">
-          <p><?php echo get_field($announcements, $post_id); ?></p>
+          <p><?php echo get_field($announcements, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a>
@@ -83,8 +84,11 @@
 </div>
 
 <div class="latest-posts-area">
+  <div class="swimmer">
+    <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
+  </div>
   <div class="latest-posts">
-    <h2>Nýtt &amp; Uppfært</h2>
+    <h2><?php echo get_field($latestHeadline, $post_id_buttons_latest); ?></h2>
     <?php
     $number_of_posts = 4;
 

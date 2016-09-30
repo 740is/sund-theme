@@ -1,27 +1,49 @@
 /* #58B7E7 */
-.opid {
+li.opid,
+div.opid {
   border-left: 4px solid #3344B4;
   background: rgba(51, 68, 180, 0.1); }
-  .opid a {
+  li.opid a,
+  div.opid a, li.opid h2,
+  div.opid h2 {
     color: #3344B4; }
 
-.sundlaugar {
+li.sundlaugar,
+div.sundlaugar {
   border-left: 4px solid #B45533;
   background: rgba(180, 85, 51, 0.1); }
-  .sundlaugar a {
+  li.sundlaugar a,
+  div.sundlaugar a, li.sundlaugar h2,
+  div.sundlaugar h2 {
     color: #B45533; }
 
-.stadsetningar {
+li.stadsetningar,
+div.stadsetningar {
   border-left: 4px solid #9A621C;
   background: rgba(154, 98, 28, 0.1); }
-  .stadsetningar a {
+  li.stadsetningar a,
+  div.stadsetningar a, li.stadsetningar h2,
+  div.stadsetningar h2 {
     color: #9A621C; }
 
-.tilkynningar {
+li.tilkynningar,
+div.tilkynningar {
   border-left: 4px solid #9A9733;
   background: rgba(154, 151, 51, 0.1); }
-  .tilkynningar a {
+  li.tilkynningar a,
+  div.tilkynningar a, li.tilkynningar h2,
+  div.tilkynningar h2 {
     color: #9A9733; }
+
+li.opid h2,
+div.opid h2,
+li.sundlaugar h2,
+div.sundlaugar h2,
+li.stadsetningar h2,
+div.stadsetningar h2,
+li.tilkynningar h2,
+div.tilkynningar h2 {
+  font-weight: bold; }
 
 /*
 Theme Name: Webpage for sundlaugar.is
@@ -109,6 +131,7 @@ nav {
   display: inline-flex;
   justify-content: space-around;
   height: 65px;
+  border-bottom: 4px solid #E7A758;
   z-index: 1000; }
 
 .menu-button svg,
@@ -142,7 +165,7 @@ nav {
   position: absolute;
   display: inline-flex;
   justify-content: center;
-  height: 65px;
+  height: 61px;
   width: 100%;
   background: #fff; }
 
@@ -201,6 +224,9 @@ input#s:focus {
   min-height: calc(100vh - 150px);
   margin-top: 65px; }
 
+.hero-image-area {
+  border-bottom: 4px solid #58b7e7; }
+
 .hero-image {
   display: none; }
 
@@ -214,8 +240,9 @@ div#selection-buttons-clearfix {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 260px;
-  width: 260px; }
+  height: 350px;
+  width: 350px;
+  padding: 45px 25px; }
 
 .selection-button {
   position: relative;
@@ -270,12 +297,16 @@ div#selection-buttons-clearfix {
 
 /* Latest posts section */
 .latest-posts-area {
-  background: #FFF; }
+  background: #ececec;
+  padding: 50px 0;
+  position: relative; }
 
 .latest-posts {
+  position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  z-index: 2; }
 
 .latest-posts h2,
 .search-results-list h2 {
@@ -335,27 +366,53 @@ i.latest-post-date {
   text-align: right;
   color: #777; }
 
+.swimmer {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  height: 760px;
+  position: absolute;
+  z-index: 1; }
+
+.swimmer svg {
+  width: 220px;
+  fill-opacity: 0.2;
+  fill: #c0c0c0; }
+
+@media screen and (min-width: 480px) {
+  .swimmer {
+    height: 735px; }
+
+  .swimmer svg {
+    width: 290px; } }
 @media screen and (min-width: 640px) {
-  #latest-flex-container {
-    width: 560px;
+  .latest-flex-container {
     margin: 0 auto 2em; }
 
   .latest-flex-item {
     flex: 1 270px;
-    margin-right: 10px; }
+    margin-right: 30px; }
 
   .latest-flex-item:nth-child(2n) {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .swimmer {
+    height: 420px; }
+
+  .swimmer svg {
+    width: 420px; } }
 @media screen and (min-width: 768px) {
   #wrapper {
-    margin-top: 115px; }
+    margin-top: 111px; }
+
+  .display-search-form {
+    height: 111px; }
 
   .hero-image-area {
-    height: 370px;
-    border-bottom: 4px solid #58b7e7; }
+    height: 470px; }
 
   .hero-image {
-    position: absolute;
+    position: fixed;
     display: block;
     z-index: -5; }
 
@@ -363,8 +420,9 @@ i.latest-post-date {
     max-width: 100%; }
 
   .selection-buttons {
-    top: 10px;
+    top: 25px;
     width: 100%;
+    padding: 0;
     flex-wrap: nowrap;
     align-content: center; }
 
@@ -384,18 +442,27 @@ i.latest-post-date {
     border: 1px solid #9A9733; }
 
   .buttons-text-banner p {
-    line-height: 0.9em; }
+    line-height: 0.9em;
+    font-size: 0.9em; }
 
   .latest-posts-area {
-    padding: 50px 0 60px; }
+    padding: 100px 0 120px; }
 
   .latest-posts h2 {
     font-size: 3.136em; }
 
-  #latest-flex-container {
-    width: 680px; } }
+  .latest-flex-container {
+    width: 680px; }
+
+  .swimmer {
+    height: 500px; }
+
+  .swimmer svg {
+    width: 500px; } }
 .single-posts-area {
-  min-height: 100vh; }
+  position: relative;
+  min-height: 100vh;
+  z-index: 1; }
 
 .single-post {
   max-width: 34em;
@@ -480,7 +547,7 @@ footer {
   flex-wrap: wrap; }
 
 .footer-menu-items {
-  padding: 20px; }
+  padding: 50px 20px; }
 
 .footer-menu-items li {
   color: #FFF;

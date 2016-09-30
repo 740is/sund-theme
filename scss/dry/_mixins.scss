@@ -1,4 +1,10 @@
 // Medis queries mixins
+@mixin mobile-landscape-nrw {
+  @media screen and (min-width: $brk-mobile-landscape-nrw) {
+    @content;
+  }
+}
+
 @mixin mobile-landscape {
   @media screen and (min-width: $brk-mobile-landscape) {
     @content;
