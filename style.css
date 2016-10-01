@@ -220,7 +220,7 @@ input#s:focus {
 
   .logo svg {
     height: 50px; } }
-#wrapper {
+.wrapper {
   min-height: calc(100vh - 150px);
   margin-top: 65px; }
 
@@ -296,10 +296,14 @@ div#selection-buttons-clearfix {
   margin-bottom: -16px; }
 
 /* Latest posts section */
-.latest-posts-area {
-  background: #ececec;
-  padding: 50px 0;
+.latest-posts-area,
+.announcements-bkg,
+.region-buttons-area {
+  background: #fefefe;
   position: relative; }
+
+.latest-posts-area {
+  padding: 50px 0; }
 
 .latest-posts {
   position: relative;
@@ -402,8 +406,8 @@ i.latest-post-date {
   .swimmer svg {
     width: 420px; } }
 @media screen and (min-width: 768px) {
-  #wrapper {
-    margin-top: 111px; }
+  .wrapper {
+    margin-top: 115px; }
 
   .display-search-form {
     height: 111px; }
@@ -507,6 +511,47 @@ img.size-thumbnail.alignright {
   margin-left: 5px;
   right: -10px; }
 
+.announcements-bkg {
+  padding: 50px 0;
+  margin: 0; }
+
+.region-buttons {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.region-buttons a {
+  text-decoration: none;
+  flex-basis: 250px;
+  margin-top: 50px;
+  color: #fff; }
+
+.region-buttons a:last-child {
+  margin-bottom: 120px; }
+
+.iceland-area-name {
+  height: 45px;
+  background: rgba(88, 183, 231, 0.1);
+  color: #58b7e7;
+  border-radius: 3px;
+  border: 1px solid #58b7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s; }
+
+.iceland-area-name:hover {
+  background: #58b7e7;
+  color: #3344B4;
+  transition: 0.7s; }
+
+.iceland-area-name p {
+  margin: 0;
+  line-height: 1em; }
+
 @media screen and (min-width: 768px) {
   .single-post h2 {
     font-size: 2.636em;
@@ -519,7 +564,16 @@ img.size-thumbnail.alignright {
     margin-bottom: 1.63em; }
 
   .single-post i {
-    margin-bottom: 0.4em; } }
+    margin-bottom: 0.4em; }
+
+  .announcements-bkg {
+    padding: 120px 0; }
+
+  .region-buttons {
+    width: 740px; } }
+@media screen and (min-width: 1024px) {
+  .region-buttons {
+    width: 940px; } }
 footer {
   background: #58b7e7; }
 

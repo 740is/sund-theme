@@ -1,4 +1,4 @@
-#wrapper {
+.wrapper {
   min-height: calc(100vh - 150px);
   margin-top: $mobile-nav-height;
 }
@@ -91,10 +91,15 @@ div#selection-buttons-clearfix {
 }
 
 /* Latest posts section */
-.latest-posts-area {
-  background: #ececec;
-  padding: 50px 0;
+.latest-posts-area,
+.announcements-bkg,
+.region-buttons-area {
+  background: #fefefe;
   position: relative;
+}
+
+.latest-posts-area {
+    padding: 50px 0;
 }
 
 .latest-posts {
@@ -249,8 +254,8 @@ i.latest-post-date {
 }
 
 @include tablets {
-  #wrapper {
-    margin-top: 111px;
+  .wrapper {
+    margin-top: 115px;
   }
 
   .display-search-form {

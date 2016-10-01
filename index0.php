@@ -53,7 +53,7 @@
       </div>
     </a>
 
-    <a href="<?php bloginfo('url'); ?>/tilkynningar">
+    <a href="#">
       <div id="announcements" class="selection-button">
         <div class="selection-buttons-icon announcements-icon">
           <?php get_template_part('assets/icons/inline', 'loudspeaker.svg'); ?>

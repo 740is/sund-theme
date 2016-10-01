@@ -57,6 +57,66 @@ img.size-thumbnail.alignright {
   right: -10px;
 }
 
+.announcements-bkg {
+    padding: 50px 0;
+    margin: 0;
+}
+
+.region-buttons {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.region-buttons a {
+  text-decoration: none;
+  flex-basis: 250px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.region-buttons a:first-child {
+
+}
+
+.region-buttons a:last-child {
+  margin-bottom: 120px;
+}
+
+.iceland-area {
+
+}
+
+.iceland-area-name {
+  height: 45px;
+  background: $transparent-theme-blue;
+  color: $theme-blue;
+  border-radius: 3px;
+  border: 1px solid $theme-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.iceland-area-name:hover {
+  background: $theme-blue;
+  color: $blue;
+  transition: 0.7s;
+}
+
+.iceland-area-name p {
+  margin: 0;
+  line-height: 1em;
+}
+
+@include mobile-landscape-nrw {
+
+}
+
 @include tablets {
   .single-post h2 {
     font-size: 2.636em;
@@ -72,5 +132,19 @@ img.size-thumbnail.alignright {
 
   .single-post i {
     margin-bottom: 0.4em;
+  }
+
+  .announcements-bkg {
+      padding: 120px 0;
+  }
+
+  .region-buttons {
+    width: 740px;
+  }
+}
+
+@include displays {
+  .region-buttons {
+    width: 940px;
   }
 }

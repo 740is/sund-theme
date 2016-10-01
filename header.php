@@ -11,4 +11,4 @@
   </head>
   <body>
     <?php include('navigation.php'); ?>
-    <div id="wrapper">
+    <div class="wrapper">
