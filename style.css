@@ -607,4 +607,11 @@ footer {
   color: #FFF;
   margin: 8px 0 0; }
 
+#svg-capital {
+  fill: #58b7e7;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: black; }
+
 /*# sourceMappingURL=style.css.map */
