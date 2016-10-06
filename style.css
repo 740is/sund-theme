@@ -66,7 +66,7 @@ body {
 p {
   font-size: .85em; }
 
-p, li,
+p, li, td, th,
 .latest-post-title,
 .latest-post-excerpt {
   font-family: 'Raleway', arial, sans-serif;
@@ -298,7 +298,8 @@ div#selection-buttons-clearfix {
 /* Latest posts section */
 .latest-posts-area,
 .announcements-bkg,
-.region-buttons-area {
+.region-buttons-area,
+.swp-single-posts-area {
   background: #f1f1f1;
   position: relative; }
 
@@ -314,12 +315,16 @@ div#selection-buttons-clearfix {
 
 .latest-posts h2,
 .search-results-list h2 {
-  color: #58b7e7;
-  text-align: center;
   font-size: 2.136em;
   padding-top: 2rem;
   padding-bottom: 20px;
-  margin-top: 0;
+  margin-top: 0; }
+
+.latest-posts h2,
+.search-results-list h2,
+.swp-single-post h2 {
+  text-align: center;
+  color: #58b7e7;
   text-shadow: 2px 2px 5px #c0c0c0; }
 
 .latest-flex-container,
@@ -354,7 +359,8 @@ div#selection-buttons-clearfix {
 .latest-posts li p {
   margin-bottom: 0; }
 
-.latest-posts a {
+.latest-posts a,
+.swp-single-post a {
   text-decoration: none;
   color: #3344B4;
   font-weight: bold; }
@@ -452,7 +458,8 @@ i.latest-post-date {
   .latest-posts-area {
     padding: 100px 0 120px; }
 
-  .latest-posts h2 {
+  .latest-posts h2,
+  .swp-single-post h2 {
     font-size: 3.136em; }
 
   .latest-flex-container {
@@ -463,12 +470,14 @@ i.latest-post-date {
 
   .swimmer svg {
     width: 500px; } }
-.single-posts-area {
+.single-posts-area,
+.swp-single-posts-area {
   position: relative;
   min-height: 100vh;
   z-index: 1; }
 
-.single-post {
+.single-post,
+.swp-single-post {
   max-width: 34em;
   margin: 0 auto;
   padding: 7px 16px 30px; }
@@ -479,7 +488,8 @@ i.latest-post-date {
   margin-top: 1.15em;
   margin-bottom: 1.6em; }
 
-.single-post p {
+.single-post p,
+.swp-single-post p {
   margin-bottom: 1.8em; }
 
 .single-post i {
@@ -552,16 +562,116 @@ img.size-thumbnail.alignright {
   margin: 0;
   line-height: 1em; }
 
+.swp-headlines {
+  margin-bottom: 60px; }
+
+.swp-headlines h4 {
+  text-align: center;
+  margin-top: -7px; }
+
+.swp-contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 260px;
+  border: 1px solid #afafaf;
+  padding: 7px;
+  background: #dfdfdf;
+  box-shadow: 2px 2px 2px #888; }
+
+.swp-contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px; }
+
+.swp-contact-info svg {
+  height: 20px;
+  width: auto;
+  fill: #58b7e7;
+  margin-right: 5px; }
+
+.swp-opening-hours p {
+  margin-bottom: 0 !important;
+  font-weight: bold;
+  color: #333; }
+
+.swp-opening-hours ul {
+  margin-top: -5px;
+  margin-bottom: 40px;
+  list-style: none; }
+
+.swp-opeing-hours ul svg {
+  height: 10px; }
+
+.swp-opening-hours li {
+  margin-bottom: 0px; }
+
+.swp-price-list tbody,
+.swp-price-list tbody:last-of-type {
+  border-bottom: 35px solid; }
+
+.swp-price-list tbody:first-of-type {
+  border-top: 35px solid; }
+
+.swp-price-list tbody,
+.swp-price-list tbody:first-of-type,
+.swp-price-list tbody:last-of-type {
+  border-color: #f1f1f1; }
+
+.swp-price-list tr:nth-child(even) {
+  background: #dfdfdf; }
+
+.swp-price-list th {
+  font-size: 0.9em;
+  color: #555;
+  padding-bottom: 5px; }
+
+.swp-price-list td {
+  font-size: 0.85em;
+  padding: 5px;
+  color: #777; }
+
+.swp-images-mobile {
+  display: block;
+  margin: 60px 0; }
+
+.swp-images-display {
+  display: none; }
+
+.swp-images img {
+  box-shadow: 2px 2px 2px #888; }
+
+.swp-images.swp-images-mobile p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto; }
+
+.swp-images.swp-images-mobile p img {
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
 @media screen and (min-width: 768px) {
+  .single-post,
+  .swp-single-post {
+    padding: 7px 16px 100px; }
+
   .single-post h2 {
     font-size: 2.636em;
     line-height: 1.85em;
     margin-top: 0.97em;
     margin-bottom: 2.3em; }
 
-  .single-post p {
+  .single-post p,
+  .swp-single-post p {
     line-height: 1.65em;
     margin-bottom: 1.63em; }
+
+  .swp-contact-info p {
+    font-size: 0.85em;
+    margin-bottom: 5px; }
 
   .single-post i {
     margin-bottom: 0.4em; }
@@ -570,7 +680,37 @@ img.size-thumbnail.alignright {
     padding: 120px 0; }
 
   .region-buttons {
-    width: 740px; } }
+    width: 740px; }
+
+  .swp-images-mobile {
+    display: none; }
+
+  .swp-images-display {
+    display: block; }
+
+  .swp-single-post {
+    max-width: 43em; }
+
+  .swp-headlines {
+    margin-bottom: 90px; }
+
+  .swp-headlines h4 {
+    margin-top: -10px; }
+
+  .swp-images {
+    float: right;
+    right: -30px;
+    margin: 0px 0 0px 20px;
+    position: relative; }
+
+  .swp-images img {
+    margin-bottom: 15px; }
+
+  .swp-price-list th {
+    font-size: 1.25em; }
+
+  .swp-price-list td {
+    font-size: 1em; } }
 @media screen and (min-width: 1024px) {
   .region-buttons {
     width: 940px; } }

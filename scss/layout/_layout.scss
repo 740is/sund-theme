@@ -93,8 +93,9 @@ div#selection-buttons-clearfix {
 /* Latest posts section */
 .latest-posts-area,
 .announcements-bkg,
-.region-buttons-area {
-  background: #f1f1f1;
+.region-buttons-area,
+.swp-single-posts-area {
+  background: $bkg-gray;
   position: relative;
 }
 
@@ -116,12 +117,17 @@ div#selection-buttons-clearfix {
 
 .latest-posts h2,
 .search-results-list h2 {
-  color: $theme-blue;
-  text-align: center;
   font-size: 2.136em;
   padding-top: 2rem;
   padding-bottom: 20px;
   margin-top: 0;
+}
+
+.latest-posts h2,
+.search-results-list h2,
+.swp-single-post h2 {
+  text-align: center;
+  color: $theme-blue;
   text-shadow: 2px 2px 5px #c0c0c0;
 }
 
@@ -185,7 +191,8 @@ div.stadsetningar {
   @extend %li-border-brown;
 }
 
-.latest-posts a {
+.latest-posts a,
+.swp-single-post a {
   text-decoration: none;
   color: $blue;
   font-weight: bold;
@@ -314,7 +321,8 @@ i.latest-post-date {
     padding: 100px 0 120px;
   }
 
-  .latest-posts h2 {
+  .latest-posts h2,
+  .swp-single-post h2 {
     font-size: 3.136em;
   }
   .latest-flex-container {

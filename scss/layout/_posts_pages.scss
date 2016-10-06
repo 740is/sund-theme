@@ -1,10 +1,12 @@
-.single-posts-area {
+.single-posts-area,
+.swp-single-posts-area {
   position: relative;
   min-height: 100vh;
   z-index: 1;
 }
 
-.single-post {
+.single-post,
+.swp-single-post {
   max-width: 34em;
   margin: 0 auto;
   padding: 7px 16px 30px;
@@ -17,7 +19,8 @@
   margin-bottom: 1.6em;
 }
 
-.single-post p {
+.single-post p,
+.swp-single-post p {
   margin-bottom: 1.8em;
 }
 
@@ -42,7 +45,7 @@
 img.size-thumbnail.alignleft,
 img.size-thumbnail.alignright {
   position: relative;
-  box-shadow: 2px 2px 2px #888;
+  @include light-gray-box-shadow;
 }
 
 img.size-thumbnail.alignleft {
@@ -113,11 +116,171 @@ img.size-thumbnail.alignright {
   line-height: 1em;
 }
 
+
+
+
+.swp-headlines {
+  margin-bottom: 60px;
+}
+
+.swp-headlines h4 {
+  text-align: center;
+  margin-top: -7px;
+}
+
+// .mobile-width {
+//   width: 290px;
+//   margin: 0 auto;
+// }
+
+.swp-contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 260px;
+  border: 1px solid #afafaf;
+  padding: 7px;
+  background: #dfdfdf;
+  box-shadow: 2px 2px 2px #888;
+}
+
+.swp-contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.swp-contact-info svg {
+  height: 20px;
+  width: auto;
+  fill: $theme-blue;
+  margin-right: 5px;
+}
+
+
+
+.swp-opening-hours p {
+  margin-bottom: 0 !important;
+  font-weight: bold;
+  color: #333;
+}
+
+.swp-opening-hours ul {
+  margin-top: -5px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.swp-opeing-hours ul svg {
+  height: 10px;
+}
+
+.swp-opening-hours li {
+  margin-bottom: 0px;
+}
+
+.swp-price-list tbody,
+.swp-price-list tbody:last-of-type {
+  border-bottom: 35px solid;
+}
+
+.swp-price-list tbody:first-of-type {
+  border-top: 35px solid;
+}
+
+.swp-price-list tbody,
+.swp-price-list tbody:first-of-type,
+.swp-price-list tbody:last-of-type {
+  border-color: $bkg-gray;
+}
+
+.swp-price-list tr:nth-child(even) {
+  background: #dfdfdf;
+}
+
+.swp-price-list th {
+  font-size: 0.9em;
+  color: #555;
+  padding-bottom: 5px;
+
+}
+
+.swp-price-list td {
+  font-size: 0.85em;
+  padding: 5px;
+  color: #777;
+}
+
+
+
+.swp-images-mobile {
+  display: block;
+  margin: 60px 0;
+}
+
+.swp-images-display {
+  display: none;
+}
+
+.swp-images img {
+  @include light-gray-box-shadow;
+}
+
+.swp-images.swp-images-mobile p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.swp-images.swp-images-mobile p img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 @include mobile-landscape-nrw {
 
 }
 
+@include mobile-landscape {
+  // .swp-images-mobile {
+  //   display: block;
+  // }
+  //
+  // .swp-images-display {
+  //   display: none;
+  // }
+
+  // .swp-images {
+  //   float: right;
+  //   right: -30px;
+  //   margin: 0px 0 0px 20px;
+  //   position: relative;
+  // }
+
+  // .mobile-width {
+  //   width: 100%;
+  // }
+
+}
+
 @include tablets {
+  .single-post,
+  .swp-single-post {
+    padding: 7px 16px 100px;
+  }
+
   .single-post h2 {
     font-size: 2.636em;
     line-height: 1.85em;
@@ -125,9 +288,15 @@ img.size-thumbnail.alignright {
     margin-bottom: 2.3em;
   }
 
-  .single-post p {
+  .single-post p,
+  .swp-single-post p {
     line-height: 1.65em;
     margin-bottom: 1.63em;
+  }
+
+  .swp-contact-info p {
+    font-size: 0.85em;
+    margin-bottom: 5px;
   }
 
   .single-post i {
@@ -140,6 +309,120 @@ img.size-thumbnail.alignright {
 
   .region-buttons {
     width: 740px;
+  }
+
+  .swp-images-mobile {
+    display: none;
+  }
+
+  .swp-images-display {
+    display: block;
+  }
+
+  .swp-single-post {
+    max-width: 43em;
+  }
+
+  .swp-single-post h2 {
+
+  }
+
+  .swp-headlines {
+    margin-bottom: 90px;
+  }
+
+  .swp-headlines h4 {
+    margin-top: -10px;
+  }
+
+  .swp-images {
+    float: right;
+    right: -30px;
+    margin: 0px 0 0px 20px;
+    position: relative;
+  }
+
+  .swp-images img {
+    margin-bottom: 15px;
+  }
+
+  // .swp-images img {
+  //   @include light-gray-box-shadow;
+  // }
+
+  // .swp-contact-info {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   margin-bottom: 30px;
+  //   width: 260px;
+  //   border: 1px solid #afafaf;
+  //   padding: 7px;
+  //   background: #dfdfdf;
+  //   box-shadow: 2px 2px 2px #888;
+  // }
+
+  // .swp-contact-info p {
+  //   display: flex;
+  //   align-items: center;
+  //   margin-bottom: 0;
+  // }
+
+  // .swp-contact-info svg {
+  //   height: 20px;
+  //   width: auto;
+  //   fill: $theme-blue;
+  //   margin-right: 5px;
+  // }
+
+  // .swp-opening-hours p {
+  //   margin-bottom: 0 !important;
+  //   font-weight: bold;
+  //   color: #333;
+  // }
+  //
+  // .swp-opening-hours ul {
+  //   margin-top: -5px;
+  //   margin-bottom: 40px;
+  //   list-style: none;
+  // }
+  //
+  // .swp-opeing-hours ul svg {
+  //   height: 10px;
+  // }
+  //
+  // .swp-opening-hours li {
+  //   margin-bottom: 0px;
+  // }
+  //
+  // .swp-price-list tbody,
+  // .swp-price-list tbody:last-of-type {
+  //   border-bottom: 35px solid;
+  // }
+  //
+  // .swp-price-list tbody:first-of-type {
+  //   border-top: 35px solid;
+  // }
+  //
+  // .swp-price-list tbody,
+  // .swp-price-list tbody:first-of-type,
+  // .swp-price-list tbody:last-of-type {
+  //   border-color: $bkg-gray;
+  // }
+  //
+  // .swp-price-list tr:nth-child(even) {
+  //   background: #dfdfdf;
+  // }
+  //
+  .swp-price-list th {
+    font-size: 1.25em;
+    // color: #555;
+    // padding-bottom: 5px;
+
+  }
+
+  .swp-price-list td {
+    font-size: 1em;
   }
 }
 
