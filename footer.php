@@ -2,7 +2,8 @@
 	<footer>
 		<div class="footer-menu">
 			<div class="footer-menu-items">
-				<ul>
+				<?php wp_nav_menu( array('menu' => 'Footer Menu')); ?>
+				<!-- <ul>
 					<li>Sundlaugar</li>
 					<li>Heitar laugar</li>
 					<li>Opnunartímar</li>
@@ -17,7 +18,7 @@
 				<ul>
 					<li>Fréttir / Tilkynningar</li>
 					<li>Tilgangur vefsins</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 		<div class="copyright">
