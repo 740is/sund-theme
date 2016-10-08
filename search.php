@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
 <div class="search-results-area">
-  <div class="swimmer">
-    <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
-  </div>
+  <?php include('swimmer.php'); ?>
   <div class="search-results-list">
 <?php $search_count = 0; ?>
 <?php $search = new WP_Query("s=$s & showposts=-1"); ?>

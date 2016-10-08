@@ -1,0 +1,63 @@
+/*========== CONTACT FORM OVERWRITE (mobile) ==========*/
+div.wpcf7 {
+	width: 303px;
+	margin: auto;
+}
+
+input.wpcf7-form-control.wpcf7-text,
+input.wpcf7-form-control.wpcf7-submit {
+	height: 40px;
+}
+
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea {
+	border: 1px solid $orange;
+	outline: none;
+}
+
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea,
+input.wpcf7-form-control.wpcf7-submit {
+	width: 294px;
+	border-radius: 3px;
+}
+
+input.wpcf7-form-control.wpcf7-submit{
+	border: 0;
+	background-color: $orange;
+	color: #FFF;
+	font-size: 1.25em;
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+	background-color: #e56f3c;
+}
+
+input.wpcf7-form-control:focus,
+textarea.wpcf7-form-control.wpcf7-textarea:focus {
+	box-shadow: 0px 0px 10px $orange;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #e32b50;
+	color: #e32b50;
+	background-color: #fad8df;
+	border-radius: 3px;
+}
+
+
+@include tablets {
+  /*========== CONTACT FORM OVERWRITE (tablets) ==========*/
+	div.wpcf7 {
+		width: 504px;
+		margin: auto;
+	}
+
+	input.wpcf7-form-control.wpcf7-text,
+	textarea.wpcf7-form-control.wpcf7-textarea,
+	input.wpcf7-form-control.wpcf7-submit {
+		width: 494px;
+	}
+
+}

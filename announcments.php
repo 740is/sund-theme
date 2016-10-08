@@ -5,9 +5,7 @@
 <?php include('header.php'); ?>
 
 <div class="latest-posts announcements-bkg wrapper">
-  <div class="swimmer">
-    <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
-  </div>
+  <?php include('swimmer.php'); ?>
   <h2><?php the_title(); ?></h2>
   <?php
   $number_of_posts = 16;

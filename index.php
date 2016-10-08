@@ -84,9 +84,7 @@
 </div>
 
 <div class="latest-posts-area">
-  <div class="swimmer">
-    <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
-  </div>
+  <?php include('swimmer.php'); ?>
   <div class="latest-posts">
     <h2><?php echo get_field($latestHeadline, $post_id_buttons_latest); ?></h2>
     <?php

@@ -2,9 +2,7 @@
 
 <!-- <div class="single-posts-area"> -->
 <!-- <div class="breadcrumb"><?php get_breadcrumb(); ?></div> -->
-<div class="swimmer">
-  <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
-</div>
+<?php include('swimmer.php'); ?>
 
     <?php
 

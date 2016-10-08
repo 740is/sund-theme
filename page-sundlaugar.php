@@ -5,9 +5,7 @@
 <?php include('header.php'); ?>
 
 <div class="latest-posts wrapper">
-  <div class="swimmer">
-    <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
-  </div>
+  <?php include('swimmer.php'); ?>
   <!-- ========== WP Page: Sundlaugar =========  -->
   <div class="a">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
