@@ -653,6 +653,17 @@ img.size-thumbnail.alignright {
   margin-right: 10px;
   margin-bottom: 10px; }
 
+.swp-listing {
+  position: relative;
+  z-index: 2; }
+
+.swp-listing-title {
+  margin: 0;
+  padding: 1em 0.5em; }
+
+.swp-listing-bkg {
+  background: rgba(180, 85, 51, 0.1); }
+
 @media screen and (min-width: 768px) {
   .single-post,
   .swp-single-post {

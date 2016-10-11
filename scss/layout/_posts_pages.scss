@@ -212,8 +212,6 @@ img.size-thumbnail.alignright {
   color: #777;
 }
 
-
-
 .swp-images-mobile {
   display: block;
   margin: 60px 0;
@@ -240,9 +238,19 @@ img.size-thumbnail.alignright {
   margin-bottom: 10px;
 }
 
+.swp-listing {
+  position: relative;
+  z-index: 2;
+}
 
+.swp-listing-title {
+  margin: 0;
+  padding: 1em 0.5em;
+}
 
-
+.swp-listing-bkg {
+  background: $transparent-orange;
+}
 
 
 
