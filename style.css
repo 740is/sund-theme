@@ -318,7 +318,7 @@ div#selection-buttons-clearfix {
   background: #f1f1f1;
   position: relative; }
 
-.latest-posts-area,
+.latest-posts,
 .region-buttons-area {
   padding: 50px 0; }
 
@@ -459,7 +459,7 @@ i.latest-post-date {
     line-height: 0.9em;
     font-size: 0.9em; }
 
-  .latest-posts-area,
+  .latest-posts,
   .region-buttons-area {
     padding: 100px 0 120px; }
 

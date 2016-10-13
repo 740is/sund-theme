@@ -17,7 +17,7 @@
 
 
       <div class="selection-buttons">
-        <a href="<?php bloginfo('url'); ?>/sundlaugar/">
+        <a href="<?php bloginfo('url'); ?>/landshlutar-yfirlit/">
           <div id="swimming-pools" class="selection-button">
             <div class="selection-buttons-icon swimming-pools-icon">
               <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
