@@ -22,7 +22,7 @@
             echo '<div class="single-post">';
               echo '<h2>' . get_the_title() . '</h2>';
               echo '<i class="latest-post-date">';
-                echo get_the_date('d/m/Y | G:i');
+                echo get_the_date('d/m/Y');
                 echo '</i>';
               echo the_content();
         }

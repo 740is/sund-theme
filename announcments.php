@@ -1,5 +1,5 @@
 <?php
-	/* Template Name: Announcements */
+	/* Template Name: Tilkynningar */
 ?>
 
 <?php include('header.php'); ?>
@@ -36,7 +36,7 @@
                 echo the_excerpt();
               echo '</div>';
               echo '<i class="latest-post-date">';
-                echo get_the_date('d/m/Y | G:i');
+                echo get_the_date('d/m/Y');
               echo '</i>';
             echo '</div>';
           echo '</a>';

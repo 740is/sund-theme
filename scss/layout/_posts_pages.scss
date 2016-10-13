@@ -435,7 +435,9 @@ img.size-thumbnail.alignright {
 }
 
 @include displays {
-  .region-buttons {
+  .region-buttons,
+  .region-buttons-content {
     width: 940px;
+    margin: 0 auto;
   }
 }

@@ -8,6 +8,7 @@
 
 <!-- <div class="latest-posts wrapper"> -->
   <div class="swp-single-posts-area wrapper">
+    <p>single sundlaugar</p>
     <div class="swp-single-post">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="swp-headlines">

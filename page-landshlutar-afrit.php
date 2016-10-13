@@ -1,5 +1,5 @@
 <?php
-	/* Template Name: Locations */
+	/* Template Name: Landshlutar */
 ?>
 
 <?php include('header.php'); ?>
@@ -30,8 +30,8 @@
   ?>
 
 <div class="region-buttons-area">
-  <div class="region-buttons">
-      <a href="#">
+  <ul class="region-buttons">
+      <a href="<?php bloginfo('url'); ?>/sundlaugar/"><li>
         <div id="capital-area" class="iceland-area capital-area">
           <div class="swimming-pools-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_capital); ?>
@@ -41,9 +41,9 @@
               <!-- <p><?php echo get_field($capitalArea, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="west" class="iceland-area west">
           <div class="opening-hours-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_west); ?>
@@ -53,9 +53,9 @@
             <!-- <p><?php echo get_field($west, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="westfjords" class="iceland-area westfjords">
           <div class="locations-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_westfjords); ?>
@@ -65,9 +65,9 @@
             <!-- <p><?php echo get_field($westFjords, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="north-west" class="iceland-area north-west">
           <div class="announcements-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_northwest); ?>
@@ -77,9 +77,9 @@
             <!-- <p><?php echo get_field($northEast, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="north-east" class="iceland-area north-east">
           <div class="opening-hours-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_northeast); ?>
@@ -89,9 +89,9 @@
             <!-- <p><?php echo get_field($northEast, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="east" class="iceland-area east">
           <div class="locations-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_east); ?>
@@ -101,9 +101,9 @@
             <!-- <p><?php echo get_field($east, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="south" class="iceland-area south">
           <div class="announcements-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_south); ?>
@@ -113,9 +113,9 @@
             <!-- <p><?php echo get_field($south, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
-      <a href="#">
+      <a href="#"><li>
         <div id="reykjanes" class="iceland-area reykjanes">
           <div class="opening-hours-icon">
             <?php get_template_part('assets/svg/inline', $iceland_reg_reykjanes); ?>
@@ -125,7 +125,7 @@
             <!-- <p><?php echo get_field($reykjanes, $post_id_buttons_latest); ?></p> -->
           </div>
         </div>
-      </a>
+      </li></a>
 
       <!-- <a href="#">
         <div id="highlands" class="iceland-area highlands">
@@ -137,7 +137,7 @@
           </div>
         </div>
       </a> -->
-    </div>
+    </ul>
 </div>
 <!-- </div> -->
 

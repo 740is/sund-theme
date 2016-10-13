@@ -47,6 +47,26 @@ div#selection-buttons-clearfix {
   fill: #fff;
 }
 
+.selection-button {
+  box-shadow: 0px 0px 18px 9px #fff;
+}
+
+#swimming-pools {
+  border: 1px solid $orange;
+}
+
+#opening-hours {
+  border: 1px solid $blue;
+}
+
+#locations {
+  border: 1px solid $brown;
+}
+
+#announcements {
+  border: 1px solid $green;
+}
+
 .buttons-text-banner {
   position: absolute;
   height: 25px;
@@ -91,7 +111,7 @@ div#selection-buttons-clearfix {
 }
 
 /* Latest posts section */
-.latest-posts-area,
+.latest-posts,
 .announcements-bkg,
 .region-buttons-area,
 .swp-single-posts-area {
@@ -99,11 +119,13 @@ div#selection-buttons-clearfix {
   position: relative;
 }
 
-.latest-posts-area {
+.latest-posts-area,
+.region-buttons-area {
     padding: 50px 0;
 }
 
-.latest-posts {
+.latest-posts-content,
+.region-buttons-content {
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
@@ -125,7 +147,8 @@ div#selection-buttons-clearfix {
 
 .latest-posts h2,
 .search-results-list h2,
-.swp-single-post h2 {
+.swp-single-post h2,
+.region-buttons-area h2 {
   text-align: center;
   color: $theme-blue;
   text-shadow: 2px 2px 5px #c0c0c0;
@@ -155,7 +178,8 @@ div#selection-buttons-clearfix {
 .latest-posts ul,
 .footer-menu-items ul,
 .mobile-menu-items ul,
-.search-results-list ul {
+.search-results-list ul,
+.region-buttons-area ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 2em;
@@ -292,37 +316,21 @@ i.latest-post-date {
     align-content: center;
   }
 
-  .selection-button {
-    box-shadow: 0px 0px 18px 9px #fff;
-  }
 
-  #swimming-pools {
-    border: 1px solid $orange;
-  }
-
-  #opening-hours {
-    border: 1px solid $blue;
-  }
-
-  #locations {
-    border: 1px solid $brown;
-  }
-
-  #announcements {
-    border: 1px solid $green;
-  }
 
   .buttons-text-banner p {
     line-height: 0.9em;
     font-size: 0.9em;
   }
 
-  .latest-posts-area {
+  .latest-posts-area,
+  .region-buttons-area {
     padding: 100px 0 120px;
   }
 
   .latest-posts h2,
-  .swp-single-post h2 {
+  .swp-single-post h2,
+  .region-buttons-area h2 {
     font-size: 3.136em;
   }
   .latest-flex-container {

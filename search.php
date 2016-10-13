@@ -3,10 +3,10 @@
 <div class="search-results-area">
   <?php include('swimmer.php'); ?>
   <div class="search-results-list">
-<?php $search_count = 0; ?>
-<?php $search = new WP_Query("s=$s & showposts=-1"); ?>
-     <?php if($search->have_posts()) : ?>
-     <h2>
+    <?php $search_count = 0; ?>
+    <?php $search = new WP_Query("s=$s & showposts=-1"); ?>
+    <?php if($search->have_posts()) : ?>
+    <h2>
        <?php
        $mySearch = new WP_Query("s=$s & showposts=-1");
        $num = $mySearch->post_count;
@@ -14,9 +14,9 @@
       ?>
       <?php printf( __( 'leitarniðurstöður fyrir: %s', 'shape' ), '<span><i>' . get_search_query() . '</i></span>' ); ?>
     </h2>
-        <ul class="search-results-flex-container">
-        <?php while($search->have_posts()) : $search->the_post(); ?>
-        <?php
+      <ul class="search-results-flex-container">
+      <?php while($search->have_posts()) : $search->the_post(); ?>
+      <?php
         $categories = get_the_category();
         if ( ! empty( $categories ) ) {
         echo '<li class="' . esc_html( $categories[0]->slug ) . ' search-results-flex-item">';
@@ -41,17 +41,17 @@
         // echo '</span>';
         echo '</a></li>';
       }
-        ?>
-        <?php $search_count++; ?>
-        <?php endwhile; else: ?>
-          <div class="search-results-area">
-            <div class="search-results-list">
-        <?php echo '<h2>Leitin að&nbsp;<i>' . get_search_query() . '</i>&nbsp;skilaði engu.</h2>'; ?>
+      ?>
+      <?php $search_count++; ?>
+      <?php endwhile; else: ?>
+      <div class="search-results-area">
+        <div class="search-results-list">
+          <?php echo '<h2>Leitin að&nbsp;<i>' . get_search_query() . '</i>&nbsp;skilaði engu.</h2>'; ?>
             <p>Vinsamlegast athugaðu hvort þú hafir slegið rétt inn. Einnig getur þú prófað að leita eftir öðrum leitarskilyrðum.</p>
-          </div>
         </div>
-        <?php endif; ?>
-      </ul>
-    </div>
+      </div>
+      <?php endif; ?>
+    </ul>
   </div>
+</div>
 <?php get_footer(); ?>
