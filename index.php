@@ -42,10 +42,10 @@
       </div>
     </a>
 
-    <a href="<?php bloginfo('url'); ?>/stadsetningar/">
+    <a href="<?php bloginfo('url'); ?>/heitar-laugar/">
       <div id="locations" class="selection-button">
         <div class="selection-buttons-icon locations-icon">
-          <?php get_template_part('assets/icons/inline', 'location.svg'); ?>
+          <?php get_template_part('assets/icons/inline', 'hot-spring.svg'); ?>
         </div>
         <div class="buttons-text-banner locations-text-banner">
           <p><?php echo get_field($locations, $post_id_buttons_latest); ?></p>

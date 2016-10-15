@@ -1,7 +1,7 @@
 <?php
 
 add_theme_support( 'menus' );
-add_theme_support( 'post-thumbmails');
+add_theme_support( 'post-thumbnails');
 /***** STYLES AND FONTS DECLARED *****/
 function theme_styles() {
 	wp_enqueue_style('googleFonts-Josefin-Slab','http://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
