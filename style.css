@@ -675,12 +675,19 @@ img.size-thumbnail.alignright {
 .feature-image {
   position: relative;
   float: left;
-  margin: 10px; }
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  margin-left: 0px; }
 
 .feature-image img {
-  height: 120px;
-  width: 120px; }
+  height: 80px;
+  width: 80px; }
 
+@media screen and (min-width: 640px) {
+  .feature-image img {
+    height: 100px;
+    width: 100px; } }
 @media screen and (min-width: 768px) {
   .single-post,
   .swp-single-post {
@@ -738,7 +745,11 @@ img.size-thumbnail.alignright {
     font-size: 1.25em; }
 
   .swp-price-list td {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .feature-image img {
+    height: 120px;
+    width: 120px; } }
 @media screen and (min-width: 1024px) {
   .region-buttons,
   .region-buttons-content {
