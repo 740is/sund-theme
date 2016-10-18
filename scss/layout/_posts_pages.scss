@@ -246,6 +246,7 @@ img.size-thumbnail.alignright {
 .swp-listing-title {
   margin: 0;
   padding: 0.4em 0.5em;
+  font-size: 1.3em;
 }
 
 .swp-listing-bkg {
@@ -262,8 +263,8 @@ img.size-thumbnail.alignright {
 }
 
 .feature-image img {
-  height: 80px;
-  width: 80px;
+  height: 82px;
+  width: 82px;
 }
 
 
@@ -335,6 +336,10 @@ img.size-thumbnail.alignright {
 
   .region-buttons {
     width: 740px;
+  }
+
+  .swp-listing-title {
+    font-size: 1.618em;
   }
 
   .swp-images-mobile {

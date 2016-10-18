@@ -22,7 +22,7 @@ div#selection-buttons-clearfix {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 350px;
+  height: 390px;
   width: 350px;
   padding: 45px 25px;
 }
@@ -195,6 +195,7 @@ div#selection-buttons-clearfix {
 
 .latest-posts li p {
   margin-bottom: 0;
+  color: #444;
 }
 
 li.tilkynningar,
@@ -287,6 +288,10 @@ i.latest-post-date {
 }
 
 @include tablets {
+  .selection-buttons {
+    height: 200px;
+  }
+
   .wrapper {
     margin-top: 115px;
   }
