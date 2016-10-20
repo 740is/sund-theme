@@ -214,6 +214,9 @@ input#s:focus {
   text-decoration: none;
   text-align: center; }
 
+@media screen and (min-width: 480px) {
+  .mobile-menu-items a {
+    padding: 0; } }
 @media screen and (min-width: 768px) {
   nav {
     height: 115px; }
@@ -302,13 +305,20 @@ div#selection-buttons-clearfix {
 
 /* Ad banner one */
 .ads-banners {
-  position: relative; }
+  position: absolute;
+  z-index: 1;
+  width: 100%; }
 
 .ads-banners img {
   width: 100%; }
 
+.ad-banner-one,
 .ad-banner-two {
-  margin-bottom: -16px; }
+  margin: 0 auto; }
+
+.ad-banner-two {
+  margin-top: -83px;
+  bottom: 0; }
 
 /* Latest posts section */
 .latest-posts,
@@ -320,7 +330,7 @@ div#selection-buttons-clearfix {
 
 .latest-posts,
 .region-buttons-area {
-  padding: 50px 0; }
+  padding: 90px 30px; }
 
 .latest-posts-content,
 .region-buttons-content {
@@ -402,9 +412,10 @@ i.latest-post-date {
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  height: 760px;
+  height: 200px;
   position: absolute;
-  z-index: 1; }
+  margin-top: 30px;
+  z-index: -1; }
 
 .swimmer svg {
   width: 220px;
@@ -412,8 +423,16 @@ i.latest-post-date {
   fill: #c0c0c0; }
 
 @media screen and (min-width: 480px) {
-  .swimmer {
-    height: 735px; }
+  .selection-buttons {
+    flex-wrap: nowrap;
+    height: 230px;
+    width: 440px;
+    padding: 45px 5px; }
+
+  .selection-button {
+    height: 100px;
+    width: 100px;
+    margin: 8px; }
 
   .swimmer svg {
     width: 290px; } }
@@ -429,7 +448,7 @@ i.latest-post-date {
     margin-right: 0; }
 
   .swimmer {
-    height: 420px; }
+    height: 230px; }
 
   .swimmer svg {
     width: 420px; } }
@@ -465,23 +484,29 @@ i.latest-post-date {
     line-height: 0.9em;
     font-size: 0.9em; }
 
-  .latest-posts,
-  .region-buttons-area {
-    padding: 100px 0 120px; }
+  .latest-posts {
+    padding: 180px 0 200px; }
+
+  .region-buttons-area,
+  .hot-spring-area {
+    padding: 70px 0 100px; }
 
   .latest-posts h2,
   .swp-single-post h2,
   .region-buttons-area h2 {
     font-size: 3.136em; }
 
-  .latest-flex-container {
+  .latest-flex-container,
+  .ad-banner-one,
+  .ad-banner-two {
     width: 680px; }
 
   .swimmer {
-    height: 500px; }
+    height: 280px;
+    margin-top: 0; }
 
   .swimmer svg {
-    width: 500px; } }
+    width: 280px; } }
 .single-posts-area,
 .swp-single-posts-area {
   position: relative;
@@ -764,7 +789,8 @@ img.size-thumbnail.alignright {
     width: 940px;
     margin: 0 auto; } }
 footer {
-  background: #58b7e7; }
+  background: #58b7e7;
+  border-top: 4px solid #E7A758; }
 
 .copyright {
   position: relative;

@@ -2,7 +2,7 @@
 
 <!-- <div class="single-posts-area"> -->
 <!-- <div class="breadcrumb"><?php get_breadcrumb(); ?></div> -->
-<?php include('swimmer.php'); ?>
+<?php  ?>
 
     <?php
 
@@ -24,6 +24,7 @@
               echo '<i class="latest-post-date">';
                 echo get_the_date('d/m/Y');
                 echo '</i>';
+include('swimmer.php');
               echo the_content();
         }
     	}

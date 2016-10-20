@@ -6,7 +6,7 @@
 
 
 
-<div class="latest-posts wrapper">
+<div class="latest-posts region-buttons-area wrapper">
 <p>page heitar laugar</p>
   <!-- ========== WP Page: Heitar laugar =========  -->
   <div class="a">
@@ -14,10 +14,11 @@
       <h2><?php the_title(); ?></h2>
     <?php endwhile; endif; ?>
   </div>
-  <?php include('swimmer.php'); ?>
+
 
  <!-- ========== Custom Post Type: Heitar laugar ========== -->
   <div class="swp-listing">
+		<?php include('swimmer.php'); ?>
     <?php
       $args = array(
         'post_type' => 'heitar_laugar',

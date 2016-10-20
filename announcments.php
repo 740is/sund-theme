@@ -5,7 +5,7 @@
 <?php include('header.php'); ?>
 
 <div class="latest-posts announcements-bkg wrapper">
-  <?php include('swimmer.php'); ?>
+
   <h2><?php the_title(); ?></h2>
   <?php
   $number_of_posts = 16;
@@ -19,6 +19,7 @@
   // The Loop
   if ( $the_query->have_posts() ) {
     echo '<ul class="latest-flex-container">';
+		include('swimmer.php');
     while ( $the_query->have_posts() ) {
       $the_query->the_post();
       $categories = get_the_category();

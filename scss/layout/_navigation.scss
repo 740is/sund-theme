@@ -99,6 +99,12 @@ input#s:focus {
   text-align: center;
 }
 
+@include mobile-landscape-nrw {
+  .mobile-menu-items a {
+    padding: 0;
+  }
+}
+
 @include tablets {
   nav {
     height: 115px;
