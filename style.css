@@ -391,6 +391,14 @@ div#selection-buttons-clearfix {
   margin-bottom: 0;
   color: #444; }
 
+li.search-results-flex-item {
+  background: rgba(130, 130, 130, 0.1);
+  border-left: 4px solid #333; }
+
+li.search-results-flex-item a {
+  text-decoration: none;
+  color: #333; }
+
 .latest-posts a,
 .swp-single-post a {
   text-decoration: none;
@@ -514,7 +522,8 @@ i.latest-post-date {
   z-index: 1; }
 
 .single-post,
-.swp-single-post {
+.swp-single-post,
+.search-results-list {
   max-width: 34em;
   margin: 0 auto;
   padding: 7px 16px 30px; }
@@ -598,6 +607,9 @@ img.size-thumbnail.alignright {
 .iceland-area-name p {
   margin: 0;
   line-height: 1em; }
+
+.search-results-list {
+  padding: 60px 16px 30px; }
 
 .swp-headlines {
   margin-bottom: 60px; }

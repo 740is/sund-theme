@@ -6,7 +6,8 @@
 }
 
 .single-post,
-.swp-single-post {
+.swp-single-post,
+.search-results-list {
   max-width: 34em;
   margin: 0 auto;
   padding: 7px 16px 30px;
@@ -116,8 +117,9 @@ img.size-thumbnail.alignright {
   line-height: 1em;
 }
 
-
-
+.search-results-list {
+  padding: 60px 16px 30px;
+}
 
 .swp-headlines {
   margin-bottom: 60px;
@@ -157,8 +159,6 @@ img.size-thumbnail.alignright {
   fill: $theme-blue;
   margin-right: 5px;
 }
-
-
 
 .swp-opening-hours p {
   margin-bottom: 0 !important;

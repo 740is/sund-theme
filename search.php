@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="search-results-area">
-  <?php include('swimmer.php'); ?>
+
   <div class="search-results-list">
     <?php $search_count = 0; ?>
     <?php $search = new WP_Query("s=$s & showposts=-1"); ?>
@@ -15,11 +15,12 @@
       <?php printf( __( 'leitarniðurstöður fyrir: %s', 'shape' ), '<span><i>' . get_search_query() . '</i></span>' ); ?>
     </h2>
       <ul class="search-results-flex-container">
+        <?php include('swimmer.php'); ?>
       <?php while($search->have_posts()) : $search->the_post(); ?>
       <?php
         $categories = get_the_category();
         if ( ! empty( $categories ) ) {
-        echo '<li class="' . esc_html( $categories[0]->slug ) . ' search-results-flex-item">';
+        echo '<li class="search-results-flex-item">';
           echo '<a href="';
             the_permalink();
           echo '">';
@@ -28,10 +29,12 @@
               echo get_the_title();
             echo '</h1>';
             echo '<div class="latest-post-excerpt">';
+            $excerpt = wp_trim_words( get_field('field_57f409fefd4fc' ), $num_words = 40, $more = ' [...]' );
+            echo '<p>' . $excerpt . '</p>';
               echo the_excerpt();
             echo '</div>';
             echo '<i class="latest-post-date">';
-              echo get_the_date('d/m/Y | G:i');
+              echo get_the_date('d/m/Y');
             echo '</i>';
           echo '</div>';
         // echo substr(get_the_excerpt(), 0,150);
@@ -44,12 +47,10 @@
       ?>
       <?php $search_count++; ?>
       <?php endwhile; else: ?>
-      <div class="search-results-area">
-        <div class="search-results-list">
+
           <?php echo '<h2>Leitin að&nbsp;<i>' . get_search_query() . '</i>&nbsp;skilaði engu.</h2>'; ?>
             <p>Vinsamlegast athugaðu hvort þú hafir slegið rétt inn. Einnig getur þú prófað að leita eftir öðrum leitarskilyrðum.</p>
-        </div>
-      </div>
+      
       <?php endif; ?>
     </ul>
   </div>

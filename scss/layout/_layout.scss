@@ -207,6 +207,16 @@ div#selection-buttons-clearfix {
   color: #444;
 }
 
+li.search-results-flex-item {
+  background: rgba(130,130,130,0.1);
+  border-left: 4px solid #333;
+}
+
+li.search-results-flex-item a {
+  text-decoration: none;
+  color: #333;
+}
+
 li.tilkynningar,
 div.tilkynningar {
   @extend %li-border-green;
