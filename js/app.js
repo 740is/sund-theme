@@ -1,3 +1,5 @@
+
+
 document.getElementById('magnifier-tool').addEventListener('click', function() {
   $('#nav-search-form').addClass('display-search-form').removeClass('close-search-form');
 });

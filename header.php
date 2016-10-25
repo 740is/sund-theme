@@ -10,5 +10,12 @@
 
   </head>
   <body>
+    <div class="language-selection">
+      <?php do_action('wpml_add_language_selector'); ?>
+    </div>
+
+    <div class="language-selection-mobile">
+      <?php do_action('wpml_add_language_selector'); ?>
+    </div>
     <?php include('navigation.php'); ?>
     <div class="wrapper">

@@ -28,17 +28,6 @@
           </div>
         </a>
 
-        <a href="#">
-          <div id="opening-hours" class="selection-button">
-            <div class="selection-buttons-icon opening-hours-icon">
-              <?php get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
-            </div>
-            <div class="buttons-text-banner opening-hours-text-banner">
-              <p><?php echo get_field($open_now, $post_id_buttons_latest); ?></p>
-            </div>
-          </div>
-        </a>
-
         <a href="<?php bloginfo('url'); ?>/heitar-laugar/">
           <div id="locations" class="selection-button">
             <div class="selection-buttons-icon locations-icon">
@@ -46,6 +35,17 @@
             </div>
             <div class="buttons-text-banner locations-text-banner">
               <p><?php echo get_field($locations, $post_id_buttons_latest); ?></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div id="opening-hours" class="selection-button">
+            <div class="selection-buttons-icon opening-hours-icon">
+              <?php get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
+            </div>
+            <div class="buttons-text-banner opening-hours-text-banner">
+              <p><?php echo get_field($open_now, $post_id_buttons_latest); ?></p>
             </div>
           </div>
         </a>

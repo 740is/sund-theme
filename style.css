@@ -267,17 +267,51 @@ div#selection-buttons-clearfix {
 .selection-button {
   box-shadow: 0px 0px 18px 9px #fff; }
 
+li.tilkynningar,
+li.opid,
+li.sundlaugar,
+li.stadsetningar,
+#swimming-pools,
+#opening-hours,
+#locations,
+#announcements,
+.swp-listing-bkg {
+  transition: .5s; }
+
+li.tilkynningar:hover,
+li.opid:hover,
+li.sundlaugar:hover,
+li.stadsetningar:hover,
+#swimming-pools:hover,
+#opening-hours:hover,
+#locations:hover,
+#announcements:hover,
+.swp-listing-bkg:hover {
+  transition: .7s; }
+
 #swimming-pools {
   border: 1px solid #B45533; }
+
+.selection-button#swimming-pools:hover {
+  background: #B45533; }
 
 #opening-hours {
   border: 1px solid #3344B4; }
 
+.selection-button#opening-hours:hover {
+  background: #3344B4; }
+
 #locations {
   border: 1px solid #9A621C; }
 
+.selection-button#locations:hover {
+  background: #9A621C; }
+
 #announcements {
   border: 1px solid #9A9733; }
+
+.selection-button#announcements:hover {
+  background: #9A9733; }
 
 .buttons-text-banner {
   position: absolute;
@@ -305,20 +339,27 @@ div#selection-buttons-clearfix {
 
 /* Ad banner one */
 .ads-banners {
-  position: absolute;
+  background: #f1f1f1;
   z-index: 1;
   width: 100%; }
 
 .ads-banners img {
   width: 100%; }
 
+.ads-banners,
+.ad-banner-one,
+.ad-banner-two {
+  position: relative; }
+
 .ad-banner-one,
 .ad-banner-two {
   margin: 0 auto; }
 
+.ad-banner-one {
+  padding-top: 3px; }
+
 .ad-banner-two {
-  margin-top: -83px;
-  bottom: 0; }
+  padding-bottom: 3px; }
 
 /* Latest posts section */
 .latest-posts,
@@ -328,9 +369,11 @@ div#selection-buttons-clearfix {
   background: #f1f1f1;
   position: relative; }
 
-.latest-posts,
+.latest-posts {
+  padding: 120px 20px 100px; }
+
 .region-buttons-area {
-  padding: 90px 30px; }
+  padding: 20px 0; }
 
 .latest-posts-content,
 .region-buttons-content {
@@ -393,11 +436,28 @@ div#selection-buttons-clearfix {
 
 li.search-results-flex-item {
   background: rgba(130, 130, 130, 0.1);
-  border-left: 4px solid #333; }
+  border-left: 4px solid #333;
+  transition: .5s; }
+
+li.search-results-flex-item:hover {
+  background: rgba(130, 130, 130, 0.4);
+  transition: .7s; }
 
 li.search-results-flex-item a {
   text-decoration: none;
   color: #333; }
+
+li.tilkynningar:hover {
+  background: rgba(154, 151, 51, 0.4); }
+
+li.opid:hover {
+  background: rgba(51, 68, 180, 0.4); }
+
+li.sundlaugar:hover {
+  background: rgba(180, 85, 51, 0.4); }
+
+li.stadsetningar:hover {
+  background: rgba(154, 98, 28, 0.4); }
 
 .latest-posts a,
 .swp-single-post a {
@@ -445,6 +505,9 @@ i.latest-post-date {
   .swimmer svg {
     width: 290px; } }
 @media screen and (min-width: 640px) {
+  .latest-posts, .region-buttons-area {
+    padding: 180px 30px 200px; }
+
   .latest-flex-container {
     margin: 0 auto 2em; }
 
@@ -497,7 +560,7 @@ i.latest-post-date {
 
   .region-buttons-area,
   .hot-spring-area {
-    padding: 70px 0 100px; }
+    padding: 40px 0 0; }
 
   .latest-posts h2,
   .swp-single-post h2,
@@ -714,6 +777,9 @@ img.size-thumbnail.alignright {
 .swp-listing-bkg {
   background: rgba(180, 85, 51, 0.1); }
 
+.swp-listing-bkg:hover {
+  background: rgba(180, 85, 51, 0.3); }
+
 .feature-image {
   position: relative;
   float: left;
@@ -891,5 +957,57 @@ div.wpcf7-mail-sent-ng {
   textarea.wpcf7-form-control.wpcf7-textarea,
   input.wpcf7-form-control.wpcf7-submit {
     width: 494px; } }
+.language-selection {
+  display: none; }
+
+.language-selection,
+.language-selection-mobile {
+  position: absolute;
+  z-index: 10000; }
+
+.language-selection ul,
+.language-selection-mobile ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0; }
+
+.language-selection-mobile {
+  margin-top: 15px;
+  width: 100%; }
+
+.language-selection-mobile ul {
+  width: 93px;
+  margin: 0 auto; }
+
+.language-selection li,
+.language-selection-mobile li {
+  list-style: none;
+  margin: 0;
+  height: 12px; }
+
+.language-selection li a,
+.language-selection-mobile li a {
+  text-decoration: none; }
+
+div#lang_sel_list ul {
+  border: none; }
+
+@media screen and (min-width: 480px) {
+  .language-selection-mobile {
+    display: none; }
+
+  .language-selection {
+    display: block;
+    top: 5px;
+    right: 15px; }
+
+  .language-selection ul {
+    flex-direction: column;
+    width: 18px;
+    height: 50px; } }
+@media screen and (min-width: 768px) {
+  .language-selection {
+    top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

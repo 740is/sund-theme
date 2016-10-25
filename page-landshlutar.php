@@ -32,7 +32,7 @@
 			$catName = $cat_array[0]->category_nicename;
 		?>
 			<a href="<?php echo get_permalink(); ?>?category=<?php echo the_title(); ?>"><li>
-        <div class="iceland-area">
+        <div id="ss" class="iceland-area">
           <div class="swimming-pools-icon">
 						<?php
 							$iceland_region = 'iceland-' . $catName . '.svg';
