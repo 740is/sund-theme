@@ -1,7 +1,11 @@
 <?php include('mobile-menu.php'); ?>
 <nav>
   <div id="menu-button" class="menu-button nav-flex-item">
-    <?php get_template_part('assets/icons/inline', 'bars.svg'); ?>
+    <div id="menu-closed">
+      <div id="upper-stripe" class="upper-stripe"></div>
+      <div id="middle-stripe" class="middle-stripe"></div>
+      <div id="lower-stripe"  class="lower-stripe"></div>
+    </div>
   </div>
 
   <div class="logo nav-flex-item">

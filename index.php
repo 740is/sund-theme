@@ -2,7 +2,15 @@
 
 <div class="hero-image-area">
   <div class="hero-image">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero1.jpg" alt="Strákur að stökkva út í laug.">
+    <div>
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero1.jpg" alt="Strákur að stökkva út í laug.">
+    </div>
+    <div>
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero2.jpg" alt="Strákur að stökkva út í laug.">
+    </div>
+    <div>
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero3.jpg" alt="Strákur að stökkva út í laug.">
+    </div>
   </div>
 
 <div id="selection-buttons-clearfix">

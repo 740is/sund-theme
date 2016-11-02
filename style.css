@@ -142,6 +142,49 @@ nav {
   padding-bottom: 10px;
   fill: #3344B4; }
 
+.menu-button:hover {
+  cursor: pointer; }
+
+.middle-stripe {
+  border: 1px solid #b43333;
+  width: 20px;
+  transition: 0.1s; }
+
+.middle-stripe-invisible {
+  border: 0;
+  transition: 0.3s; }
+
+#upper-stripe,
+#lower-stripe {
+  border: 1px solid #3344B4;
+  width: 20px; }
+
+.upper-stripe,
+.lower-stripe {
+  transition: 0.3s; }
+
+.upper-stripe {
+  margin-bottom: 8px; }
+
+.lower-stripe {
+  margin-top: 8px; }
+
+.upper-stripe-close {
+  margin-bottom: -4px;
+  transition: 0.3s; }
+
+.lower-stripe-close {
+  margin-top: -4px;
+  transition: 0.3s; }
+
+.rotate-right {
+  transform: rotateZ(45deg);
+  transition: 0.7s; }
+
+.rotate-left {
+  transform: rotateZ(-45deg);
+  transition: 0.7s; }
+
 .logo svg {
   height: 45px;
   padding-top: 10px;
@@ -221,6 +264,20 @@ input#s:focus {
   nav {
     height: 115px; }
 
+  #upper-stripe,
+  #lower-stripe {
+    border: 2px solid #3344B4;
+    width: 30px; }
+
+  .middle-stripe {
+    border: 2px solid #b43333;
+    width: 30px;
+    transition: 0.1s; }
+
+  .middle-stripe-invisible {
+    border: 0;
+    transition: 0.3s; }
+
   .logo svg {
     height: 50px; } }
 .wrapper {
@@ -232,6 +289,9 @@ input#s:focus {
 
 .hero-image {
   display: none; }
+
+.hero-image {
+  width: 100%; }
 
 div#selection-buttons-clearfix {
   display: flex;
@@ -516,7 +576,7 @@ i.latest-post-date {
     margin-right: 30px; }
 
   .latest-flex-item:nth-child(2n) {
-    margin-right: 0; }
+    margin-right: 10px; }
 
   .swimmer {
     height: 230px; }
@@ -534,7 +594,7 @@ i.latest-post-date {
     height: 111px; }
 
   .hero-image-area {
-    height: 470px; }
+    height: 67vw; }
 
   .hero-image {
     position: fixed;
@@ -960,10 +1020,9 @@ div.wpcf7-mail-sent-ng {
 .language-selection {
   display: none; }
 
-.language-selection,
 .language-selection-mobile {
   position: absolute;
-  z-index: 10000; }
+  z-index: 998; }
 
 .language-selection ul,
 .language-selection-mobile ul {
@@ -993,21 +1052,20 @@ div.wpcf7-mail-sent-ng {
 div#lang_sel_list ul {
   border: none; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .language-selection-mobile {
     display: none; }
 
   .language-selection {
+    position: fixed;
     display: block;
-    top: 5px;
-    right: 15px; }
+    top: 30px;
+    right: 15px;
+    z-index: 1001; }
 
   .language-selection ul {
     flex-direction: column;
     width: 18px;
     height: 50px; } }
-@media screen and (min-width: 768px) {
-  .language-selection {
-    top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

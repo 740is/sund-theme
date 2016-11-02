@@ -11,6 +11,8 @@ function theme_styles() {
 	wp_enqueue_style('googleFonts-Raleway','http://fonts.googleapis.com/css?family=Raleway:200,400,600');
 
 	wp_enqueue_style('normalize-theme-style', get_template_directory_uri(). '/css/normalize.css');
+	wp_enqueue_style('slick-slide', get_template_directory_uri() . '/slick/slick.css');
+	wp_enqueue_style('slick-slide-theme', get_template_directory_uri() . '/slick/slick-theme.css');
 	wp_enqueue_style('main-theme-style', get_template_directory_uri() . '/style.css');
 }
 

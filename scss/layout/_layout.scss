@@ -11,6 +11,10 @@
   display: none;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 div#selection-buttons-clearfix {
   display: flex;
   justify-content: center;
@@ -380,7 +384,7 @@ i.latest-post-date {
   }
 
   .latest-flex-item:nth-child(2n) {
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .swimmer {
@@ -406,7 +410,7 @@ i.latest-post-date {
 }
 
   .hero-image-area {
-    height: 470px;
+    height: 67vw;
 
   }
 

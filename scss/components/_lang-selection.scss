@@ -2,10 +2,9 @@
   display: none;
 }
 
-.language-selection,
 .language-selection-mobile {
   position: absolute;
-  z-index: 10000;
+  z-index: 998;
 }
 
 .language-selection ul,
@@ -42,15 +41,17 @@ div#lang_sel_list ul {
   border: none;
 }
 
-@include mobile-landscape-nrw {
+@include tablets {
   .language-selection-mobile {
     display: none;
   }
 
   .language-selection {
+    position: fixed;
     display: block;
-    top: 5px;
+    top: 30px;
     right: 15px;
+    z-index: 1001;
   }
 
   .language-selection ul {
@@ -60,8 +61,8 @@ div#lang_sel_list ul {
   }
 }
 
-@include tablets {
-  .language-selection {
-    top: 30px;
-  }
-}
+// @include tablets {
+//   .language-selection {
+//     top: 30px;
+//   }
+// }

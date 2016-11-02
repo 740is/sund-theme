@@ -10,10 +10,65 @@ nav {
   z-index: 1000;
 }
 
-.menu-button svg,
+.menu-button svg, //Taka líklega út
 .search svg,
 .search-field svg {
   @include mobile-nav-icons;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.middle-stripe {
+  border: 1px solid #b43333;
+  width: 20px;
+  transition: 0.1s;
+}
+
+.middle-stripe-invisible {
+  border: 0;
+  transition: 0.3s;
+}
+
+#upper-stripe,
+#lower-stripe {
+  border: 1px solid $blue;
+  width: 20px;
+}
+
+.upper-stripe,
+.lower-stripe {
+  //margin: -4px 0;
+  transition: 0.3s;
+}
+
+.upper-stripe {
+  margin-bottom: 8px;
+}
+
+.lower-stripe {
+  margin-top: 8px;
+}
+
+.upper-stripe-close {
+  margin-bottom: -4px;
+  transition: 0.3s;
+}
+
+.lower-stripe-close {
+  margin-top: -4px;
+  transition: 0.3s;
+}
+
+.rotate-right {
+  transform: rotateZ(45deg);
+  transition: 0.7s;
+}
+
+.rotate-left {
+  transform: rotateZ(-45deg);
+  transition: 0.7s;
 }
 
 .logo svg {
@@ -72,7 +127,6 @@ input#s:focus {
   background: $theme-blue;
   color: #FFF;
   z-index: 999;
-
 }
 
 .mobile-menu-items {
@@ -108,6 +162,23 @@ input#s:focus {
 @include tablets {
   nav {
     height: 115px;
+  }
+
+  #upper-stripe,
+  #lower-stripe {
+    border: 2px solid $blue;
+    width: 30px;
+  }
+
+  .middle-stripe {
+    border: 2px solid #b43333;
+    width: 30px;
+    transition: 0.1s;
+  }
+
+  .middle-stripe-invisible {
+    border: 0;
+    transition: 0.3s;
   }
 
   .logo svg {
