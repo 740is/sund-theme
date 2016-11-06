@@ -108,6 +108,9 @@ h4 {
 img {
   display: block; }
 
+.lighter-box-shadow {
+  box-shadow: 3px 3px 6px #c0c0c0; }
+
 @media screen and (min-width: 768px) {
   p {
     font-size: 1em; }
@@ -170,11 +173,11 @@ nav {
   margin-top: 8px; }
 
 .upper-stripe-close {
-  margin-bottom: -4px;
+  margin-bottom: -2px;
   transition: 0.3s; }
 
 .lower-stripe-close {
-  margin-top: -4px;
+  margin-top: -2px;
   transition: 0.3s; }
 
 .rotate-right {
@@ -278,6 +281,12 @@ input#s:focus {
     border: 0;
     transition: 0.3s; }
 
+  .upper-stripe-close {
+    margin-bottom: -4px; }
+
+  .lower-stripe-close {
+    margin-top: -4px; }
+
   .logo svg {
     height: 50px; } }
 .wrapper {
@@ -285,7 +294,7 @@ input#s:focus {
   margin-top: 65px; }
 
 .hero-image-area {
-  border-bottom: 4px solid #58b7e7; }
+  box-shadow: 0px 2px 13px #d7d7d7; }
 
 .hero-image {
   display: none; }
@@ -335,7 +344,8 @@ li.stadsetningar,
 #opening-hours,
 #locations,
 #announcements,
-.swp-listing-bkg {
+.swp-listing-bkg,
+.button-more-announcement {
   transition: .5s; }
 
 li.tilkynningar:hover,
@@ -346,7 +356,8 @@ li.stadsetningar:hover,
 #opening-hours:hover,
 #locations:hover,
 #announcements:hover,
-.swp-listing-bkg:hover {
+.swp-listing-bkg:hover,
+.button-more-announcement:hover {
   transition: .7s; }
 
 #swimming-pools {
@@ -394,13 +405,14 @@ li.stadsetningar:hover,
 .locations-text-banner {
   background: #9A621C; }
 
-.announcements-text-banner {
+.announcements-text-banner,
+.button-more-announcement {
   background: #9A9733; }
 
 /* Ad banner one */
 .ads-banners {
   background: #f1f1f1;
-  z-index: 1;
+  z-index: -1;
   width: 100%; }
 
 .ads-banners img {
@@ -416,10 +428,10 @@ li.stadsetningar:hover,
   margin: 0 auto; }
 
 .ad-banner-one {
-  padding-top: 3px; }
+  padding-top: 33px; }
 
 .ad-banner-two {
-  padding-bottom: 3px; }
+  padding-bottom: 33px; }
 
 /* Latest posts section */
 .latest-posts,
@@ -430,7 +442,7 @@ li.stadsetningar:hover,
   position: relative; }
 
 .latest-posts {
-  padding: 120px 20px 100px; }
+  padding: 30px 20px 40px; }
 
 .region-buttons-area {
   padding: 20px 0; }
@@ -487,8 +499,7 @@ li.stadsetningar:hover,
 
 .latest-posts li,
 .search-results-list li {
-  padding: 7px;
-  box-shadow: 3px 3px 6px #c0c0c0; }
+  padding: 7px; }
 
 .latest-posts li p {
   margin-bottom: 0;
@@ -550,6 +561,34 @@ i.latest-post-date {
   fill-opacity: 0.2;
   fill: #c0c0c0; }
 
+.button-more-announcement-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #f1f1f1;
+  padding-bottom: 80px; }
+
+.button-more-announcement {
+  position: relative;
+  border: 1px solid #656322; }
+
+.button-more-announcement p {
+  color: #fff;
+  margin: 0 0 0 5px;
+  font-size: 1em; }
+
+.button-more-announcement a {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 10px 10px 7px 7px; }
+
+.button-more-announcement svg {
+  height: 25px;
+  fill: #fff; }
+
+.button-more-announcement:hover {
+  background: #656322; }
+
 @media screen and (min-width: 480px) {
   .selection-buttons {
     flex-wrap: nowrap;
@@ -572,8 +611,7 @@ i.latest-post-date {
     margin: 0 auto 2em; }
 
   .latest-flex-item {
-    flex: 1 270px;
-    margin-right: 30px; }
+    flex: 1 270px; }
 
   .latest-flex-item:nth-child(2n) {
     margin-right: 10px; }
@@ -594,7 +632,8 @@ i.latest-post-date {
     height: 111px; }
 
   .hero-image-area {
-    height: 67vw; }
+    height: 66.6vw;
+    box-shadow: 0px 2px 13px #777; }
 
   .hero-image {
     position: fixed;
@@ -616,7 +655,7 @@ i.latest-post-date {
     font-size: 0.9em; }
 
   .latest-posts {
-    padding: 180px 0 200px; }
+    padding: 50px 0 70px; }
 
   .region-buttons-area,
   .hot-spring-area {
@@ -630,7 +669,7 @@ i.latest-post-date {
   .latest-flex-container,
   .ad-banner-one,
   .ad-banner-two {
-    width: 680px; }
+    max-width: 728px; }
 
   .swimmer {
     height: 280px;
@@ -691,8 +730,10 @@ img.size-thumbnail.alignright {
   right: -10px; }
 
 .announcements-bkg {
+  position: relative;
   padding: 50px 0;
-  margin: 0; }
+  margin: 0;
+  z-index: 0; }
 
 .region-buttons {
   position: relative;
@@ -880,7 +921,7 @@ img.size-thumbnail.alignright {
     margin-bottom: 0.4em; }
 
   .announcements-bkg {
-    padding: 120px 0; }
+    padding: 30px 0; }
 
   .region-buttons {
     width: 740px; }

@@ -52,12 +52,12 @@ nav {
 }
 
 .upper-stripe-close {
-  margin-bottom: -4px;
+  margin-bottom: -2px;
   transition: 0.3s;
 }
 
 .lower-stripe-close {
-  margin-top: -4px;
+  margin-top: -2px;
   transition: 0.3s;
 }
 
@@ -179,6 +179,14 @@ input#s:focus {
   .middle-stripe-invisible {
     border: 0;
     transition: 0.3s;
+  }
+
+  .upper-stripe-close {
+    margin-bottom: -4px;
+  }
+
+  .lower-stripe-close {
+    margin-top: -4px;
   }
 
   .logo svg {

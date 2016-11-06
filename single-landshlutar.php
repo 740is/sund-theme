@@ -1,7 +1,6 @@
 <?php include('header.php'); ?>
 
-
-
+<?php include('ad-one.php'); ?>
 <div class="latest-posts wrapper">
 <p>page sundlaugar</p>
   <!-- ========== WP Page: Sundlaugar =========  -->
@@ -52,5 +51,5 @@
 
 </div>
 
-
+<?php include('ad-two.php'); ?>
 <?php include('footer.php'); ?>

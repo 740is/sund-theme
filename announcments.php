@@ -3,7 +3,7 @@
 ?>
 
 <?php include('header.php'); ?>
-
+<?php include('ad-one.php'); ?>
 <div class="latest-posts announcements-bkg wrapper">
 
   <h2><?php the_title(); ?></h2>
@@ -25,7 +25,7 @@
       $categories = get_the_category();
 
       if ( ! empty( $categories ) ) {
-        echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item">';
+        echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item lighter-box-shadow">';
           echo '<a href="';
             echo get_permalink();
           echo '">';
@@ -53,4 +53,5 @@
   ?>
 
 </div>
+<?php include('ad-two.php'); ?>
 <?php include('footer.php'); ?>

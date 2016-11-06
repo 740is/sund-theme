@@ -31,10 +31,16 @@
   fill: $blue;
 }
 
+
+// Shadows
 @mixin theme-color-box-shadow {
   box-shadow: 0px 0px 4px $theme-blue;
 }
 
 @mixin light-gray-box-shadow {
   box-shadow: 2px 2px 2px #888;
+}
+
+@mixin lighter-box-shadow {
+  box-shadow: 3px 3px 6px #c0c0c0;
 }

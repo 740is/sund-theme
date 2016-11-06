@@ -35,7 +35,7 @@ document.getElementById('menu-button').addEventListener('click', function() {
 $(document).ready(function(){
   $('.hero-image').slick({
     autoplay: true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 3000,
     fade: true,

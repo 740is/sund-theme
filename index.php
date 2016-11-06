@@ -76,20 +76,8 @@
 </div>
 
 
-<?php
-  $mobile_ad1_key = "field_57debfd2e7395";
-  $ad1_customer_url_key = "field_57decb11f85bb";
-  $post_id = "14";
-  $mobile_ad1 = get_field($mobile_ad1_key, $post_id);
-  $ad1_customer_url = get_field($ad1_customer_url_key, $post_id);
-?>
-<div class="ads-banners">
-  <div class="ad-banner-one">
-    <a href="<?php echo $ad1_customer_url ?>">
-      <img src="<?php echo $mobile_ad1['url']; ?>" alt="<?php echo $mobile_ad1['alt']; ?>">
-    </a>
-  </div>
-</div>
+<?php include('ad-one.php'); ?>
+
 <div class="latest-posts-area">
   <div class="latest-posts">
 
@@ -112,7 +100,7 @@
         $categories = get_the_category();
 
         if ( ! empty( $categories ) ) {
-      		echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item">';
+      		echo '<li class="' . esc_html( $categories[0]->slug ) . ' latest-flex-item lighter-box-shadow">';
             echo '<a href="';
               echo get_permalink();
             echo '">';
@@ -140,24 +128,15 @@
     ?>
 
   </div>
-
-</div>
-<?php
-  $mobile_ad2_key = "field_57dec202e7396";
-  $ad2_customer_url_key = "field_57decb8ff85bc";
-  $post_id = "14";
-  $mobile_ad = get_field($mobile_ad2_key, $post_id);
-  $ad_customer_url = get_field($ad2_customer_url_key, $post_id);
-?>
-
-<div class="ads-banners">
-  <div class="ad-banner-two">
-    <a href="<?php echo $ad_customer_url ?>">
-      <img src="<?php echo $mobile_ad['url']; ?>" alt="<?php echo $mobile_ad['alt']; ?>">
-    </a>
+  <div class="button-more-announcement-area">
+    <button class="button-more-announcement lighter-box-shadow">
+      <a href="<?php bloginfo('url'); ?>/tilkynningar">
+        <?php get_template_part('assets/icons/inline', 'loudspeaker.svg'); ?>
+        <p><?php echo get_field($announcements, $post_id_buttons_latest); ?></p>
+      </a>
+    </button>
   </div>
+
 </div>
-
-
-
+<?php include('ad-two.php'); ?>
 <?php include('footer.php'); ?>

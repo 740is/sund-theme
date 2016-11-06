@@ -74,6 +74,10 @@ img {
   display: block;
 }
 
+.lighter-box-shadow {
+  @include lighter-box-shadow;
+}
+
 @include tablets {
   p {
     font-size: 1em;

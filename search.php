@@ -20,7 +20,7 @@
       <?php
         $categories = get_the_category();
         if ( ! empty( $categories ) ) {
-        echo '<li class="search-results-flex-item">';
+        echo '<li class="search-results-flex-item lighter-box-shadow">';
           echo '<a href="';
             the_permalink();
           echo '">';
@@ -50,7 +50,7 @@
 
           <?php echo '<h2>Leitin að&nbsp;<i>' . get_search_query() . '</i>&nbsp;skilaði engu.</h2>'; ?>
             <p>Vinsamlegast athugaðu hvort þú hafir slegið rétt inn. Einnig getur þú prófað að leita eftir öðrum leitarskilyrðum.</p>
-      
+
       <?php endif; ?>
     </ul>
   </div>
