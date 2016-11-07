@@ -3,8 +3,10 @@
 }
 
 .language-selection-mobile {
-  position: absolute;
-  z-index: 998;
+  position: fixed;
+  top: 65px;
+  right: 0px;
+  z-index: 1001;
 }
 
 .language-selection ul,
@@ -15,13 +17,13 @@
   margin: 0;
 }
 
-.language-selection-mobile {
-  margin-top: 15px;
-  width: 100%;
-}
+// .language-selection-mobile {
+//   margin-top: 15px;
+//   width: 100%;
+// }
 
 .language-selection-mobile ul {
-  width: 93px;
+  width: 70px;
   margin: 0 auto;
 }
 

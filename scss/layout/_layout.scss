@@ -145,7 +145,7 @@ li.stadsetningar:hover,
   background: $green;
 }
 
-/* Ad banner one */
+/* Ad banners */
 .ads-banners {
   background: $bkg-gray;
   z-index: -1;
@@ -156,6 +156,12 @@ li.stadsetningar:hover,
   width: 100%;
 }
 
+.ads-banners-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .ads-banners,
 .ad-banner-one,
 .ad-banner-two {
@@ -164,7 +170,7 @@ li.stadsetningar:hover,
 
 .ad-banner-one,
 .ad-banner-two {
-  margin: 0 auto;
+  margin: 0 5px;
 }
 
 .ad-banner-one {
@@ -173,6 +179,11 @@ li.stadsetningar:hover,
 
 .ad-banner-two {
   padding-bottom: 33px;
+}
+
+.ad-banner-two img {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Latest posts section */
@@ -358,6 +369,7 @@ i.latest-post-date {
   justify-content: center;
   background: #f1f1f1;
   padding-bottom: 80px;
+  margin-top: -50px;
 }
 
 .button-more-announcement {
@@ -376,7 +388,7 @@ i.latest-post-date {
 .button-more-announcement a {
   text-decoration: none;
   display: inline-flex;
-  padding: 10px 10px 7px 7px;
+  padding: 7px 7px 3px 3px;
 }
 
 .button-more-announcement svg {
@@ -477,7 +489,7 @@ i.latest-post-date {
   }
 
   .latest-posts {
-    padding: 50px 0 70px;
+    padding: 15px 0 70px;
   }
 
   .region-buttons-area,
@@ -493,8 +505,29 @@ i.latest-post-date {
 
   .latest-flex-container,
   .ad-banner-one,
-  .ad-banner-two {
+  .ads-banners-bottom {
     max-width: 728px;
+  }
+
+  .button-more-announcement-area {
+    margin-top: -80px;
+  }
+
+  .button-more-announcement a {
+    padding: 10px 10px 7px 7px;
+  }
+
+  .ad-banner-one,
+  .ad-banner-two {
+    margin: 0 auto;
+  }
+
+  .ad-banner-two {
+    max-width: 300px;
+  }
+
+  .ad-banner-two img {
+    padding: 0;
   }
 
   .swimmer {

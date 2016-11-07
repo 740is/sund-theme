@@ -27,7 +27,7 @@
     <?php echo '<ul class="latest-flex-container">'; ?>
     <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
       <?php
-      echo '<li class="latest-flex-item swp-listing-bkg">';
+      echo '<li class="latest-flex-item swp-listing-bkg lighter-box-shadow">';
         echo '<a href="';
           echo get_permalink();
         echo '">';

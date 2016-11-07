@@ -133,7 +133,7 @@ nav {
   background: #fff;
   display: inline-flex;
   justify-content: space-around;
-  height: 65px;
+  height: 90px;
   border-bottom: 4px solid #E7A758;
   z-index: 1000; }
 
@@ -207,6 +207,9 @@ nav {
 .nav-flex-item {
   align-self: center; }
 
+.mobile-flags-padding {
+  padding: 7px 0 30px; }
+
 .display-search-form {
   position: absolute;
   display: inline-flex;
@@ -237,6 +240,7 @@ input#s:focus {
 .mobile-menu {
   position: fixed;
   width: 100%;
+  top: 90px;
   background: #58b7e7;
   color: #FFF;
   z-index: 999; }
@@ -288,10 +292,13 @@ input#s:focus {
     margin-top: -4px; }
 
   .logo svg {
-    height: 50px; } }
+    height: 50px; }
+
+  .mobile-flags-padding {
+    padding: 0; } }
 .wrapper {
   min-height: calc(100vh - 150px);
-  margin-top: 65px; }
+  margin-top: 90px; }
 
 .hero-image-area {
   box-shadow: 0px 2px 13px #d7d7d7; }
@@ -409,7 +416,7 @@ li.stadsetningar:hover,
 .button-more-announcement {
   background: #9A9733; }
 
-/* Ad banner one */
+/* Ad banners */
 .ads-banners {
   background: #f1f1f1;
   z-index: -1;
@@ -418,6 +425,11 @@ li.stadsetningar:hover,
 .ads-banners img {
   width: 100%; }
 
+.ads-banners-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; }
+
 .ads-banners,
 .ad-banner-one,
 .ad-banner-two {
@@ -425,13 +437,17 @@ li.stadsetningar:hover,
 
 .ad-banner-one,
 .ad-banner-two {
-  margin: 0 auto; }
+  margin: 0 5px; }
 
 .ad-banner-one {
   padding-top: 33px; }
 
 .ad-banner-two {
   padding-bottom: 33px; }
+
+.ad-banner-two img {
+  padding-left: 5px;
+  padding-right: 5px; }
 
 /* Latest posts section */
 .latest-posts,
@@ -566,7 +582,8 @@ i.latest-post-date {
   display: flex;
   justify-content: center;
   background: #f1f1f1;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  margin-top: -50px; }
 
 .button-more-announcement {
   position: relative;
@@ -580,7 +597,7 @@ i.latest-post-date {
 .button-more-announcement a {
   text-decoration: none;
   display: inline-flex;
-  padding: 10px 10px 7px 7px; }
+  padding: 7px 7px 3px 3px; }
 
 .button-more-announcement svg {
   height: 25px;
@@ -655,7 +672,7 @@ i.latest-post-date {
     font-size: 0.9em; }
 
   .latest-posts {
-    padding: 50px 0 70px; }
+    padding: 15px 0 70px; }
 
   .region-buttons-area,
   .hot-spring-area {
@@ -668,8 +685,24 @@ i.latest-post-date {
 
   .latest-flex-container,
   .ad-banner-one,
-  .ad-banner-two {
+  .ads-banners-bottom {
     max-width: 728px; }
+
+  .button-more-announcement-area {
+    margin-top: -80px; }
+
+  .button-more-announcement a {
+    padding: 10px 10px 7px 7px; }
+
+  .ad-banner-one,
+  .ad-banner-two {
+    margin: 0 auto; }
+
+  .ad-banner-two {
+    max-width: 300px; }
+
+  .ad-banner-two img {
+    padding: 0; }
 
   .swimmer {
     height: 280px;
@@ -999,7 +1032,13 @@ footer {
 
 .footer-menu-items li {
   color: #FFF;
-  margin: 8px 0 0; }
+  margin: 8px 0 0;
+  text-align: center;
+  line-height: 2em; }
+
+.footer-menu-items a {
+  text-decoration: none;
+  color: #fff; }
 
 #svg-capital {
   fill: #58b7e7;
@@ -1062,8 +1101,10 @@ div.wpcf7-mail-sent-ng {
   display: none; }
 
 .language-selection-mobile {
-  position: absolute;
-  z-index: 998; }
+  position: fixed;
+  top: 65px;
+  right: 0px;
+  z-index: 1001; }
 
 .language-selection ul,
 .language-selection-mobile ul {
@@ -1072,12 +1113,8 @@ div.wpcf7-mail-sent-ng {
   padding-left: 0;
   margin: 0; }
 
-.language-selection-mobile {
-  margin-top: 15px;
-  width: 100%; }
-
 .language-selection-mobile ul {
-  width: 93px;
+  width: 70px;
   margin: 0 auto; }
 
 .language-selection li,

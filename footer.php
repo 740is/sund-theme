@@ -3,22 +3,6 @@
 		<div class="footer-menu">
 			<div class="footer-menu-items">
 				<?php wp_nav_menu( array('menu' => 'Footer Menu')); ?>
-				<!-- <ul>
-					<li>Sundlaugar</li>
-					<li>Heitar laugar</li>
-					<li>Opnunartímar</li>
-					<li>Sundkennsla</li>
-				</ul>
-				<ul>
-					<li>Hafa samband</li>
-					<li>Auglýsingar</li>
-					<li>Senda inn frétt</li>
-					<li>Tilkynna villu</li>
-				</ul>
-				<ul>
-					<li>Fréttir / Tilkynningar</li>
-					<li>Tilgangur vefsins</li>
-				</ul> -->
 			</div>
 		</div>
 		<div class="copyright">

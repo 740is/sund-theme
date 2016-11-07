@@ -12,7 +12,7 @@
     <a href="<?php bloginfo('url'); ?>"><?php get_template_part('assets/logo/inline', 'logo.svg'); ?></a>
   </div>
 
-  <div id="magnifier-tool" class="search nav-flex-item">
+  <div id="magnifier-tool" class="search nav-flex-item mobile-flags-padding">
     <?php get_template_part('assets/icons/inline', 'magnifier-tool.svg'); ?>
   </div>
 

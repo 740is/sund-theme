@@ -87,6 +87,10 @@ nav {
   align-self: center;
 }
 
+.mobile-flags-padding {
+  padding: 7px 0 30px;
+}
+
 .display-search-form {
   position: absolute;
   display: inline-flex;
@@ -124,6 +128,7 @@ input#s:focus {
 .mobile-menu {
   position: fixed;
   width: 100%;
+  top: $mobile-nav-height;
   background: $theme-blue;
   color: #FFF;
   z-index: 999;
@@ -191,5 +196,9 @@ input#s:focus {
 
   .logo svg {
     height: 50px;
+  }
+
+  .mobile-flags-padding {
+    padding: 0;
   }
 }

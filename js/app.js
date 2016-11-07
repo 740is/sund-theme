@@ -1,3 +1,11 @@
+// Remove WPML nbsp under flags
+(function($){
+  $("#lang_sel_list ul li a").each(function() {
+    var $this = $(this);
+    $this.html($this.html().replace(/&nbsp;/g, ''));
+  });
+})(jQuery);
+
 document.getElementById('magnifier-tool').addEventListener('click', function() {
   $('#nav-search-form').addClass('display-search-form').removeClass('close-search-form');
 });
