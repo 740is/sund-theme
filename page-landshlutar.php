@@ -19,19 +19,18 @@
 			$args = array(
 				'post_type' => 'landshlutar',
 				'orderby'		=> 'modified',
-				'order'			=> 'ASC'
+				'order'			=> 'DESC'
 			);
 			$query = new WP_Query( $args );
 		?>
 
   	<ul class="region-buttons">
 		<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-
 		<?php
 			$cat_array = get_the_category();
 			$catName = $cat_array[0]->category_nicename;
 		?>
-			<a href="<?php echo get_permalink(); ?>?category=<?php echo the_title(); ?>"><li>
+			<a href="<?php echo get_permalink(); ?>"><li>
         <div id="ss" class="iceland-area">
           <div class="swimming-pools-icon">
 						<?php

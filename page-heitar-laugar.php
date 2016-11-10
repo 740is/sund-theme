@@ -3,11 +3,7 @@
 ?>
 
 <?php include('header.php'); ?>
-
-
-
 <div class="latest-posts region-buttons-area wrapper">
-<p>page heitar laugar</p>
   <!-- ========== WP Page: Heitar laugar =========  -->
   <div class="a">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

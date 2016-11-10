@@ -1,8 +1,7 @@
 <?php include('header.php'); ?>
 
 <?php include('ad-one.php'); ?>
-<div class="latest-posts wrapper">
-<p>page sundlaugar</p>
+<div class="latest-posts">
   <!-- ========== WP Page: Sundlaugar =========  -->
   <div class="a">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -11,9 +10,14 @@
   </div>
   <?php include('swimmer.php'); ?>
 
+  <?php
+    $region = 'field_5823a933e9b66';
+    $post_id = get_the_ID();
+    $category = get_field($region, $post_id);
+  ?>
+
  <!-- ========== Custom Post Type: Sundlaugar ========== -->
   <div class="swp-listing">
-    <?php $category = $_GET['category']; ?>
     <?php
       $args = array(
         'post_type' => 'sundlaugar',

@@ -166,7 +166,7 @@ input#s:focus {
 
 @include tablets {
   nav {
-    height: 115px;
+    height: $desktop-nav-height;
   }
 
   #upper-stripe,
@@ -196,6 +196,10 @@ input#s:focus {
 
   .logo svg {
     height: 50px;
+  }
+
+  .mobile-menu {
+    top: $desktop-nav-height;  
   }
 
   .mobile-flags-padding {

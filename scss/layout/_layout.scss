@@ -128,6 +128,11 @@ li.stadsetningar:hover,
   text-align: center;
 }
 
+.buttons-text-banner-en p {
+  line-height: 1.3em;
+  font-size: 0.7em;
+}
+
 .swimming-pools-text-banner {
   background: $orange;
 }
@@ -370,6 +375,7 @@ i.latest-post-date {
   background: #f1f1f1;
   padding-bottom: 80px;
   margin-top: -50px;
+  z-index: 2;
 }
 
 .button-more-announcement {
@@ -486,6 +492,11 @@ i.latest-post-date {
   .buttons-text-banner p {
     line-height: 0.9em;
     font-size: 0.9em;
+  }
+
+  .buttons-text-banner-en p {
+    line-height: 1.3em;
+    font-size: 0.7em;
   }
 
   .latest-posts {

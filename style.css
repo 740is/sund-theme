@@ -294,6 +294,9 @@ input#s:focus {
   .logo svg {
     height: 50px; }
 
+  .mobile-menu {
+    top: 115px; }
+
   .mobile-flags-padding {
     padding: 0; } }
 .wrapper {
@@ -402,6 +405,10 @@ li.stadsetningar:hover,
   color: #fff;
   margin: 6px 0;
   text-align: center; }
+
+.buttons-text-banner-en p {
+  line-height: 1.3em;
+  font-size: 0.7em; }
 
 .swimming-pools-text-banner {
   background: #B45533; }
@@ -583,7 +590,8 @@ i.latest-post-date {
   justify-content: center;
   background: #f1f1f1;
   padding-bottom: 80px;
-  margin-top: -50px; }
+  margin-top: -50px;
+  z-index: 2; }
 
 .button-more-announcement {
   position: relative;
@@ -670,6 +678,10 @@ i.latest-post-date {
   .buttons-text-banner p {
     line-height: 0.9em;
     font-size: 0.9em; }
+
+  .buttons-text-banner-en p {
+    line-height: 1.3em;
+    font-size: 0.7em; }
 
   .latest-posts {
     padding: 15px 0 70px; }
