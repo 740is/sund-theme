@@ -93,6 +93,7 @@ nav {
 
 .display-search-form {
   position: absolute;
+  top: 3px;
   display: inline-flex;
   justify-content: center;
   height: 61px;
@@ -110,9 +111,22 @@ label.screen-reader-text,
   display: none;
 }
 
-input#s {
-  border: 1px solid $blue;
+input#s,
+input#searchsubmit {
   height: 30px;
+  font-size: 0.85em;
+}
+
+input#s {
+  border: 1px solid $theme-blue;
+  width: 150px;
+}
+
+input#searchsubmit {
+  border: $theme-blue;
+  background: $theme-blue;
+  color: #fff;
+  padding: 5px 10px;
 }
 
 input#s:focus {
@@ -122,7 +136,6 @@ input#s:focus {
 
 #mobile-menu {
   display: none;
-
 }
 
 .mobile-menu {
@@ -199,10 +212,35 @@ input#s:focus {
   }
 
   .mobile-menu {
-    top: $desktop-nav-height;  
+    top: $desktop-nav-height;
   }
 
   .mobile-flags-padding {
     padding: 0;
+  }
+
+  .display-search-form {
+    top: 0px;
+  }
+
+  input#s,
+  input#searchsubmit {
+    height: 40px;
+    font-size: 1em;
+  }
+
+  // input#s {
+  //   width: 230px;
+  // }
+
+  input#s {
+    width: 330px;
+    margin-right: -2px;
+    padding-left: 10px;
+    color: #777;
+  }
+
+  input#searchsubmit {
+    padding: 5px 10px;
   }
 }
