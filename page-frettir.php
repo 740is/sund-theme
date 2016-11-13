@@ -1,5 +1,5 @@
 <?php
-	/* Template Name: Tilkynningar */
+	/* Template Name: Fréttir */
 ?>
 
 <?php include('header.php'); ?>

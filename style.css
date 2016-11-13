@@ -26,13 +26,19 @@ div.stadsetningar {
   div.stadsetningar h2 {
     color: #9A621C; }
 
-li.tilkynningar,
-div.tilkynningar {
+li.frettir,
+div.frettir,
+li.news,
+div.news {
   border-left: 4px solid #9A9733;
   background: rgba(154, 151, 51, 0.1); }
-  li.tilkynningar a,
-  div.tilkynningar a, li.tilkynningar h2,
-  div.tilkynningar h2 {
+  li.frettir a,
+  div.frettir a,
+  li.news a,
+  div.news a, li.frettir h2,
+  div.frettir h2,
+  li.news h2,
+  div.news h2 {
     color: #9A9733; }
 
 li.opid h2,
@@ -41,8 +47,10 @@ li.sundlaugar h2,
 div.sundlaugar h2,
 li.stadsetningar h2,
 div.stadsetningar h2,
-li.tilkynningar h2,
-div.tilkynningar h2 {
+li.frettir h2,
+div.frettir h2,
+li.news h2,
+div.news h2 {
   font-weight: bold; }
 
 /*
@@ -346,7 +354,8 @@ div#selection-buttons-clearfix {
 .selection-button {
   box-shadow: 0px 0px 18px 9px #fff; }
 
-li.tilkynningar,
+li.frettir,
+li.news,
 li.opid,
 li.sundlaugar,
 li.stadsetningar,
@@ -358,7 +367,8 @@ li.stadsetningar,
 .button-more-announcement {
   transition: .5s; }
 
-li.tilkynningar:hover,
+li.frettir:hover,
+li.news:hover,
 li.opid:hover,
 li.sundlaugar:hover,
 li.stadsetningar:hover,
@@ -541,7 +551,8 @@ li.search-results-flex-item a {
   text-decoration: none;
   color: #333; }
 
-li.tilkynningar:hover {
+li.frettir:hover,
+li.news:hover {
   background: rgba(154, 151, 51, 0.4); }
 
 li.opid:hover {

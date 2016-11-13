@@ -56,7 +56,8 @@ div#selection-buttons-clearfix {
   box-shadow: 0px 0px 18px 9px #fff;
 }
 
-li.tilkynningar,
+li.frettir,
+li.news,
 li.opid,
 li.sundlaugar,
 li.stadsetningar,
@@ -69,7 +70,8 @@ li.stadsetningar,
   transition: .5s;
 }
 
-li.tilkynningar:hover,
+li.frettir:hover,
+li.news:hover,
 li.opid:hover,
 li.sundlaugar:hover,
 li.stadsetningar:hover,
@@ -296,12 +298,15 @@ li.search-results-flex-item a {
   color: #333;
 }
 
-li.tilkynningar,
-div.tilkynningar {
+li.frettir,
+div.frettir,
+li.news,
+div.news  {
   @extend %li-border-green;
 }
 
-li.tilkynningar:hover {
+li.frettir:hover,
+li.news:hover {
   background: rgba(154,151,51,0.4);
 }
 
