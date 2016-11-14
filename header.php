@@ -18,4 +18,4 @@
       <?php do_action('wpml_add_language_selector'); ?>
     </div>
     <?php include('navigation.php'); ?>
-    <div class="wrapper">
+    <div id="wrapper" class="wrapper">

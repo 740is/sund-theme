@@ -46,7 +46,7 @@
   <div class="selection-buttons">
     <a href="<?php echo $landshlutar; ?>">
       <div id="swimming-pools" class="selection-button">
-        <div class="selection-buttons-icon swimming-pools-icon">
+        <div class="selection-buttons-icon swimming-pools-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
         </div>
         <div class="buttons-text-banner swimming-pools-text-banner <?php echo $en_buttons_class; ?>">
@@ -57,7 +57,7 @@
 
     <a href="<?php echo $heitar_laugar; ?>">
       <div id="locations" class="selection-button">
-        <div class="selection-buttons-icon locations-icon">
+        <div class="selection-buttons-icon locations-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'hot-spring.svg'); ?>
         </div>
         <div class="buttons-text-banner locations-text-banner <?php echo $en_buttons_class; ?>">
@@ -68,7 +68,7 @@
 
     <a href="<?php echo $afgreidslutimi; ?>">
       <div id="opening-hours" class="selection-button">
-        <div class="selection-buttons-icon opening-hours-icon">
+        <div class="selection-buttons-icon opening-hours-icon front-page-button">
           <?php get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
         </div>
         <div class="buttons-text-banner opening-hours-text-banner <?php echo $en_buttons_class; ?>">
@@ -79,7 +79,7 @@
 
     <a href="<?php echo $tilkynningar; ?>">
       <div id="announcements" class="selection-button">
-        <div class="selection-buttons-icon announcements-icon">
+        <div class="selection-buttons-icon announcements-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'loudspeaker.svg'); ?>
         </div>
         <div class="buttons-text-banner announcements-text-banner <?php echo $en_buttons_class; ?>">

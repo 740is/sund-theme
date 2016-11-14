@@ -24,12 +24,13 @@ p {
 }
 p, li, td, th,
 .latest-post-title,
-.latest-post-excerpt {
+.latest-post-excerpt,
+input#s,
+input#searchsubmit {
   font-family: 'Raleway', arial, sans-serif;
 	font-weight: 400;
   font-size: .85em;
   margin-top: 0.8em;
-
 }
 
 p {

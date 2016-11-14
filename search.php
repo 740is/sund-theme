@@ -31,7 +31,7 @@
             echo '<div class="latest-post-excerpt">';
             $excerpt = wp_trim_words( get_field('field_57f409fefd4fc' ), $num_words = 40, $more = ' [...]' );
             echo '<p>' . $excerpt . '</p>';
-              echo the_excerpt();
+              //echo the_excerpt();
             echo '</div>';
             echo '<i class="latest-post-date">';
               echo get_the_date('d/m/Y');

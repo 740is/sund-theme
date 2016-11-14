@@ -2,7 +2,15 @@
 	<footer>
 		<div class="footer-menu">
 			<div class="footer-menu-items">
-				<?php wp_nav_menu( array('menu' => 'Footer Menu')); ?>
+				<div class="footer-menu-item">
+					<?php wp_nav_menu( array('menu' => '7')); ?>
+				</div>
+			</div>
+
+			<div class="footer-menu-items">
+				<div class="footer-menu-item">
+					<?php wp_nav_menu( array('menu' => '30')); ?>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">

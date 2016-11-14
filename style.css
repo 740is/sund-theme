@@ -53,6 +53,34 @@ li.news h2,
 div.news h2 {
   font-weight: bold; }
 
+li.frettir,
+li.news,
+li.opid,
+li.sundlaugar,
+li.stadsetningar,
+#swimming-pools,
+#opening-hours,
+#locations,
+#announcements,
+.swp-listing-bkg,
+.button-more-announcement,
+.footer-menu-items li {
+  transition: .5s; }
+
+li.frettir:hover,
+li.news:hover,
+li.opid:hover,
+li.sundlaugar:hover,
+li.stadsetningar:hover,
+#swimming-pools:hover,
+#opening-hours:hover,
+#locations:hover,
+#announcements:hover,
+.swp-listing-bkg:hover,
+.button-more-announcement:hover,
+.footer-menu-items li:hover {
+  transition: .7s; }
+
 /*
 Theme Name: Webpage for sundlaugar.is
 Theme URI: http://sundlaugar.is/
@@ -76,7 +104,9 @@ p {
 
 p, li, td, th,
 .latest-post-title,
-.latest-post-excerpt {
+.latest-post-excerpt,
+input#s,
+input#searchsubmit {
   font-family: 'Raleway', arial, sans-serif;
   font-weight: 400;
   font-size: .85em;
@@ -153,7 +183,9 @@ nav {
   padding-bottom: 10px;
   fill: #3344B4; }
 
-.menu-button:hover {
+.menu-button:hover,
+.search:hover,
+.close-search-field:hover {
   cursor: pointer; }
 
 .middle-stripe {
@@ -228,7 +260,8 @@ nav {
   background: #fff; }
 
 #nav-close-icon {
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-top: 15px; }
 
 /* Search form overwrite for mobile */
 label.screen-reader-text,
@@ -245,8 +278,8 @@ input#s {
   width: 150px; }
 
 input#searchsubmit {
-  border: #58b7e7;
-  background: #58b7e7;
+  border: #000;
+  background: #465C67;
   color: #fff;
   padding: 5px 10px; }
 
@@ -266,7 +299,10 @@ input#s:focus {
   z-index: 999; }
 
 .mobile-menu-items {
-  padding-top: 10px; }
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .mobile-menu-items ul {
   margin: 0; }
@@ -382,32 +418,6 @@ div#selection-buttons-clearfix {
 
 .selection-button {
   box-shadow: 0px 0px 18px 9px #fff; }
-
-li.frettir,
-li.news,
-li.opid,
-li.sundlaugar,
-li.stadsetningar,
-#swimming-pools,
-#opening-hours,
-#locations,
-#announcements,
-.swp-listing-bkg,
-.button-more-announcement {
-  transition: .5s; }
-
-li.frettir:hover,
-li.news:hover,
-li.opid:hover,
-li.sundlaugar:hover,
-li.stadsetningar:hover,
-#swimming-pools:hover,
-#opening-hours:hover,
-#locations:hover,
-#announcements:hover,
-.swp-listing-bkg:hover,
-.button-more-announcement:hover {
-  transition: .7s; }
 
 #swimming-pools {
   border: 1px solid #B45533; }
@@ -549,7 +559,6 @@ li.stadsetningar:hover,
   margin: 0 auto; }
 
 .latest-posts ul,
-.footer-menu-items ul,
 .mobile-menu-items ul,
 .search-results-list ul,
 .region-buttons-area ul {
@@ -1053,8 +1062,9 @@ img.size-thumbnail.alignright {
     width: 940px;
     margin: 0 auto; } }
 footer {
-  background: #58b7e7;
-  border-top: 4px solid #E7A758; }
+  background: #465C67;
+  border-top: 4px solid #E7A758;
+  text-align: center; }
 
 .copyright {
   position: relative;
@@ -1065,33 +1075,53 @@ footer {
 
 .copyright h4 {
   margin: 0;
-  font-size: 0.8em;
-  text-shadow: 1px 1px 2px #555; }
+  font-size: 0.8em; }
 
 .footer-menu {
   position: relative;
-  top: 20px; }
-
-.footer-menu-items,
-.mobile-menu-items {
-  width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  top: 20px;
+  width: 227px;
+  margin: 0 auto 35px; }
 
 .footer-menu-items {
-  padding: 50px 20px; }
+  padding: 40px 0px;
+  margin: 5px;
+  background: rgba(160, 210, 226, 0.08); }
+
+.footer-menu-items ul {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  z-index: 2; }
 
 .footer-menu-items li {
   color: #FFF;
-  margin: 8px 0 0;
-  text-align: center;
-  line-height: 2em; }
+  margin: 0;
+  text-align: center; }
+
+.footer-menu-items li:hover {
+  background: #58b7e7; }
 
 .footer-menu-items a {
+  display: block;
+  padding: 12px 0;
   text-decoration: none;
   color: #fff; }
 
+.footer-menu-item {
+  width: 227px; }
+
+@media screen and (min-width: 480px) {
+  .footer-menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 479px; }
+
+  .footer-menu-items {
+    max-width: 250px; } }
 #svg-capital {
   fill: #58b7e7;
   stroke-width: 2.5px;
@@ -1197,5 +1227,24 @@ div#lang_sel_list ul {
     flex-direction: column;
     width: 18px;
     height: 50px; } }
+@keyframes growFrontPageButtons {
+  0% {
+    transform: scale(1); }
+  70% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+.front-page-button:hover {
+  animation: growFrontPageButtons 1s ease-in-out backwards; }
+
+@keyframes growIceland {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+.swimming-pools-icon:hover {
+  animation: growIceland 1s ease-in-out backwards; }
 
 /*# sourceMappingURL=style.css.map */

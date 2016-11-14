@@ -1,0 +1,29 @@
+li.frettir,
+li.news,
+li.opid,
+li.sundlaugar,
+li.stadsetningar,
+#swimming-pools,
+#opening-hours,
+#locations,
+#announcements,
+.swp-listing-bkg,
+.button-more-announcement,
+.footer-menu-items li {
+  transition: .5s;
+}
+
+li.frettir:hover,
+li.news:hover,
+li.opid:hover,
+li.sundlaugar:hover,
+li.stadsetningar:hover,
+#swimming-pools:hover,
+#opening-hours:hover,
+#locations:hover,
+#announcements:hover,
+.swp-listing-bkg:hover,
+.button-more-announcement:hover,
+.footer-menu-items li:hover {
+  transition: .7s;
+}

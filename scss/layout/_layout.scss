@@ -56,34 +56,6 @@ div#selection-buttons-clearfix {
   box-shadow: 0px 0px 18px 9px #fff;
 }
 
-li.frettir,
-li.news,
-li.opid,
-li.sundlaugar,
-li.stadsetningar,
-#swimming-pools,
-#opening-hours,
-#locations,
-#announcements,
-.swp-listing-bkg,
-.button-more-announcement {
-  transition: .5s;
-}
-
-li.frettir:hover,
-li.news:hover,
-li.opid:hover,
-li.sundlaugar:hover,
-li.stadsetningar:hover,
-#swimming-pools:hover,
-#opening-hours:hover,
-#locations:hover,
-#announcements:hover,
-.swp-listing-bkg:hover,
-.button-more-announcement:hover {
-  transition: .7s;
-}
-
 #swimming-pools {
   border: 1px solid $orange;
 }
@@ -261,7 +233,6 @@ li.stadsetningar:hover,
 }
 
 .latest-posts ul,
-.footer-menu-items ul,
 .mobile-menu-items ul,
 .search-results-list ul,
 .region-buttons-area ul {

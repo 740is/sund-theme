@@ -16,7 +16,9 @@ nav {
   @include mobile-nav-icons;
 }
 
-.menu-button:hover {
+.menu-button:hover,
+.search:hover,
+.close-search-field:hover {
   cursor: pointer;
 }
 
@@ -103,6 +105,7 @@ nav {
 
 #nav-close-icon {
   margin-right: 15px;
+  margin-top: 15px;
 }
 
 /* Search form overwrite for mobile */
@@ -123,8 +126,8 @@ input#s {
 }
 
 input#searchsubmit {
-  border: $theme-blue;
-  background: $theme-blue;
+  border: #000;
+  background: #465C67;
   color: #fff;
   padding: 5px 10px;
 }
@@ -149,6 +152,9 @@ input#s:focus {
 
 .mobile-menu-items {
   padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-items ul {
