@@ -39,7 +39,7 @@ document.getElementById('menu-button').addEventListener('click', function() {
   }
 });
 
-// Slick Slider adjustments
+// Slick Slider hero image adjustments
 $(document).ready(function(){
   $('.hero-image').slick({
     autoplay: true,
@@ -48,5 +48,38 @@ $(document).ready(function(){
     speed: 3000,
     fade: true,
     cssEase: 'ease'
+  });
+});
+
+// Slick Slider ad banners adjustments
+$(document).ready(function(){
+  $('.ads-banners-overflow-hidden').slick({
+    ltr: true,
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    autoplaySpeed: 7000
+  });
+});
+
+// Slick Slider ad cubes 1 adjustments
+$(document).ready(function(){
+  $('.ads-cube-one-overflow-hidden').slick({
+    rtl: true,
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    autoplaySpeed: 5000
+  });
+});
+
+// Slick Slider ad cubes 2 adjustments
+$(document).ready(function(){
+  $('.ads-cube-two-overflow-hidden').slick({
+    ltr: true,
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    autoplaySpeed: 5000
   });
 });

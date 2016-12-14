@@ -23,12 +23,14 @@
     $locations = "field_57debeac74a7d";
     $announcements = "field_57debe7c74a7c";
     $latestHeadline = "field_57ec215cd1882";
+    $sundKennslaTexti = "field_583f402e1edbe";
     if($post_id === 14) {
       $post_id_buttons_latest = '13';
       $landshlutar = esc_url( get_permalink(73));
       $heitar_laugar = esc_url( get_permalink(33));
       $afgreidslutimi = '#';
       $tilkynningar = esc_url( get_permalink(37));
+      $sund_kennsla = esc_url( get_permalink(271));
     } elseif($post_id === 140) {
       $post_id_buttons_latest = '140';
       $en_buttons_class = 'buttons-text-banner-en';
@@ -36,6 +38,7 @@
       $heitar_laugar = esc_url( get_permalink(124));
       $afgreidslutimi = '#';
       $tilkynningar = esc_url( get_permalink(122));
+      $sund_kennsla = esc_url( get_permalink(273));
     }
 
     // $mobile_ad1 = get_field($mobile_ad1_key, $post_id);
@@ -66,13 +69,24 @@
       </div>
     </a>
 
-    <a href="<?php echo $afgreidslutimi; ?>">
+    <!-- <a href="<?php echo $afgreidslutimi; ?>">
       <div id="opening-hours" class="selection-button">
         <div class="selection-buttons-icon opening-hours-icon front-page-button">
           <?php get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
         </div>
         <div class="buttons-text-banner opening-hours-text-banner <?php echo $en_buttons_class; ?>">
           <p><?php echo get_field($open_now, $post_id_buttons_latest); ?></p>
+        </div>
+      </div>
+    </a> -->
+
+    <a href="<?php echo $sund_kennsla; ?>">
+      <div id="sund-kennsla" class="selection-button">
+        <div class="selection-buttons-icon opening-hours-icon front-page-button">
+          <?php get_template_part('assets/icons/inline', 'swim-lesson.svg'); ?>
+        </div>
+        <div class="buttons-text-banner sund-kennsla-text-banner <?php echo $en_buttons_class; ?>">
+          <p><?php echo get_field($sundKennslaTexti, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a>
@@ -92,7 +106,7 @@
 </div>
 
 
-<?php include('ad-one.php'); ?>
+<?php include('ad-banner-1.php'); ?>
 
 <div class="latest-posts-area">
   <div class="latest-posts">
@@ -154,6 +168,13 @@
   </div>
 
 </div>
-<?php include('ad-two.php'); ?>
+
+<div class="ad-cubes-area">
+  <div class="ad-cubes-area-content">
+    <?php include('ad-cube-1.php'); ?>
+    <?php include('ad-cube-2.php'); ?>
+  </div>
+</div>
 <?php endif; wp_reset_postdata();?>
+
 <?php include('footer.php'); ?>

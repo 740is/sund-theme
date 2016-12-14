@@ -4,11 +4,11 @@
   $phoneIcon = "phone-call.svg";
   $emailIcon = "email.svg";
   $webIcon = "worldwide.svg";
+  $facebookIcon = "facebook.svg";
 ?>
 
 <!-- <div class="latest-posts wrapper"> -->
   <div class="swp-single-posts-area wrapper">
-    <p>single sundlaugar</p>
     <div class="swp-single-post">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="swp-headlines">
@@ -23,7 +23,8 @@
       <div class="swp-contact-info mobile-width">
         <p><?php get_template_part('assets/svg/inline', $phoneIcon); ?><?php the_field('field_57f561fd0c57b'); ?></p>
         <p><?php get_template_part('assets/svg/inline', $emailIcon); ?><?php the_field('field_57f561e00c57a'); ?></p>
-        <p><?php get_template_part('assets/svg/inline', $webIcon); ?><a href="<?php the_field('field_57f5620d0c57c'); ?>"><?php the_field('field_57f5620d0c57c'); ?></a></p>
+        <p><?php get_template_part('assets/svg/inline', $webIcon); ?><a href="<?php the_field('field_57f5620d0c57c'); ?>"><?php the_field('field_585060433a3e3'); ?></a></p>
+        <p><?php get_template_part('assets/svg/inline', $facebookIcon); ?><a href="<?php the_field('field_5850550b2b2be'); ?>"><?php the_field('field_58505810f64c3'); ?></a></p>
       </div>
 
       <div class="swp-opening-hours mobile-width">

@@ -240,23 +240,29 @@ img.size-thumbnail.alignright {
   margin-bottom: 10px;
 }
 
-.swp-listing {
+.swp-listing,
+.sund-kennsla-listing {
   position: relative;
   z-index: 2;
 }
 
-.swp-listing-title {
+.swp-listing-title,
+.sund-kennsla-title {
   margin: 0;
   padding: 0.4em 0.5em;
   font-size: 1.3em;
 }
 
-.swp-listing-bkg {
+.swp-listing-bkg,
+.sund-kennsla-listing-bkg {
   background: $transparent-orange;
+  transition: .3s;
 }
 
-.swp-listing-bkg:hover {
-  background: rgba(180, 85, 51, 0.3)
+.swp-listing-bkg:hover,
+.sund-kennsla-listing-bkg:hover {
+  background: rgba(180, 85, 51, 0.3);
+  transition: .7s;
 }
 
 .feature-image {
@@ -340,7 +346,8 @@ img.size-thumbnail.alignright {
     width: 740px;
   }
 
-  .swp-listing-title {
+  .swp-listing-title,
+  .sund-kennsla-title {
     font-size: 1.618em;
   }
 
