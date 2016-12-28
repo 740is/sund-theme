@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 
-<?php include('ad-one.php'); ?>
+<?php include('ad-banner-1.php'); ?>
 <div class="latest-posts">
   <!-- ========== WP Page: Sundlaugar =========  -->
   <div class="a">
@@ -55,5 +55,11 @@
 
 </div>
 
-<?php include('ad-two.php'); ?>
+<div class="ad-cubes-area">
+  <div class="ad-cubes-area-content">
+    <?php include('ad-cube-1.php'); ?>
+    <?php include('ad-cube-2.php'); ?>
+  </div>
+</div>
+
 <?php include('footer.php'); ?>

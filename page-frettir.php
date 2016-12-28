@@ -3,7 +3,7 @@
 ?>
 
 <?php include('header.php'); ?>
-<?php include('ad-one.php'); ?>
+<?php include('ad-banner-1.php'); ?>
 <div class="latest-posts announcements-bkg wrapper">
 
   <h2><?php the_title(); ?></h2>
@@ -12,7 +12,7 @@
 
   // The Query
   $the_query = new WP_Query( array(
-    'post_type' => 'post',
+    'post_type' => 'frettir',
     'posts_per_page' => $number_of_posts
   ));
 
@@ -53,5 +53,10 @@
   ?>
 
 </div>
-<?php include('ad-two.php'); ?>
+<div class="ad-cubes-area">
+  <div class="ad-cubes-area-content">
+    <?php include('ad-cube-1.php'); ?>
+    <?php include('ad-cube-2.php'); ?>
+  </div>
+</div>
 <?php include('footer.php'); ?>

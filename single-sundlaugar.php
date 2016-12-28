@@ -22,9 +22,9 @@
 
       <div class="swp-contact-info mobile-width">
         <p><?php get_template_part('assets/svg/inline', $phoneIcon); ?><?php the_field('field_57f561fd0c57b'); ?></p>
-        <p><?php get_template_part('assets/svg/inline', $emailIcon); ?><?php the_field('field_57f561e00c57a'); ?></p>
-        <p><?php get_template_part('assets/svg/inline', $webIcon); ?><a href="<?php the_field('field_57f5620d0c57c'); ?>"><?php the_field('field_585060433a3e3'); ?></a></p>
-        <p><?php get_template_part('assets/svg/inline', $facebookIcon); ?><a href="<?php the_field('field_5850550b2b2be'); ?>"><?php the_field('field_58505810f64c3'); ?></a></p>
+        <p><?php get_template_part('assets/svg/inline', $emailIcon); ?><a href="mailto:<?php the_field('field_57f561e00c57a'); ?>?subject=Fyrirspurn%20af%20sundlaugar.is%20/%20Inquiry%20from%20swimminginiceland.is"><?php the_field('field_57f561e00c57a'); ?></a></p>
+        <p><?php get_template_part('assets/svg/inline', $webIcon); ?><a href="<?php the_field('field_57f5620d0c57c'); ?>" target="_blank"><?php the_field('field_585060433a3e3'); ?></a></p>
+        <p><?php get_template_part('assets/svg/inline', $facebookIcon); ?><a href="<?php the_field('field_5850550b2b2be'); ?>" target="_blank"><?php the_field('field_58505810f64c3'); ?></a></p>
       </div>
 
       <div class="swp-opening-hours mobile-width">

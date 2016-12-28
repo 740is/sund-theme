@@ -560,7 +560,8 @@ div#selection-buttons-clearfix {
 .latest-posts h2,
 .search-results-list h2,
 .swp-single-post h2,
-.region-buttons-area h2 {
+.region-buttons-area h2,
+.single-post h2 {
   text-align: center;
   color: #58b7e7;
   text-shadow: 2px 2px 5px #c0c0c0; }
@@ -633,7 +634,7 @@ li.stadsetningar:hover {
 
 .latest-posts a:hover,
 .swp-single-post a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .latest-post-title {
   font-weight: bold;
@@ -1019,6 +1020,9 @@ img.size-thumbnail.alignright {
 .feature-image img {
   height: 82px;
   width: 82px; }
+
+#frettir img {
+  width: 100%; }
 
 @media screen and (min-width: 640px) {
   .feature-image img {
