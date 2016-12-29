@@ -13,7 +13,7 @@
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="swp-headlines">
         <h2><?php the_field('field_57f40974fd4fa'); ?></h2>
-        <h4><?php the_field('field_57f546e7798b8'); ?></h4>
+        <a href="#google-map"><h4><?php get_template_part('assets/icons/inline', 'location-in-circle.svg'); ?><?php the_field('field_57f546e7798b8'); ?></h4></a>
       </div>
 
       <div class="swp-images swp-images-display">
@@ -42,10 +42,12 @@
       <div class="swp-description">
         <?php the_field('field_57f409fefd4fc'); ?>
       </div>
+      <div id="google-map"></div>
 
     <?php endwhile; endif; ?>
   </div>
   </div>
-<!-- </div> -->
 
+<!-- </div> -->
+<?php include('google-map.php'); ?>
 <?php include('footer.php'); ?>

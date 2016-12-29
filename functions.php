@@ -71,7 +71,15 @@ function cptui_register_my_cpts_sundlaugar() {
 // End of cptui_register_my_cpts_sundlaugar()
 }
 
+function my_acf_google_map_api( $api ){
 
+	$api['key'] = 'AIzaSyALN6B-y54zn1ukWuodf2z9Ntwe3kl1p2M';
+
+	return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 
 ?>

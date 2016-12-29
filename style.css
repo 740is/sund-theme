@@ -902,7 +902,14 @@ img.size-thumbnail.alignright {
 
 .swp-headlines h4 {
   text-align: center;
-  margin-top: -7px; }
+  margin-top: -7px;
+  color: #666; }
+
+.swp-headlines svg {
+  height: 22px;
+  position: relative;
+  top: 7px;
+  margin-right: -7px; }
 
 .swp-contact-info {
   display: flex;
@@ -1075,6 +1082,11 @@ img.size-thumbnail.alignright {
 
   .swp-headlines h4 {
     margin-top: -10px; }
+
+  .swp-headlines svg {
+    height: 32px;
+    top: 11px;
+    margin-right: -11px; }
 
   .swp-images {
     float: right;
@@ -1284,5 +1296,40 @@ div#lang_sel_list ul {
     transform: scale(1); } }
 .swimming-pools-icon:hover {
   animation: growIceland 1s ease-in-out backwards; }
+
+.acf-map-container {
+  position: relative;
+  background: #58b7e7;
+  padding: 90px 0; }
+
+.location-icon {
+  position: absolute;
+  top: -30px;
+  height: 60px;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  z-index: 1; }
+
+.acf-map {
+  width: 90%;
+  height: 400px;
+  margin: auto; }
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important; }
+
+/* get direction button */
+.direction {
+  text-align: center;
+  position: relative;
+  top: 45px; }
+
+.direction a {
+  padding: 20px;
+  background: #465c67;
+  color: white;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

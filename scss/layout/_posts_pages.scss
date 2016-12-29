@@ -130,6 +130,14 @@ img.size-thumbnail.alignright {
 .swp-headlines h4 {
   text-align: center;
   margin-top: -7px;
+  color: #666;
+}
+
+.swp-headlines svg {
+  height: 22px;
+  position: relative;
+  top: 7px;
+  margin-right: -7px;
 }
 
 // .mobile-width {
@@ -377,6 +385,12 @@ img.size-thumbnail.alignright {
 
   .swp-headlines h4 {
     margin-top: -10px;
+  }
+
+  .swp-headlines svg {
+    height: 32px;
+    top: 11px;
+    margin-right: -11px;
   }
 
   .swp-images {

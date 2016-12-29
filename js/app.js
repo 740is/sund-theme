@@ -83,3 +83,9 @@ $(document).ready(function(){
     autoplaySpeed: 5000
   });
 });
+
+// BEGIN: ACF Google Map JavaScript
+
+
+
+// END: ACF Google Map JavaScript
