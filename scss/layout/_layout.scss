@@ -152,9 +152,11 @@ div#selection-buttons-clearfix {
 }
 
 .ad-cubes-area-content {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .ads-banners-overflow-hidden,
@@ -171,7 +173,7 @@ div#selection-buttons-clearfix {
 
 .ads-cube-one-overflow-hidden,
 .ads-cube-two-overflow-hidden {
-  max-width: 300px;
+  max-width: 140px;
 }
 
 .ads-banners,
@@ -439,6 +441,11 @@ i.latest-post-date {
   .swimmer svg {
     width: 290px;
   }
+
+  .ads-cube-one-overflow-hidden,
+  .ads-cube-two-overflow-hidden {
+    max-width: 200px;
+  }
 }
 
 @include mobile-landscape {
@@ -503,6 +510,11 @@ i.latest-post-date {
     padding: 0;
     flex-wrap: nowrap;
     align-content: center;
+  }
+
+  .ads-cube-one-overflow-hidden,
+  .ads-cube-two-overflow-hidden {
+    max-width: 300px;
   }
 
   .buttons-text-banner p {

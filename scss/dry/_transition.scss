@@ -9,7 +9,8 @@ li.stadsetningar,
 #announcements,
 .swp-listing-bkg,
 .button-more-announcement,
-.footer-menu-items li {
+.footer-menu-items li,
+.direction a {
   transition: .5s;
 }
 
@@ -24,6 +25,7 @@ li.stadsetningar:hover,
 #announcements:hover,
 .swp-listing-bkg:hover,
 .button-more-announcement:hover,
-.footer-menu-items li:hover {
+.footer-menu-items li:hover,
+.direction a:hover {
   transition: .7s;
 }
