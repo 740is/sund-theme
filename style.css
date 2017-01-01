@@ -568,6 +568,16 @@ div#selection-buttons-clearfix {
   color: #58b7e7;
   text-shadow: 2px 2px 5px #c0c0c0; }
 
+.swp-price-list h4,
+.swp-opening-hours h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.6em; }
+
+.swp-price-list h4,
+.swp-opening-hours h4 {
+  margin-top: 2em; }
+
 .latest-flex-container,
 .search-results-flex-container {
   display: flex;
