@@ -729,10 +729,12 @@ i.latest-post-date {
     margin: 0 auto 2em; }
 
   .latest-flex-item {
-    flex: 1 270px; }
+    flex: 1 270px;
+    margin-right: 19px;
+    margin-bottom: 9px; }
 
   .latest-flex-item:nth-child(2n) {
-    margin-right: 10px; }
+    margin-right: 0; }
 
   .swimmer {
     height: 230px; }
