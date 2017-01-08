@@ -982,7 +982,7 @@ img.size-thumbnail.alignright {
   margin-right: -7px; }
 
 .swp-contact-info {
-  display: flex;
+  display: block;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 30px;
