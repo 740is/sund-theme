@@ -139,12 +139,6 @@ div#selection-buttons-clearfix {
   width: 100%;
 }
 
-// .ads-banners-bottom {
-//   display: flex;
-//   justify-content: center;
-//   margin: 0 auto;
-// }
-
 .ad-cubes-area {
   position: relative;
   background: #f1f1f1;
@@ -154,7 +148,7 @@ div#selection-buttons-clearfix {
 
 .ad-cubes-area-content {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: center;
   margin: 0 auto;
   z-index: 1;
@@ -174,17 +168,19 @@ div#selection-buttons-clearfix {
 
 .ads-cube-one-overflow-hidden,
 .ads-cube-two-overflow-hidden {
-  max-width: 140px;
+  max-width: 310px;
 }
 
 .ads-banners,
 .ad-banner-one,
-.ad-cube {
+.ad-cube-one,
+.ad-cube-two {
   position: relative;
 }
 
 .ad-banner-one,
-.ad-cube {
+.ad-cube-one,
+.ad-cube-two {
   margin: 0 5px;
 }
 
@@ -192,14 +188,15 @@ div#selection-buttons-clearfix {
   padding-top: 33px;
 }
 
-.ad-cube {
+.ad-cube-one,
+.ad-cube-two {
   padding-bottom: 33px;
 }
 
-.ad-cube img {
-  padding-left: 5px;
-  padding-right: 5px;
-}
+// .ad-cube-one img {
+//   padding-left: 5px;
+//   padding-right: 5px;
+// }
 
 /* Latest posts section */
 .latest-posts,
@@ -453,9 +450,13 @@ i.latest-post-date {
     width: 290px;
   }
 
+  .ad-cubes-area-content {
+    display: flex;
+  }
+
   .ads-cube-one-overflow-hidden,
   .ads-cube-two-overflow-hidden {
-    max-width: 200px;
+    max-width: 230px;
   }
 }
 
@@ -465,7 +466,6 @@ i.latest-post-date {
   }
 
   .latest-flex-container {
-    // width: 560px;
     margin: 0 auto 2em;
   }
 
@@ -574,15 +574,15 @@ i.latest-post-date {
   }
 
   .ad-banner-one,
-  .ad-cube {
+  .ad-cube-one {
     margin: 0 auto;
   }
 
-  .ad-cube {
+  .ad-cube-one {
     max-width: 300px;
   }
 
-  .ad-cube img {
+  .ad-cube-one img {
     padding: 0;
   }
 

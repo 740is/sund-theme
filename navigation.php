@@ -1,5 +1,10 @@
 <?php include('mobile-menu.php'); ?>
 <nav>
+  <div class="homepage-icon nav-flex-item">
+    <a href="<?php bloginfo('url'); ?>">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/svg/homepage.svg" alt="">
+    </a>
+  </div>
   <div id="menu-button" class="menu-button nav-flex-item">
     <div id="menu-closed">
       <div id="upper-stripe" class="upper-stripe"></div>
@@ -8,7 +13,7 @@
     </div>
   </div>
 
-  <div class="logo nav-flex-item">
+  <div class="logo nav-flex-item nav-flex-item-2">
     <a href="<?php bloginfo('url'); ?>"><?php get_template_part('assets/logo/inline', 'logo.svg'); ?></a>
   </div>
 
