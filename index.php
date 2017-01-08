@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 
-<div class="hero-image-area">
+<div id="hero-image" class="hero-image-area">
   <div class="hero-image">
     <div>
       <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero1.jpg" alt="Strákur að stökkva út í laug.">

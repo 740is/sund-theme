@@ -1,5 +1,6 @@
 .single-posts-area,
 .swp-single-posts-area {
+  background: $bkg-gray;
   position: relative;
   min-height: 100vh;
   z-index: 1;
@@ -287,8 +288,12 @@ img.size-thumbnail.alignright {
   width: 82px;
 }
 
-#frettir img {
+#frettir-ad-banner {
   width: 100%;
+}
+
+.frettir-texti-tvo {
+  padding-top: 50px;
 }
 
 @include mobile-landscape-nrw {

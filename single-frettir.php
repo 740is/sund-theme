@@ -31,10 +31,13 @@
                 echo get_the_date('d/m/Y');
               echo '</i>';
               echo the_content();
-              echo '<a href="' . $frettirBannerTheUrl . '" target="_blank">';
-              echo '<img src="' . $frettirBannerImage['url'] . '" alt="' . $frettirBannerImage['alt'] . '">';
-              echo '</a><p></p>';
+              include('ad-banner-1.php');
+              // echo '<a href="' . $frettirBannerTheUrl . '" target="_blank">';
+              // echo '<img id="frettir-ad-banner" src="' . $frettirBannerImage['url'] . '" alt="' . $frettirBannerImage['alt'] . '">';
+              // echo '</a><p></p>';
+              echo '<div class="frettir-texti-tvo">';
               echo $frettirTextTwoText;
+              echo '</div>';
         }
 
 

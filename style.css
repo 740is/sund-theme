@@ -826,6 +826,7 @@ i.latest-post-date {
     width: 280px; } }
 .single-posts-area,
 .swp-single-posts-area {
+  background: #f1f1f1;
   position: relative;
   min-height: 100vh;
   z-index: 1; }
@@ -1053,8 +1054,11 @@ img.size-thumbnail.alignright {
   height: 82px;
   width: 82px; }
 
-#frettir img {
+#frettir-ad-banner {
   width: 100%; }
+
+.frettir-texti-tvo {
+  padding-top: 50px; }
 
 @media screen and (min-width: 640px) {
   .feature-image img {
@@ -1259,7 +1263,7 @@ div.wpcf7-mail-sent-ng {
 
 .language-selection-mobile {
   position: fixed;
-  top: 65px;
+  top: 61px;
   right: 0px;
   z-index: 1001; }
 
