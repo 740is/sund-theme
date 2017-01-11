@@ -62,6 +62,7 @@ li.stadsetningar,
 #opening-hours,
 #locations,
 #announcements,
+#sund-kennsla,
 .swp-listing-bkg,
 .button-more-announcement,
 .footer-menu-items li,
@@ -77,6 +78,7 @@ li.stadsetningar:hover,
 #opening-hours:hover,
 #locations:hover,
 #announcements:hover,
+#sund-kennsla:hover,
 .swp-listing-bkg:hover,
 .button-more-announcement:hover,
 .footer-menu-items li:hover,
@@ -276,6 +278,7 @@ nav {
 .display-search-form {
   position: absolute;
   top: 3px;
+  right: 0;
   display: inline-flex;
   justify-content: center;
   height: 61px;
@@ -416,10 +419,14 @@ input#s:focus {
   input#searchsubmit {
     padding: 5px 10px; } }
 .wrapper {
+  position: relative;
   min-height: calc(100vh - 150px);
-  margin-top: 90px; }
+  margin-top: 90px;
+  background: #f1f1f1;
+  z-index: 0; }
 
-.hero-image-area {
+.hero-image-area,
+.wrapper {
   background: #f1f1f1; }
 
 .hero-image {
@@ -664,6 +671,7 @@ li.search-results-flex-item:hover {
   transition: .7s; }
 
 li.search-results-flex-item a {
+  display: block;
   text-decoration: none;
   color: #333; }
 
@@ -964,8 +972,18 @@ img.size-thumbnail.alignright {
   margin: 0;
   line-height: 1em; }
 
+.search-results-area {
+  background: #f1f1f1; }
+
 .search-results-list {
   padding: 60px 16px 30px; }
+
+.search-results-list span {
+  color: #b43333;
+  text-align: left; }
+
+.search-results-list h2 {
+  text-align: left; }
 
 .swp-headlines {
   margin-bottom: 60px; }
@@ -1185,6 +1203,7 @@ img.size-thumbnail.alignright {
     width: 940px;
     margin: 0 auto; } }
 footer {
+  position: relative;
   background: #465C67;
   border-top: 4px solid #E7A758;
   text-align: center; }

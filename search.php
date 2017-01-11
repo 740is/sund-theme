@@ -15,11 +15,10 @@
       <?php printf( __( 'leitarniðurstöður fyrir: %s', 'shape' ), '<span><i>' . get_search_query() . '</i></span>' ); ?>
     </h2>
       <ul class="search-results-flex-container">
-        <?php include('swimmer.php'); ?>
+        <!-- <?php include('swimmer.php'); ?> -->
       <?php while($search->have_posts()) : $search->the_post(); ?>
       <?php
-        $categories = get_the_category();
-        if ( ! empty( $categories ) ) {
+
         echo '<li class="search-results-flex-item lighter-box-shadow">';
           echo '<a href="';
             the_permalink();
@@ -43,7 +42,7 @@
         // the_permalink();
         // echo '</span>';
         echo '</a></li>';
-      }
+
       ?>
       <?php $search_count++; ?>
       <?php endwhile; else: ?>

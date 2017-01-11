@@ -120,8 +120,21 @@ img.size-thumbnail.alignright {
   line-height: 1em;
 }
 
+.search-results-area {
+  background: $bkg-gray;
+}
+
 .search-results-list {
   padding: 60px 16px 30px;
+}
+
+.search-results-list span {
+  color: $red;
+  text-align: left;
+}
+
+.search-results-list h2 {
+  text-align: left;
 }
 
 .swp-headlines {
