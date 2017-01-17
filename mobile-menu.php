@@ -1,4 +1,9 @@
 <div id="mobile-menu" class="mobile-menu">
+  <div class="homepage-mobile-icon">
+    <a href="<?php bloginfo('url'); ?>">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/svg/homepage-mobile.svg" alt="">
+    </a>
+  </div>
   <div class="mobile-menu-items">
 
 
@@ -92,29 +97,7 @@
         </a>
       </div>
       <?php endif; wp_reset_postdata();?>
+
     </div>
-
-
-
-
-
-
-    <?php //wp_nav_menu( array('menu' => 'Top Mobile Menu')); ?>
-    <!-- <ul>
-      <li><a href="#">Sundlaugar</a></li>
-      <li><a href="#">Heitar laugar</a></li>
-      <li><a href="#">Opnunartímar</a></li>
-      <li><a href="#">Sundkennsla</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">Hafa samband</a></li>
-      <li><a href="#">Auglýsingar</a></li>
-      <li><a href="#">Senda inn frétt</a></li>
-      <li><a href="#">Tilkynna villu</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">Fréttir / Tilkynningar</a></li>
-      <li><a href="#">Tilgangur vefsins</a></li>
-    </ul> -->
   </div>
 </div>

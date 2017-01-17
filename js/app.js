@@ -6,8 +6,12 @@
   });
 })(jQuery);
 
+var inputFocus = document.getElementById('s');
+
 document.getElementById('magnifier-tool').addEventListener('click', function() {
+  console.log('Magnifier tool clicked');
   $('#nav-search-form').addClass('display-search-form').removeClass('close-search-form');
+  inputFocus.focus();
 });
 
 document.getElementById('nav-close-icon').addEventListener('click', function() {

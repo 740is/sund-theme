@@ -1,5 +1,6 @@
 .single-posts-area,
 .swp-single-posts-area {
+  background: $bkg-gray;
   position: relative;
   min-height: 100vh;
   z-index: 1;
@@ -119,8 +120,21 @@ img.size-thumbnail.alignright {
   line-height: 1em;
 }
 
+.search-results-area {
+  background: $bkg-gray;
+}
+
 .search-results-list {
   padding: 60px 16px 30px;
+}
+
+.search-results-list span {
+  color: $red;
+  text-align: left;
+}
+
+.search-results-list h2 {
+  text-align: left;
 }
 
 .swp-headlines {
@@ -140,13 +154,8 @@ img.size-thumbnail.alignright {
   margin-right: -7px;
 }
 
-// .mobile-width {
-//   width: 290px;
-//   margin: 0 auto;
-// }
-
 .swp-contact-info {
-  display: flex;
+  display: block;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -190,13 +199,17 @@ img.size-thumbnail.alignright {
   margin-bottom: 0px;
 }
 
+.swp-price-list table {
+  width: 100%;
+}
+
 .swp-price-list tbody,
 .swp-price-list tbody:last-of-type {
   border-bottom: 35px solid;
 }
 
 .swp-price-list tbody:first-of-type {
-  border-top: 35px solid;
+  border-top: 15px solid;
 }
 
 .swp-price-list tbody,
@@ -212,14 +225,18 @@ img.size-thumbnail.alignright {
 .swp-price-list th {
   font-size: 0.9em;
   color: #555;
-  padding-bottom: 5px;
-
 }
 
 .swp-price-list td {
   font-size: 0.85em;
   padding: 5px;
   color: #777;
+}
+
+.price-more-info {
+  font-size: 0.85em;
+  margin-top: -30px;
+  margin-bottom: 60px;
 }
 
 .swp-images-mobile {
@@ -287,8 +304,12 @@ img.size-thumbnail.alignright {
   width: 82px;
 }
 
-#frettir img {
+#frettir-ad-banner {
   width: 100%;
+}
+
+.frettir-texti-tvo {
+  padding-top: 50px;
 }
 
 @include mobile-landscape-nrw {
@@ -344,6 +365,10 @@ img.size-thumbnail.alignright {
   .swp-contact-info p {
     font-size: 0.85em;
     margin-bottom: 5px;
+  }
+
+  .swp-price-list table {
+    width: 74%;
   }
 
   .single-post i {
@@ -405,10 +430,7 @@ img.size-thumbnail.alignright {
   }
 
   .swp-price-list th {
-    font-size: 1.25em;
-    // color: #555;
-    // padding-bottom: 5px;
-
+    font-size: 1.05em;
   }
 
   .swp-price-list td {
