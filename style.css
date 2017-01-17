@@ -1373,7 +1373,7 @@ div#lang_sel_list ul {
   .language-selection {
     position: fixed;
     display: block;
-    top: 30px;
+    top: 25px;
     right: 15px;
     z-index: 1001; }
 

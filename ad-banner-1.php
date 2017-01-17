@@ -15,6 +15,32 @@
   $adBannerThreeImage = get_field($adBannerThree, $post_id);
   $adBannerThreeTheUrl = get_field($adBannerThreeUrl, $post_id);
 ?>
+
+<?php
+// $image1 = $adBannerOneImage['url'];
+// $image2 = $adBannerTwoImage['url'];
+// $image3 = $adBannerThreeImage['url'];
+// echo "Tegund: " . gettype($image1);
+// echo $image1;
+// $bannerImages = array($image1, $image2, $image3);
+// $bannerUrls = array($adBannerOneTheUrl, $adBannerTwoTheUrl, $adBannerThreeTheUrl);
+// $rand_keys = array_rand($bannerImages, 3);
+// echo "Random: ";
+// var_dump($rand_keys);
+// echo "<p>" . $bannerImages[1] . "</p>";
+// echo $bannerImages[$rand_keys[0]] . "\n";
+// echo $bannerImages[$rand_keys[1]] . "\n";
+// echo $bannerImages[$rand_keys[2]] . "\n";
+?>
+<?php
+// $input = array("Neo", "Morpheus", "Trinity", "Cypher", "Tank");
+// $rand_key = array_rand($input, 3);
+// var_dump($rand_key);
+// echo $input[$rand_key[0]] . "\n";
+// echo $input[$rand_key[1]] . "\n";
+// echo $input[$rand_key[2]] . "\n";
+?>
+
 <div dir="ltr" class="ads-banners">
   <div class="ads-banners-overflow-hidden">
     <div>
