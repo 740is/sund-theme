@@ -419,7 +419,9 @@ img.size-thumbnail.alignright {
   }
 
   .swp-images {
-    float: right;
+    position: absolute;
+    width: 167px;
+    // float: right;
     right: -30px;
     margin: 0px 0 0px 20px;
     position: relative;
