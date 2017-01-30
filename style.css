@@ -116,8 +116,8 @@ input#s,
 input#searchsubmit {
   font-family: 'Raleway', arial, sans-serif;
   font-weight: 400;
-  font-size: .85em;
-  margin-top: 0.8em; }
+  font-size: .85rem;
+  margin-top: 0.8rem; }
 
 li {
   margin-top: 0.8em;
@@ -154,7 +154,7 @@ img {
 
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1em; }
+    font-size: 1rem; }
 
   h1 {
     font-size: 6.854em; }
@@ -203,7 +203,8 @@ nav {
 
 .menu-button:hover,
 .search:hover,
-.close-search-field:hover {
+.close-search-field:hover,
+#nav-close-icon:hover {
   cursor: pointer; }
 
 .middle-stripe {
@@ -397,7 +398,7 @@ input#s:focus {
 
   .search {
     position: relative;
-    right: 50px; }
+    right: 65px; }
 
   .mobile-flags-padding {
     padding: 0; }
@@ -423,6 +424,9 @@ input#s:focus {
   border-color: #ffffff; }
 
 .wpml-ls-statics-shortcode_actions {
+  background-color: #ffffff; }
+
+.wpml-ls-statics-shortcode_actions a:hover, .wpml-ls-statics-shortcode_actions a:focus {
   background-color: #ffffff; }
 
 .wrapper {
@@ -636,8 +640,7 @@ div#selection-buttons-clearfix {
 .swp-opening-hours h4 {
   margin-top: 2em; }
 
-.latest-flex-container,
-.search-results-flex-container {
+.latest-flex-container {
   display: flex;
   flex-wrap: wrap; }
 
@@ -649,8 +652,9 @@ div#selection-buttons-clearfix {
   justify-content: space-between; }
 
 .search-results-flex-container {
-  max-width: 34em;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block; }
 
 .latest-posts ul,
 .mobile-menu-items ul,
@@ -708,7 +712,7 @@ li.stadsetningar:hover {
   text-decoration: none; }
 
 .latest-post-title {
-  font-size: 0.9em; }
+  font-size: 1.2em; }
 
 i.latest-post-date {
   display: block;
@@ -791,11 +795,13 @@ i.latest-post-date {
 
   .latest-flex-item {
     flex: 1 270px;
-    margin-right: 19px;
     margin-bottom: 9px; }
 
   .latest-flex-item:nth-child(2n) {
     margin-right: 0; }
+
+  .latest-posts li:nth-of-type(2n) {
+    margin-left: 10px; }
 
   .swimmer {
     height: 230px; }
@@ -847,7 +853,7 @@ i.latest-post-date {
     padding: 15px 0 70px; }
 
   .latest-post-title {
-    font-size: 1.3em; }
+    font-size: 1.3rem; }
 
   .region-buttons-area,
   .hot-spring-area {
@@ -1037,7 +1043,7 @@ img.size-thumbnail.alignright {
 
 .swp-opening-hours ul {
   margin-top: -5px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   list-style: none; }
 
 .swp-opeing-hours ul svg {
@@ -1048,7 +1054,7 @@ img.size-thumbnail.alignright {
 
 .swp-price-list table {
   width: 100%;
-  font-size: 0.4em; }
+  font-size: 2.1vw; }
 
 .swp-price-list tbody,
 .swp-price-list tbody:last-of-type {
@@ -1067,12 +1073,19 @@ img.size-thumbnail.alignright {
 
 .swp-price-list th {
   font-size: 0.9em;
-  color: #555; }
+  font-weight: 600;
+  color: #58b7e7; }
 
 .swp-price-list td {
   font-size: 0.85em;
   padding: 5px;
   color: #777; }
+
+.swp-price-list td {
+  border-right: 1px solid; }
+
+.swp-price-list td:last-of-type {
+  border: 0; }
 
 .price-more-info {
   font-size: 0.85em;
@@ -1080,7 +1093,9 @@ img.size-thumbnail.alignright {
   margin-bottom: 60px; }
 
 .swp-images-mobile {
-  max-width: 338px;
+  max-width: 164px;
+  height: 321px;
+  overflow: hidden;
   display: block;
   margin: 60px auto; }
 
@@ -1140,10 +1155,17 @@ img.size-thumbnail.alignright {
 .frettir-texti-tvo {
   padding-top: 50px; }
 
+@media screen and (min-width: 480px) {
+  .swp-images-mobile {
+    max-width: 344px;
+    height: 311px; } }
 @media screen and (min-width: 640px) {
   .feature-image img {
     height: 100px;
-    width: 100px; } }
+    width: 100px; }
+
+  .swp-price-list table {
+    font-size: 0.8em; } }
 @media screen and (min-width: 768px) {
   .single-post,
   .swp-single-post {
@@ -1203,6 +1225,8 @@ img.size-thumbnail.alignright {
 
   .swp-images {
     position: absolute;
+    overflow: scroll;
+    height: 520px;
     width: 167px;
     right: -30px;
     margin: 0px 0 0px 20px; }
@@ -1352,7 +1376,7 @@ div.wpcf7-mail-sent-ng {
 
 .language-selection-mobile {
   position: fixed;
-  top: 61px;
+  top: 56px;
   right: 0px;
   z-index: 1001; }
 
@@ -1388,7 +1412,7 @@ div#lang_sel_list ul {
     position: fixed;
     display: block;
     top: 25px;
-    right: 15px;
+    right: 30px;
     z-index: 1001; }
 
   .language-selection ul {

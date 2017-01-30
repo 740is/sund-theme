@@ -257,8 +257,7 @@ div#selection-buttons-clearfix {
   margin-top: 2em;
 }
 
-.latest-flex-container,
-.search-results-flex-container {
+.latest-flex-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -273,8 +272,9 @@ div#selection-buttons-clearfix {
 }
 
 .search-results-flex-container {
-  max-width: 34em;
+  width: 100%;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .latest-posts ul,
@@ -367,7 +367,7 @@ li.stadsetningar:hover {
 }
 
 .latest-post-title {
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 i.latest-post-date {
@@ -469,12 +469,16 @@ i.latest-post-date {
 
   .latest-flex-item {
     flex: 1 270px;
-    margin-right: 19px;
+    // margin-right: 19px;
     margin-bottom: 9px;
   }
 
   .latest-flex-item:nth-child(2n) {
     margin-right: 0;
+  }
+
+  .latest-posts li:nth-of-type(2n) {
+      margin-left: 10px;
   }
 
   .swimmer {
@@ -542,7 +546,7 @@ i.latest-post-date {
   }
 
   .latest-post-title {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   .region-buttons-area,

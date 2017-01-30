@@ -3,7 +3,9 @@
 ?>
 
 <?php include('header.php'); ?>
-<div class="latest-posts region-buttons-area wrapper">
+
+<?php include('ad-banner-1.php'); ?>
+<div class="latest-posts">
   <!-- ========== WP Page: Heitar laugar =========  -->
   <div class="a">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -187,7 +187,7 @@ img.size-thumbnail.alignright {
 
 .swp-opening-hours ul {
   margin-top: -5px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   list-style: none;
 }
 
@@ -201,7 +201,7 @@ img.size-thumbnail.alignright {
 
 .swp-price-list table {
   width: 100%;
-  font-size: 0.4em;
+  font-size: 2.1vw;
 }
 
 .swp-price-list tbody,
@@ -225,13 +225,22 @@ img.size-thumbnail.alignright {
 
 .swp-price-list th {
   font-size: 0.9em;
-  color: #555;
+  font-weight: 600;
+  color: $theme-blue;
 }
 
 .swp-price-list td {
   font-size: 0.85em;
   padding: 5px;
   color: #777;
+}
+
+.swp-price-list td {
+    border-right: 1px solid;
+}
+
+.swp-price-list td:last-of-type {
+    border: 0;
 }
 
 .price-more-info {
@@ -241,7 +250,9 @@ img.size-thumbnail.alignright {
 }
 
 .swp-images-mobile {
-  max-width: 338px;
+  max-width: 164px;
+  height: 321px;
+  overflow: hidden;
   display: block;
   margin: 60px auto;
 }
@@ -315,7 +326,10 @@ img.size-thumbnail.alignright {
 }
 
 @include mobile-landscape-nrw {
-
+  .swp-images-mobile {
+    max-width: 344px;
+    height: 311px;
+  }
 }
 
 @include mobile-landscape {
@@ -324,25 +338,9 @@ img.size-thumbnail.alignright {
     width: 100px;
   }
 
-  // .swp-images-mobile {
-  //   display: block;
-  // }
-  //
-  // .swp-images-display {
-  //   display: none;
-  // }
-
-  // .swp-images {
-  //   float: right;
-  //   right: -30px;
-  //   margin: 0px 0 0px 20px;
-  //   position: relative;
-  // }
-
-  // .mobile-width {
-  //   width: 100%;
-  // }
-
+  .swp-price-list table {
+    font-size: 0.8em;
+  }
 }
 
 @include tablets {
@@ -423,8 +421,9 @@ img.size-thumbnail.alignright {
 
   .swp-images {
     position: absolute;
+    overflow: scroll;
+    height: 520px;
     width: 167px;
-    // float: right;
     right: -30px;
     margin: 0px 0 0px 20px;
   }

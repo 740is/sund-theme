@@ -36,7 +36,8 @@ nav {
 
 .menu-button:hover,
 .search:hover,
-.close-search-field:hover {
+.close-search-field:hover,
+#nav-close-icon:hover {
   cursor: pointer;
 }
 
@@ -272,7 +273,7 @@ input#s:focus {
 
   .search {
     position: relative;
-    right: 50px;
+    right: 65px;
   }
 
   .mobile-flags-padding {
@@ -312,4 +313,8 @@ input#s:focus {
 
 .wpml-ls-statics-shortcode_actions {
   background-color: #ffffff;
+}
+
+.wpml-ls-statics-shortcode_actions a:hover, .wpml-ls-statics-shortcode_actions a:focus {
+    background-color: #ffffff;
 }

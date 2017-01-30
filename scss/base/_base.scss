@@ -32,8 +32,8 @@ input#s,
 input#searchsubmit {
   font-family: 'Raleway', arial, sans-serif;
 	font-weight: 400;
-  font-size: .85em;
-  margin-top: 0.8em;
+  font-size: .85rem;
+  margin-top: 0.8rem;
 }
 
 
@@ -80,7 +80,7 @@ img {
 
 @include tablets {
   p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   h1 {
