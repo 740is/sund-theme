@@ -117,7 +117,7 @@
 
     // The Query
     $the_query = new WP_Query( array(
-      'post_type' => 'post',
+      'post_type' => 'frettir',
       'posts_per_page' => $number_of_posts
     ));
 

@@ -201,6 +201,7 @@ img.size-thumbnail.alignright {
 
 .swp-price-list table {
   width: 100%;
+  font-size: 0.4em;
 }
 
 .swp-price-list tbody,
@@ -240,8 +241,9 @@ img.size-thumbnail.alignright {
 }
 
 .swp-images-mobile {
+  max-width: 338px;
   display: block;
-  margin: 60px 0;
+  margin: 60px auto;
 }
 
 .swp-images-display {
@@ -368,7 +370,7 @@ img.size-thumbnail.alignright {
   }
 
   .swp-price-list table {
-    width: 74%;
+    width: 100%;
   }
 
   .single-post i {
@@ -397,6 +399,7 @@ img.size-thumbnail.alignright {
   }
 
   .swp-single-post {
+    position: relative;
     max-width: 43em;
   }
 
@@ -420,11 +423,10 @@ img.size-thumbnail.alignright {
 
   .swp-images {
     position: absolute;
-    width: 167px
+    width: 167px;
     // float: right;
     right: -30px;
     margin: 0px 0 0px 20px;
-    position: relative;
   }
 
   .swp-images img {

@@ -304,3 +304,12 @@ input#s:focus {
     padding: 5px 10px;
   }
 }
+
+/* WPML overwrite */
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+  border-color: #ffffff;
+}
+
+.wpml-ls-statics-shortcode_actions {
+  background-color: #ffffff;
+}

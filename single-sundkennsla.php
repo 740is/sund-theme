@@ -1,9 +1,15 @@
 <?php include('header.php'); ?>
 
 <?php
+  $facebookUrl = get_field('field_588e7abe203d4');
+  $emailUrl = get_field('field_588e7b1c203d7');
+  $webUrl = get_field('field_588e7b0b203d6');
+
+
   $phoneIcon = "phone-call.svg";
   $emailIcon = "email.svg";
   $webIcon = "worldwide.svg";
+  $facebookIcon = "facebook.svg";
 ?>
 
 <!-- <div class="latest-posts wrapper"> -->
@@ -11,36 +17,56 @@
     <div class="swp-single-post">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="swp-headlines">
-        <?php the_title(); ?>
-        <h2><?php the_field('field_57f40974fd4fa'); ?></h2>
-        <h4><?php the_field('field_57f546e7798b8'); ?></h4>
-      </div>
-
-      <div class="swp-images swp-images-display">
-        <?php the_field('field_57f54ff01c83b'); ?>
+        <h2><?php the_title(); ?></h2>
       </div>
 
       <div class="swp-contact-info mobile-width">
-        <p><?php get_template_part('assets/svg/inline', $phoneIcon); ?><?php the_field('field_57f561fd0c57b'); ?></p>
-        <p><?php get_template_part('assets/svg/inline', $emailIcon); ?><?php the_field('field_57f561e00c57a'); ?></p>
-        <p><?php get_template_part('assets/svg/inline', $webIcon); ?><a href="<?php the_field('field_57f5620d0c57c'); ?>"><?php the_field('field_57f5620d0c57c'); ?></a></p>
-      </div>
+        <p><?php get_template_part('assets/svg/inline', $phoneIcon); ?><?php the_field('field_588e7af9203d5'); ?></p>
+        <?php
+          if(!$emailUrl) {
+            echo '';
+          } else {
+            echo '<p>';
+            get_template_part('assets/svg/inline', $emailIcon);
+            echo '<a href="mailto:';
+            the_field('field_588e7b1c203d7');
+            echo '?subject=Fyrirspurn%20af%20sundlaugar.is%20/%20Inquiry%20from%20swimminginiceland.is">';
+            the_field('field_588e7b1c203d7');
+            echo '</a></p>';
+          }
+        ?>
 
-      <div class="swp-opening-hours mobile-width">
-        <?php the_field('field_57f409b5fd4fb'); ?>
-      </div>
+        <?php
+          if(!$webUrl) {
+            echo '';
+          } else {
+            echo '<p>';
+            get_template_part('assets/svg/inline', $webIcon);
+            echo '<a href="';
+            the_field('field_588e7b0b203d6');
+            echo '" target="_blank">';
+            the_field('field_588e7f2c8aa83');
+            echo '</a></p>';
+          }
+        ?>
 
-      <div class="swp-price-list mobile-width">
-        <?php the_field('field_57f5498f798b9'); ?>
-      </div>
-
-      <div class="swp-images swp-images-mobile">
-        <?php the_field('field_57f54ff01c83b'); ?>
+        <?php
+          if(!$facebookUrl) {
+            echo '';
+          } else {
+            echo '<p>';
+            get_template_part('assets/svg/inline', $facebookIcon);
+            echo '<a href="';
+            the_field('field_588e7b0b203d6');
+            echo '" target="_blank">';
+            the_field('field_588e7f448aa84');
+            echo '</a></p>';
+          }
+        ?>
       </div>
 
       <div class="swp-description">
         <?php the_content(); ?>
-        <?php the_field('field_57f409fefd4fc'); ?>
       </div>
 
     <?php endwhile; endif; ?>

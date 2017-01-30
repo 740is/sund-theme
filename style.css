@@ -1,102 +1,1457 @@
+/* #58B7E7 */
+li.opid,
+div.opid {
+  border-left: 4px solid #3344B4;
+  background: rgba(51, 68, 180, 0.1); }
+  li.opid a,
+  div.opid a, li.opid h2,
+  div.opid h2 {
+    color: #3344B4; }
+
+li.sundlaugar,
+div.sundlaugar {
+  border-left: 4px solid #B45533;
+  background: rgba(180, 85, 51, 0.1); }
+  li.sundlaugar a,
+  div.sundlaugar a, li.sundlaugar h2,
+  div.sundlaugar h2 {
+    color: #B45533; }
+
+li.stadsetningar,
+div.stadsetningar {
+  border-left: 4px solid #9A621C;
+  background: rgba(154, 98, 28, 0.1); }
+  li.stadsetningar a,
+  div.stadsetningar a, li.stadsetningar h2,
+  div.stadsetningar h2 {
+    color: #9A621C; }
+
+li.frettir,
+div.frettir,
+li.news,
+div.news {
+  border-left: 4px solid #9A9733;
+  background: rgba(154, 151, 51, 0.1); }
+  li.frettir a,
+  div.frettir a,
+  li.news a,
+  div.news a, li.frettir h2,
+  div.frettir h2,
+  li.news h2,
+  div.news h2 {
+    color: #9A9733; }
+
+li.opid h2,
+div.opid h2,
+li.sundlaugar h2,
+div.sundlaugar h2,
+li.stadsetningar h2,
+div.stadsetningar h2,
+li.frettir h2,
+div.frettir h2,
+li.news h2,
+div.news h2 {
+  font-weight: bold; }
+
+li.frettir,
+li.news,
+li.opid,
+li.sundlaugar,
+li.stadsetningar,
+#swimming-pools,
+#opening-hours,
+#locations,
+#announcements,
+#sund-kennsla,
+.swp-listing-bkg,
+.button-more-announcement,
+.footer-menu-items li,
+.direction a {
+  transition: .5s; }
+
+li.frettir:hover,
+li.news:hover,
+li.opid:hover,
+li.sundlaugar:hover,
+li.stadsetningar:hover,
+#swimming-pools:hover,
+#opening-hours:hover,
+#locations:hover,
+#announcements:hover,
+#sund-kennsla:hover,
+.swp-listing-bkg:hover,
+.button-more-announcement:hover,
+.footer-menu-items li:hover,
+.direction a:hover {
+  transition: .7s; }
+
 /*
-Error: Invalid CSS after "    right": expected ";", was ": -30px;"
-        on line 425 of /Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/layout/_posts_pages.scss
-        from line 6 of /Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/layout/_index.scss
-        from line 7 of /Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/style.scss
+Theme Name: Webpage for sundlaugar.is
+Theme URI: http://sundlaugar.is/
+Description: A custom WordPress information website for sundlaugar.is.
+Author: Steingrimur
+Author URI: http://740.is
+Version: 1.0
+Tags: clean, light, responsive, swimming, swim, pool
 
-420: 
-421:   .swp-images {
-422:     position: absolute;
-423:     width: 167px
-424:     // float: right;
-425:     right: -30px;
-426:     margin: 0px 0 0px 20px;
-427:     position: relative;
-428:   }
-429: 
-430:   .swp-images img {
-
-Backtrace:
-/Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/layout/_posts_pages.scss:425
-/Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/layout/_index.scss:6
-/Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/style.scss:7
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:777:in `block in try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:245:in `include_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    right\": expected \";\", was \": -30px;\"\A         on line 425 of /Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/layout/_posts_pages.scss\A         from line 6 of /Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/layout/_index.scss\A         from line 7 of /Users/steingrimur/htdocs/sundlaugar.is/wp-content/themes/sund-theme/scss/style.scss\A \A 420: \A 421:   .swp-images {\A 422:     position: absolute;\A 423:     width: 167px\A 424:     // float: right;\A 425:     right: -30px;\A 426:     margin: 0px 0 0px 20px;\A 427:     position: relative;\A 428:   }\A 429: \A 430:   .swp-images img {"; }
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+p {
+  font-size: .85em;
+  margin-top: 0.1em;
+  line-height: 1.83em;
+  margin-bottom: 1.6em; }
+
+p, li, td, th,
+.latest-post-title,
+.latest-post-excerpt,
+input#s,
+input#searchsubmit {
+  font-family: 'Raleway', arial, sans-serif;
+  font-weight: 400;
+  font-size: .85em;
+  margin-top: 0.8em; }
+
+li {
+  margin-top: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 1.45em; }
+
+h1,
+h2,
+h3,
+h4,
+.latest-post-title {
+  font-family: 'Poiret One', cursive, arial, sans-serif; }
+
+h1 {
+  font-size: 4.254em; }
+
+h2 {
+  font-size: 2.636em;
+  margin-top: 0.98em;
+  margin-bottom: 0.45em; }
+
+h3 {
+  color: blue;
+  font-size: 1.618em; }
+
+h4 {
+  font-size: 1.25em; }
+
+img {
+  display: block; }
+
+.lighter-box-shadow {
+  box-shadow: 3px 3px 6px #c0c0c0; }
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1em; }
+
+  h1 {
+    font-size: 6.854em; }
+
+  h2 {
+    font-size: 4.236em; }
+
+  h3 {
+    font-size: 2.618em; }
+
+  h4 {
+    font-size: 1.618em; } }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: inline-flex;
+  justify-content: space-around;
+  height: 90px;
+  border-bottom: 4px solid #E7A758;
+  z-index: 1000; }
+
+.homepage-icon {
+  display: none; }
+
+.homepage-mobile-icon {
+  position: relative;
+  width: 30px;
+  height: auto;
+  margin: 20px auto 0;
+  z-index: 1002; }
+
+.menu-button {
+  position: relative;
+  left: 25px; }
+
+.menu-button svg,
+.search svg,
+.search-field svg,
+.homepage-icon img {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: #3344B4; }
+
+.menu-button:hover,
+.search:hover,
+.close-search-field:hover {
+  cursor: pointer; }
+
+.middle-stripe {
+  border: 1px solid #b43333;
+  width: 20px;
+  transition: 0.1s; }
+
+.middle-stripe-invisible {
+  border: 0;
+  transition: 0.3s; }
+
+#upper-stripe,
+#lower-stripe {
+  border: 1px solid #3344B4;
+  width: 20px; }
+
+.upper-stripe,
+.lower-stripe {
+  transition: 0.3s; }
+
+.upper-stripe {
+  margin-bottom: 8px; }
+
+.lower-stripe {
+  margin-top: 8px; }
+
+.upper-stripe-close {
+  margin-bottom: -2px;
+  transition: 0.3s; }
+
+.lower-stripe-close {
+  margin-top: -2px;
+  transition: 0.3s; }
+
+.rotate-right {
+  transform: rotateZ(45deg);
+  transition: 0.7s; }
+
+.rotate-left {
+  transform: rotateZ(-45deg);
+  transition: 0.7s; }
+
+.logo svg {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: #3344B4;
+  padding: 0 0 0 5px;
+  height: 40px; }
+
+.search {
+  position: relative;
+  right: 25px; }
+
+.close-search-field svg {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: #3344B4;
+  height: 35px;
+  margin-left: 10px; }
+
+.nav-flex-item {
+  align-self: center; }
+
+.nav-flex-item-2 {
+  margin: auto; }
+
+.mobile-flags-padding {
+  padding: 7px 0 30px; }
+
+.display-search-form {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  display: inline-flex;
+  justify-content: center;
+  height: 61px;
+  width: 100%;
+  background: #fff; }
+
+#nav-close-icon {
+  margin-right: 15px;
+  margin-top: 15px; }
+
+/* Search form overwrite for mobile */
+label.screen-reader-text,
+.close-search-form {
+  display: none; }
+
+input#s,
+input#searchsubmit {
+  height: 30px;
+  font-size: 0.85em; }
+
+input#s {
+  border: 1px solid #58b7e7;
+  width: 150px; }
+
+input#searchsubmit {
+  border: #000;
+  background: #465C67;
+  color: #fff;
+  padding: 5px 10px; }
+
+input#s:focus {
+  box-shadow: 0px 0px 4px #58b7e7;
+  outline: none; }
+
+#mobile-menu {
+  display: none; }
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  top: 90px;
+  background: #58b7e7;
+  color: #FFF;
+  z-index: 999; }
+
+.mobile-menu-items {
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.mobile-menu-items ul {
+  margin: 0; }
+
+.mobile-menu-items li {
+  margin: 0; }
+
+.mobile-menu-items li:hover {
+  background: #3344B4; }
+
+.mobile-menu-items a {
+  display: block;
+  padding: 10px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center; }
+
+@media screen and (min-width: 480px) {
+  .menu-button {
+    left: 0; }
+
+  .mobile-menu-items {
+    margin-top: 20px; }
+
+  .mobile-menu-items a {
+    padding: 0; }
+
+  .homepage-icon {
+    display: block;
+    margin: 0 20px; }
+
+  .homepage-mobile-icon {
+    display: none; }
+
+  .search {
+    right: 25px; } }
+@media screen and (min-width: 768px) {
+  nav {
+    height: 116px; }
+
+  #upper-stripe,
+  #lower-stripe {
+    border: 2px solid #3344B4;
+    width: 30px; }
+
+  .middle-stripe {
+    border: 2px solid #b43333;
+    width: 30px;
+    transition: 0.1s; }
+
+  .middle-stripe-invisible {
+    border: 0;
+    transition: 0.3s; }
+
+  .upper-stripe-close {
+    margin-bottom: -4px; }
+
+  .lower-stripe-close {
+    margin-top: -4px; }
+
+  .logo svg {
+    height: 50px; }
+
+  .mobile-menu {
+    top: 116px; }
+
+  .search {
+    position: relative;
+    right: 50px; }
+
+  .mobile-flags-padding {
+    padding: 0; }
+
+  .display-search-form {
+    top: 0px; }
+
+  input#s,
+  input#searchsubmit {
+    height: 40px;
+    font-size: 1em; }
+
+  input#s {
+    width: 330px;
+    margin-right: -2px;
+    padding-left: 10px;
+    color: #777; }
+
+  input#searchsubmit {
+    padding: 5px 10px; } }
+/* WPML overwrite */
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+  border-color: #ffffff; }
+
+.wpml-ls-statics-shortcode_actions {
+  background-color: #ffffff; }
+
+.wrapper {
+  position: relative;
+  min-height: calc(100vh - 150px);
+  margin-top: 90px;
+  background: #f1f1f1;
+  z-index: 0; }
+
+.hero-image-area,
+.wrapper {
+  background: #f1f1f1; }
+
+.hero-image {
+  display: none; }
+
+.hero-image {
+  width: 100%; }
+
+div#selection-buttons-clearfix {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px; }
+
+.selection-buttons {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 390px;
+  width: 350px;
+  padding: 45px 25px; }
+
+.selection-button {
+  position: relative;
+  background: #58b7e7;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  box-shadow: 0px 0px 4px #58b7e7; }
+
+.selection-buttons-icon {
+  position: relative;
+  top: 20px;
+  text-align: center; }
+
+.selection-buttons-icon svg {
+  height: 40px;
+  fill: #fff; }
+
+.selection-button {
+  box-shadow: 0px 0px 10px 3px #fff; }
+
+#swimming-pools {
+  border: 1px solid #B45533; }
+
+.selection-button#swimming-pools:hover {
+  background: #B45533; }
+
+#opening-hours,
+#sund-kennsla {
+  border: 1px solid #3344B4; }
+
+.selection-button#opening-hours:hover,
+.selection-button#sund-kennsla:hover {
+  background: #3344B4; }
+
+#locations {
+  border: 1px solid #9A621C; }
+
+.selection-button#locations:hover {
+  background: #9A621C; }
+
+#announcements {
+  border: 1px solid #9A9733; }
+
+.selection-button#announcements:hover {
+  background: #9A9733; }
+
+.buttons-text-banner {
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  bottom: 0; }
+
+.buttons-text-banner p {
+  line-height: 1em;
+  color: #fff;
+  margin: 6px 0;
+  text-align: center; }
+
+.buttons-text-banner-en p {
+  line-height: 1.3em;
+  font-size: 0.7em; }
+
+.swimming-pools-text-banner {
+  background: #B45533; }
+
+.opening-hours-text-banner,
+.sund-kennsla-text-banner {
+  background: #3344B4; }
+
+.locations-text-banner {
+  background: #9A621C; }
+
+.announcements-text-banner,
+.button-more-announcement {
+  background: #9A9733; }
+
+/* Ad banners */
+.ads-banners {
+  background: #f1f1f1;
+  z-index: -1;
+  width: 100%; }
+
+.ads-banners img {
+  width: 100%; }
+
+.ad-cubes-area {
+  position: relative;
+  background: #f1f1f1;
+  width: 100%;
+  z-index: 1; }
+
+.ad-cubes-area-content {
+  position: relative;
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 1; }
+
+.ads-banners-overflow-hidden,
+.ads-cube-one-overflow-hidden,
+.ads-cube-two-overflow-hidden {
+  overflow: hidden;
+  position: relative;
+  margin: auto; }
+
+.ads-banners-overflow-hidden {
+  max-width: 728px; }
+
+.ads-cube-one-overflow-hidden,
+.ads-cube-two-overflow-hidden {
+  max-width: 310px; }
+
+.ads-banners,
+.ad-banner-one,
+.ad-cube-one,
+.ad-cube-two {
+  position: relative; }
+
+.ad-banner-one,
+.ad-cube-one,
+.ad-cube-two {
+  margin: 0 5px; }
+
+.ad-banner-one {
+  padding-top: 33px; }
+
+.ad-cube-one,
+.ad-cube-two {
+  padding-bottom: 33px; }
+
+/* Latest posts section */
+.latest-posts,
+.announcements-bkg,
+.region-buttons-area,
+.swp-single-posts-area {
+  background: #f1f1f1;
+  position: relative; }
+
+.latest-posts {
+  padding: 30px 20px 40px; }
+
+.region-buttons-area {
+  padding: 20px 0; }
+
+.latest-posts-content,
+.region-buttons-content {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  z-index: 2; }
+
+.latest-posts h2,
+.search-results-list h2 {
+  font-size: 2.136em;
+  padding-top: 2rem;
+  padding-bottom: 20px;
+  margin-top: 0; }
+
+.latest-posts h2,
+.search-results-list h2,
+.swp-single-post h2,
+.region-buttons-area h2,
+.single-post h2 {
+  text-align: center;
+  color: #58b7e7;
+  text-shadow: 2px 2px 5px #c0c0c0; }
+
+.swp-price-list h4,
+.swp-opening-hours h4,
+.swp-images h4,
+.swp-description h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.6em; }
+
+.swp-price-list h4,
+.swp-opening-hours h4 {
+  margin-top: 2em; }
+
+.latest-flex-container,
+.search-results-flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.latest-flex-item,
+.search-results-flex-item {
+  flex-grow: 1; }
+
+.latest-flex-container {
+  justify-content: space-between; }
+
+.search-results-flex-container {
+  max-width: 34em;
+  margin: 0 auto; }
+
+.latest-posts ul,
+.mobile-menu-items ul,
+.search-results-list ul,
+.region-buttons-area ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 2; }
+
+.latest-posts li,
+.search-results-list li {
+  padding: 7px; }
+
+.latest-posts li p {
+  margin-bottom: 0;
+  color: #444; }
+
+li.search-results-flex-item {
+  background: rgba(130, 130, 130, 0.1);
+  border-left: 4px solid #333;
+  transition: .5s; }
+
+li.search-results-flex-item:hover {
+  background: rgba(130, 130, 130, 0.4);
+  transition: .7s; }
+
+li.search-results-flex-item a {
+  display: block;
+  text-decoration: none;
+  color: #333; }
+
+li.frettir:hover,
+li.news:hover {
+  background: rgba(154, 151, 51, 0.4); }
+
+li.opid:hover {
+  background: rgba(51, 68, 180, 0.4); }
+
+li.sundlaugar:hover {
+  background: rgba(180, 85, 51, 0.4); }
+
+li.stadsetningar:hover {
+  background: rgba(154, 98, 28, 0.4); }
+
+.latest-posts a,
+.swp-single-post a {
+  text-decoration: none;
+  color: #3344B4;
+  font-weight: bold; }
+
+.latest-posts a:hover,
+.swp-single-post a:hover {
+  text-decoration: none; }
+
+.latest-post-title {
+  font-size: 0.9em; }
+
+i.latest-post-date {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-align: right;
+  color: #777; }
+
+.swimmer {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  height: 200px;
+  position: absolute;
+  margin-top: 30px;
+  z-index: -1; }
+
+.swimmer svg {
+  width: 220px;
+  fill-opacity: 0.2;
+  fill: #c0c0c0; }
+
+.button-more-announcement-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #f1f1f1;
+  padding-bottom: 80px;
+  margin-top: -50px;
+  z-index: 2; }
+
+.button-more-announcement {
+  position: relative;
+  border: 1px solid #656322; }
+
+.button-more-announcement p {
+  color: #fff;
+  margin: 0 0 0 5px;
+  font-size: 1em; }
+
+.button-more-announcement a {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 7px 7px 3px 3px; }
+
+.button-more-announcement svg {
+  height: 25px;
+  fill: #fff; }
+
+.button-more-announcement:hover {
+  background: #656322; }
+
+@media screen and (min-width: 480px) {
+  .selection-buttons {
+    flex-wrap: nowrap;
+    height: 230px;
+    width: 440px;
+    padding: 45px 5px; }
+
+  .selection-button {
+    height: 100px;
+    width: 100px;
+    margin: 8px; }
+
+  .swimmer svg {
+    width: 290px; }
+
+  .ad-cubes-area-content {
+    display: flex; }
+
+  .ads-cube-one-overflow-hidden,
+  .ads-cube-two-overflow-hidden {
+    max-width: 230px; } }
+@media screen and (min-width: 640px) {
+  .latest-posts, .region-buttons-area {
+    padding: 180px 30px 200px; }
+
+  .latest-flex-container {
+    margin: 0 auto 2em; }
+
+  .latest-flex-item {
+    flex: 1 270px;
+    margin-right: 19px;
+    margin-bottom: 9px; }
+
+  .latest-flex-item:nth-child(2n) {
+    margin-right: 0; }
+
+  .swimmer {
+    height: 230px; }
+
+  .swimmer svg {
+    width: 420px; } }
+@media screen and (min-width: 768px) {
+  .selection-buttons {
+    height: 200px; }
+
+  .wrapper {
+    margin-top: 115px; }
+
+  .display-search-form {
+    height: 111px; }
+
+  .hero-image-area {
+    height: 66.8vw;
+    background-color: transparent; }
+
+  .hero-image {
+    position: fixed;
+    display: block;
+    z-index: -5; }
+
+  .hero-image img {
+    max-width: 100%; }
+
+  .selection-buttons {
+    top: 75px;
+    width: 100%;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-content: center; }
+
+  .ads-cube-one-overflow-hidden,
+  .ads-cube-two-overflow-hidden {
+    max-width: 300px; }
+
+  .buttons-text-banner p {
+    line-height: 0.9em;
+    font-size: 0.9em; }
+
+  .buttons-text-banner-en p {
+    line-height: 1.3em;
+    font-size: 0.7em; }
+
+  .latest-posts {
+    padding: 15px 0 70px; }
+
+  .latest-post-title {
+    font-size: 1.3em; }
+
+  .region-buttons-area,
+  .hot-spring-area {
+    padding: 40px 0 0; }
+
+  .latest-posts h2,
+  .swp-single-post h2,
+  .region-buttons-area h2 {
+    font-size: 3.136em; }
+
+  .latest-flex-container,
+  .ad-banner-one,
+  .ad-cubes-area-content {
+    max-width: 728px; }
+
+  .button-more-announcement-area {
+    margin-top: -80px; }
+
+  .button-more-announcement a {
+    padding: 10px 10px 7px 7px; }
+
+  .ad-banner-one,
+  .ad-cube-one {
+    margin: 0 auto; }
+
+  .ad-cube-one {
+    max-width: 300px; }
+
+  .ad-cube-one img {
+    padding: 0; }
+
+  .swimmer {
+    height: 280px;
+    margin-top: 0; }
+
+  .swimmer svg {
+    width: 280px; } }
+.single-posts-area,
+.swp-single-posts-area {
+  background: #f1f1f1;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1; }
+
+.single-post,
+.swp-single-post,
+.search-results-list {
+  max-width: 34em;
+  margin: 0 auto;
+  padding: 7px 16px 30px; }
+
+.single-post h2 {
+  font-size: 1.636em;
+  line-height: 1.85em;
+  margin-top: 1.15em;
+  margin-bottom: 1.6em; }
+
+.single-post p,
+.swp-single-post p {
+  margin-bottom: 1.8em; }
+
+.single-post i {
+  margin-bottom: 0.8em; }
+
+.previous-link,
+.next-link {
+  display: inline; }
+
+.previous-link a,
+.next-link a {
+  text-decoration: none; }
+
+.next-link {
+  float: right; }
+
+img.size-thumbnail.alignleft,
+img.size-thumbnail.alignright {
+  position: relative;
+  box-shadow: 2px 2px 2px #888; }
+
+img.size-thumbnail.alignleft {
+  float: left;
+  margin-right: 5px;
+  left: -10px; }
+
+img.size-thumbnail.alignright {
+  float: right;
+  margin-left: 5px;
+  right: -10px; }
+
+.announcements-bkg {
+  position: relative;
+  padding: 50px 0;
+  margin: 0;
+  z-index: 0; }
+
+.region-buttons {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.region-buttons a {
+  text-decoration: none;
+  flex-basis: 250px;
+  margin-top: 50px;
+  color: #fff; }
+
+.region-buttons a:last-child {
+  margin-bottom: 120px; }
+
+.iceland-area-name {
+  height: 45px;
+  background: rgba(88, 183, 231, 0.1);
+  color: #58b7e7;
+  border-radius: 3px;
+  border: 1px solid #58b7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s; }
+
+.iceland-area-name:hover {
+  background: #58b7e7;
+  color: #3344B4;
+  transition: 0.7s; }
+
+.iceland-area-name p {
+  margin: 0;
+  line-height: 1em; }
+
+.search-results-area {
+  background: #f1f1f1; }
+
+.search-results-list {
+  padding: 60px 16px 30px; }
+
+.search-results-list span {
+  color: #b43333;
+  text-align: left; }
+
+.search-results-list h2 {
+  text-align: left; }
+
+.swp-headlines {
+  margin-bottom: 60px; }
+
+.swp-headlines h4 {
+  text-align: center;
+  margin-top: -7px;
+  color: #666; }
+
+.swp-headlines svg {
+  height: 22px;
+  position: relative;
+  top: 7px;
+  margin-right: -7px; }
+
+.swp-contact-info {
+  display: block;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 260px;
+  border: 1px solid #afafaf;
+  padding: 7px;
+  background: #dfdfdf;
+  box-shadow: 2px 2px 2px #888; }
+
+.swp-contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px; }
+
+.swp-contact-info svg {
+  height: 20px;
+  width: auto;
+  fill: #58b7e7;
+  margin-right: 5px; }
+
+.swp-opening-hours p {
+  margin-bottom: 0 !important;
+  font-weight: bold;
+  color: #333; }
+
+.swp-opening-hours ul {
+  margin-top: -5px;
+  margin-bottom: 40px;
+  list-style: none; }
+
+.swp-opeing-hours ul svg {
+  height: 10px; }
+
+.swp-opening-hours li {
+  margin-bottom: 0px; }
+
+.swp-price-list table {
+  width: 100%;
+  font-size: 0.4em; }
+
+.swp-price-list tbody,
+.swp-price-list tbody:last-of-type {
+  border-bottom: 35px solid; }
+
+.swp-price-list tbody:first-of-type {
+  border-top: 15px solid; }
+
+.swp-price-list tbody,
+.swp-price-list tbody:first-of-type,
+.swp-price-list tbody:last-of-type {
+  border-color: #f1f1f1; }
+
+.swp-price-list tr:nth-child(even) {
+  background: #dfdfdf; }
+
+.swp-price-list th {
+  font-size: 0.9em;
+  color: #555; }
+
+.swp-price-list td {
+  font-size: 0.85em;
+  padding: 5px;
+  color: #777; }
+
+.price-more-info {
+  font-size: 0.85em;
+  margin-top: -30px;
+  margin-bottom: 60px; }
+
+.swp-images-mobile {
+  max-width: 338px;
+  display: block;
+  margin: 60px auto; }
+
+.swp-images-display {
+  display: none; }
+
+.swp-images img {
+  box-shadow: 2px 2px 2px #888; }
+
+.swp-images.swp-images-mobile p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto; }
+
+.swp-images.swp-images-mobile p img {
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.swp-listing,
+.sund-kennsla-listing {
+  position: relative;
+  z-index: 2; }
+
+.swp-listing-title,
+.sund-kennsla-title {
+  margin: 0;
+  padding: 0.4em 0.5em;
+  font-size: 1.3em; }
+
+.swp-listing-bkg,
+.sund-kennsla-listing-bkg {
+  background: rgba(180, 85, 51, 0.1);
+  transition: .3s; }
+
+.swp-listing-bkg:hover,
+.sund-kennsla-listing-bkg:hover {
+  background: rgba(180, 85, 51, 0.3);
+  transition: .7s; }
+
+.feature-image {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  margin-left: 0px; }
+
+.feature-image img {
+  height: 82px;
+  width: 82px; }
+
+#frettir-ad-banner {
+  width: 100%; }
+
+.frettir-texti-tvo {
+  padding-top: 50px; }
+
+@media screen and (min-width: 640px) {
+  .feature-image img {
+    height: 100px;
+    width: 100px; } }
+@media screen and (min-width: 768px) {
+  .single-post,
+  .swp-single-post {
+    padding: 7px 16px 100px; }
+
+  .single-post h2 {
+    font-size: 2.636em;
+    line-height: 1.85em;
+    margin-top: 0.97em;
+    margin-bottom: 2.3em; }
+
+  .single-post p,
+  .swp-single-post p {
+    line-height: 1.65em;
+    margin-bottom: 1.63em; }
+
+  .swp-contact-info p {
+    font-size: 0.85em;
+    margin-bottom: 5px; }
+
+  .swp-price-list table {
+    width: 100%; }
+
+  .single-post i {
+    margin-bottom: 0.4em; }
+
+  .announcements-bkg {
+    padding: 30px 0; }
+
+  .region-buttons {
+    width: 740px; }
+
+  .swp-listing-title,
+  .sund-kennsla-title {
+    font-size: 1.618em; }
+
+  .swp-images-mobile {
+    display: none; }
+
+  .swp-images-display {
+    display: block; }
+
+  .swp-single-post {
+    position: relative;
+    max-width: 43em; }
+
+  .swp-headlines {
+    margin-bottom: 90px; }
+
+  .swp-headlines h4 {
+    margin-top: -10px; }
+
+  .swp-headlines svg {
+    height: 32px;
+    top: 11px;
+    margin-right: -11px; }
+
+  .swp-images {
+    position: absolute;
+    width: 167px;
+    right: -30px;
+    margin: 0px 0 0px 20px; }
+
+  .swp-images img {
+    margin-bottom: 15px; }
+
+  .swp-price-list th {
+    font-size: 1.05em; }
+
+  .swp-price-list td {
+    font-size: 1em; }
+
+  .feature-image img {
+    height: 120px;
+    width: 120px; } }
+@media screen and (min-width: 1024px) {
+  .region-buttons,
+  .region-buttons-content {
+    width: 940px;
+    margin: 0 auto; } }
+footer {
+  position: relative;
+  background: #465C67;
+  border-top: 4px solid #E7A758;
+  text-align: center; }
+
+.copyright {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0; }
+
+.copyright h4 {
+  margin: 0;
+  font-size: 0.8em; }
+
+.footer-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  top: 20px;
+  width: 227px;
+  margin: 0 auto 35px; }
+
+.footer-menu-items {
+  padding: 40px 0px;
+  margin: 5px;
+  background: rgba(160, 210, 226, 0.08); }
+
+.footer-menu-items ul {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  z-index: 2; }
+
+.footer-menu-items li {
+  color: #FFF;
+  margin: 0;
+  text-align: center; }
+
+.footer-menu-items li:hover {
+  background: #58b7e7; }
+
+.footer-menu-items a {
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #fff; }
+
+.footer-menu-item {
+  width: 227px; }
+
+@media screen and (min-width: 480px) {
+  .footer-menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 479px; }
+
+  .footer-menu-items {
+    max-width: 250px; } }
+/* Gallery overwrite */
+.separator-doubled {
+  display: none; }
+
+#svg-capital {
+  fill: #58b7e7;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: black; }
+
+/*========== CONTACT FORM OVERWRITE (mobile) ==========*/
+div.wpcf7 {
+  width: 303px;
+  margin: auto; }
+
+input.wpcf7-form-control.wpcf7-text,
+input.wpcf7-form-control.wpcf7-submit {
+  height: 40px; }
+
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea {
+  border: 1px solid #B45533;
+  outline: none; }
+
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea,
+input.wpcf7-form-control.wpcf7-submit {
+  width: 294px;
+  border-radius: 3px; }
+
+input.wpcf7-form-control.wpcf7-submit {
+  border: 0;
+  background-color: #B45533;
+  color: #FFF;
+  font-size: 1.25em; }
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #e56f3c; }
+
+input.wpcf7-form-control:focus,
+textarea.wpcf7-form-control.wpcf7-textarea:focus {
+  box-shadow: 0px 0px 10px #B45533; }
+
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ng {
+  border: 2px solid #e32b50;
+  color: #e32b50;
+  background-color: #fad8df;
+  border-radius: 3px; }
+
+@media screen and (min-width: 768px) {
+  /*========== CONTACT FORM OVERWRITE (tablets) ==========*/
+  div.wpcf7 {
+    width: 504px;
+    margin: auto; }
+
+  input.wpcf7-form-control.wpcf7-text,
+  textarea.wpcf7-form-control.wpcf7-textarea,
+  input.wpcf7-form-control.wpcf7-submit {
+    width: 494px; } }
+.language-selection {
+  display: none; }
+
+.language-selection-mobile {
+  position: fixed;
+  top: 61px;
+  right: 0px;
+  z-index: 1001; }
+
+.language-selection ul,
+.language-selection-mobile ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0; }
+
+.language-selection-mobile ul {
+  width: 70px;
+  margin: 0 auto; }
+
+.language-selection li,
+.language-selection-mobile li {
+  list-style: none;
+  margin: 0;
+  height: 12px; }
+
+.language-selection li a,
+.language-selection-mobile li a {
+  text-decoration: none; }
+
+div#lang_sel_list ul {
+  border: none; }
+
+@media screen and (min-width: 768px) {
+  .language-selection-mobile {
+    display: none; }
+
+  .language-selection {
+    position: fixed;
+    display: block;
+    top: 25px;
+    right: 15px;
+    z-index: 1001; }
+
+  .language-selection ul {
+    flex-direction: column;
+    width: 18px;
+    height: 50px; } }
+@keyframes growFrontPageButtons {
+  0% {
+    transform: scale(1); }
+  70% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+.front-page-button:hover {
+  animation: growFrontPageButtons 1s ease-in-out backwards; }
+
+@keyframes growIceland {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+.swimming-pools-icon:hover {
+  animation: growIceland 1s ease-in-out backwards; }
+
+.acf-map-container {
+  position: relative;
+  background: #58b7e7;
+  padding: 90px 0; }
+
+.location-icon {
+  position: absolute;
+  top: -30px;
+  height: 60px;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  z-index: 1; }
+
+.acf-map {
+  width: 90%;
+  height: 400px;
+  margin: auto; }
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important; }
+
+/* get direction button */
+.direction {
+  text-align: center;
+  position: relative;
+  top: 45px; }
+
+.direction a {
+  padding: 20px;
+  background: #465c67;
+  color: white;
+  font-weight: 100;
+  text-decoration: none; }
+
+.direction a:hover {
+  background: #58717C; }
+
+/*# sourceMappingURL=style.css.map */
