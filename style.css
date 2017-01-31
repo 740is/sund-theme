@@ -901,6 +901,7 @@ i.latest-post-date {
 .single-post,
 .swp-single-post,
 .search-results-list {
+  position: relative;
   max-width: 34em;
   margin: 0 auto;
   padding: 7px 16px 30px; }
@@ -1149,11 +1150,14 @@ img.size-thumbnail.alignright {
   height: 82px;
   width: 82px; }
 
-#frettir-ad-banner {
-  width: 100%; }
+#frettir h2 {
+  margin-bottom: 1.3em; }
+
+#frettir .ad-cubes-area {
+  margin-top: 50px; }
 
 .frettir-texti-tvo {
-  padding-top: 50px; }
+  padding-top: 10px; }
 
 @media screen and (min-width: 480px) {
   .swp-images-mobile {
@@ -1242,7 +1246,11 @@ img.size-thumbnail.alignright {
 
   .feature-image img {
     height: 120px;
-    width: 120px; } }
+    width: 120px; }
+
+  #frettir .ads-cube-one-overflow-hidden,
+  #frettir .ads-cube-two-overflow-hidden {
+    max-width: 256px; } }
 @media screen and (min-width: 1024px) {
   .region-buttons,
   .region-buttons-content {
