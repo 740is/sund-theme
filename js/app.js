@@ -1,4 +1,27 @@
-// Remove WPML nbsp under flags
+// Slick Slider random tweak
+$.fn.randomize = function (selector) {
+    var $elems = selector ? $(this).find(selector) : $(this).children(),
+        $parents = $elems.parent();
+
+    $parents.each(function () {
+        $(this).children(selector).sort(function (childA, childB) {
+            // * Prevent last slide from being reordered
+            if($(childB).index() !== $(this).children(selector).length) {
+                return Math.round(Math.random()) - 0.5;
+            }
+        }.bind(this)).detach().appendTo(this);
+    });
+
+    return this;
+};
+
+//$('.hero-image').randomize().slick();
+$('.ads-banners-overflow-hidden').randomize().slick();
+$('.ads-cube-one-overflow-hidden').randomize().slick();
+$('.ads-cube-two-overflow-hidden').randomize().slick();
+
+
+// Remove WPML $nbsp under flags
 (function($){
   $("#lang_sel_list ul li a").each(function() {
     var $this = $(this);
@@ -43,6 +66,7 @@ document.getElementById('menu-button').addEventListener('click', function() {
   }
 });
 
+
 // Slick Slider hero image adjustments
 $(document).ready(function(){
   $('.hero-image').slick({
@@ -59,7 +83,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.ads-banners-overflow-hidden').slick({
     ltr: true,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     infinite: true,
     autoplaySpeed: 7000
@@ -68,24 +92,12 @@ $(document).ready(function(){
 
 // Slick Slider ad cubes 1 adjustments
 $(document).ready(function(){
-  $('.ads-cube-one-overflow-hidden').slick({
-    rtl: true,
-    autoplay: true,
-    dots: false,
-    infinite: true,
-    autoplaySpeed: 5000
-  });
+  $('.ads-cube-one-overflow-hidden').slick();
 });
 
 // Slick Slider ad cubes 2 adjustments
 $(document).ready(function(){
-  $('.ads-cube-two-overflow-hidden').slick({
-    ltr: true,
-    autoplay: true,
-    dots: false,
-    infinite: true,
-    autoplaySpeed: 5000
-  });
+  $('.ads-cube-two-overflow-hidden').slick();
 });
 
 $(function() {
