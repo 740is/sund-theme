@@ -556,6 +556,7 @@ div#selection-buttons-clearfix {
   display: block;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 60px;
   z-index: 1; }
 
 .ads-banners-overflow-hidden,
@@ -572,23 +573,18 @@ div#selection-buttons-clearfix {
 .ads-cube-two-overflow-hidden {
   max-width: 310px; }
 
+.ads-cube-one-overflow-hidden {
+  margin-bottom: 30px; }
+
 .ads-banners,
-.ad-banner-one,
-.ad-cube-one,
-.ad-cube-two {
+.ad-banner-one {
   position: relative; }
 
-.ad-banner-one,
-.ad-cube-one,
-.ad-cube-two {
+.ad-banner-one {
   margin: 0 5px; }
 
 .ad-banner-one {
   padding-top: 33px; }
-
-.ad-cube-one,
-.ad-cube-two {
-  padding-bottom: 33px; }
 
 /* Latest posts section */
 .latest-posts,
@@ -791,7 +787,10 @@ i.latest-post-date {
 
   .ads-cube-one-overflow-hidden,
   .ads-cube-two-overflow-hidden {
-    max-width: 230px; } }
+    max-width: 230px; }
+
+  .ads-cube-one-overflow-hidden {
+    margin-bottom: 0; } }
 @media screen and (min-width: 640px) {
   .latest-posts, .region-buttons-area {
     padding: 180px 30px 200px; }

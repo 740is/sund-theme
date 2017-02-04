@@ -100,6 +100,7 @@ $(document).ready(function(){
   $('.ads-cube-two-overflow-hidden').slick();
 });
 
+// Scroll effect for swimming pools address that takes user to map at bottom of page.
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

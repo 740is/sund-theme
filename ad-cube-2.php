@@ -18,27 +18,21 @@
 <div dir="ltr" class="ads-banners">
   <div class="ads-cube-two-overflow-hidden">
     <div>
-      <div class="ad-cube-two">
-        <a href="<?php echo $adCubeTwoTheUrlA ?>">
-          <img src="<?php echo $adCubeTwoImageA['url']; ?>" alt="<?php echo $adCubeTwoImageA['alt']; ?>">
-        </a>
-      </div>
+      <a href="<?php echo $adCubeTwoTheUrlA ?>">
+        <img src="<?php echo $adCubeTwoImageA['url']; ?>" alt="<?php echo $adCubeTwoImageA['alt']; ?>">
+      </a>
     </div>
 
     <div>
-      <div class="ad-cube-two">
-        <a href="<?php echo $adCubeTwoTheUrlB ?>">
-          <img src="<?php echo $adCubeTwoImageB['url']; ?>" alt="<?php echo $adCubeTwoImageB['alt']; ?>">
-        </a>
-      </div>
+      <a href="<?php echo $adCubeTwoTheUrlB ?>">
+        <img src="<?php echo $adCubeTwoImageB['url']; ?>" alt="<?php echo $adCubeTwoImageB['alt']; ?>">
+      </a>
     </div>
 
     <div>
-      <div class="ad-cube-two">
-        <a href="<?php echo $adCubeTwoTheUrlC ?>">
-          <img src="<?php echo $adCubeTwoImageC['url']; ?>" alt="<?php echo $adCubeTwoImageC['alt']; ?>">
-        </a>
-      </div>
+      <a href="<?php echo $adCubeTwoTheUrlC ?>">
+        <img src="<?php echo $adCubeTwoImageC['url']; ?>" alt="<?php echo $adCubeTwoImageC['alt']; ?>">
+      </a>
     </div>
   </div>
 </div>

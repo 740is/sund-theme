@@ -153,6 +153,7 @@ div#selection-buttons-clearfix {
   display: block;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 60px;
   z-index: 1;
 }
 
@@ -173,26 +174,23 @@ div#selection-buttons-clearfix {
   max-width: 310px;
 }
 
+.ads-cube-one-overflow-hidden {
+  margin-bottom: 30px;
+}
+
 .ads-banners,
 .ad-banner-one,
-.ad-cube-one,
-.ad-cube-two {
+ {
   position: relative;
 }
 
 .ad-banner-one,
-.ad-cube-one,
-.ad-cube-two {
+ {
   margin: 0 5px;
 }
 
 .ad-banner-one {
   padding-top: 33px;
-}
-
-.ad-cube-one,
-.ad-cube-two {
-  padding-bottom: 33px;
 }
 
 /* Latest posts section */
@@ -463,6 +461,10 @@ i.latest-post-date {
   .ads-cube-one-overflow-hidden,
   .ads-cube-two-overflow-hidden {
     max-width: 230px;
+  }
+
+  .ads-cube-one-overflow-hidden {
+    margin-bottom: 0;
   }
 }
 
