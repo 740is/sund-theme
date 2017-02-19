@@ -28,6 +28,9 @@
                 echo get_the_date('d/m/Y');
               echo '</i>';
               include('swimmer.php');
+              echo '<div class="feature-image feature-image-begin-of-post">';
+                echo the_post_thumbnail();
+              echo '</div>';
               echo the_content();
               echo '<div class="ad-cubes-area">';
                 echo '<div class="ad-cubes-area-content">';

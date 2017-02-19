@@ -17,7 +17,7 @@
 
 .single-post h2 {
   font-size: 1.636em;
-  line-height: 1.85em;
+  line-height: 1.35em;
   margin-top: 1.15em;
   margin-bottom: 1.6em;
 }
@@ -318,12 +318,17 @@ img.size-thumbnail.alignright {
   width: 82px;
 }
 
+.feature-image-begin-of-post img {
+  height: 84px;
+  width: 126px;
+}
+
 #frettir h2 {
-  margin-bottom: 1.3em;
+  margin-bottom: 0.7em;
 }
 
 #frettir .ad-cubes-area {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .frettir-texti-tvo {
@@ -343,6 +348,11 @@ img.size-thumbnail.alignright {
     width: 100px;
   }
 
+  .feature-image-begin-of-post img {
+    height: 110px;
+    width: 165px;
+  }
+
   .swp-price-list table {
     font-size: 0.8em;
   }
@@ -356,7 +366,7 @@ img.size-thumbnail.alignright {
 
   .single-post h2 {
     font-size: 2.636em;
-    line-height: 1.85em;
+    line-height: 1.25em;
     margin-top: 0.97em;
     margin-bottom: 2.3em;
   }
@@ -377,7 +387,7 @@ img.size-thumbnail.alignright {
   }
 
   .single-post i {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.8em;
   }
 
   .announcements-bkg {
@@ -448,6 +458,11 @@ img.size-thumbnail.alignright {
   .feature-image img {
     height: 120px;
     width: 120px;
+  }
+
+  .feature-image-begin-of-post img {
+    height: 150px;
+    width: 225px;
   }
 
   #frettir .ads-cube-one-overflow-hidden,

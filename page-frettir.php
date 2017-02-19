@@ -29,6 +29,9 @@
           echo '<a href="';
             echo get_permalink();
           echo '">';
+					echo '<div class="feature-image">';
+            echo the_post_thumbnail();
+          echo '</div>';
             echo '<div>';
               echo '<h1 class="latest-post-title">';
                 echo get_the_title();
