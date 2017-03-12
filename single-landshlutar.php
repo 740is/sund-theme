@@ -42,7 +42,7 @@
             echo '<h4 class="swp-listing-title">';
               echo get_the_title();
             echo '</h4>';
-            $excerpt = wp_trim_words( get_field('field_57f409fefd4fc' ), $num_words = 40, $more = ' [...]' );
+            $excerpt = wp_trim_words( get_field('field_57f409fefd4fc' ), $num_words = 17, $more = ' [...]' );
             echo '<p>' . $excerpt . '</p>';
             //echo the_field('field_57f409fefd4fc');
           echo '</div>';

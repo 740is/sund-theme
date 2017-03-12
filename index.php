@@ -33,7 +33,6 @@
       $sund_kennsla = esc_url( get_permalink(271));
     } elseif($post_id === 140) {
       $post_id_buttons_latest = '140';
-      $en_buttons_class = 'buttons-text-banner-en';
       $landshlutar = esc_url( get_permalink(143));
       $heitar_laugar = esc_url( get_permalink(124));
       $afgreidslutimi = '#';
@@ -52,7 +51,7 @@
         <div class="selection-buttons-icon swimming-pools-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'swimmer.svg'); ?>
         </div>
-        <div class="buttons-text-banner swimming-pools-text-banner <?php echo $en_buttons_class; ?>">
+        <div class="buttons-text-banner swimming-pools-text-banner <?php if($post_id === 140) {echo 'buttons-text-banner-en';} ?>">
             <p><?php echo get_field($swimming_pools, $post_id_buttons_latest); ?></p>
         </div>
       </div>
@@ -63,19 +62,19 @@
         <div class="selection-buttons-icon locations-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'hot-spring.svg'); ?>
         </div>
-        <div class="buttons-text-banner locations-text-banner <?php echo $en_buttons_class; ?>">
+        <div class="buttons-text-banner locations-text-banner <?php if($post_id === 140) {echo 'buttons-text-banner-en';} ?>">
           <p><?php echo get_field($locations, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a>
 
-    <!-- <a href="<?php echo $afgreidslutimi; ?>">
+    <!-- <a href="<?php //echo $afgreidslutimi; ?>">
       <div id="opening-hours" class="selection-button">
         <div class="selection-buttons-icon opening-hours-icon front-page-button">
-          <?php get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
+          <?php //get_template_part('assets/icons/inline', '24-hours-open.svg'); ?>
         </div>
-        <div class="buttons-text-banner opening-hours-text-banner <?php echo $en_buttons_class; ?>">
-          <p><?php echo get_field($open_now, $post_id_buttons_latest); ?></p>
+        <div class="buttons-text-banner opening-hours-text-banner <?php //if($post_id === 140) {echo 'buttons-text-banner-en';} ?>">
+          <p><?php //echo get_field($open_now, $post_id_buttons_latest); ?></p>
         </div>
       </div>
     </a> -->
@@ -85,7 +84,7 @@
         <div class="selection-buttons-icon opening-hours-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'swim-lesson.svg'); ?>
         </div>
-        <div class="buttons-text-banner sund-kennsla-text-banner <?php echo $en_buttons_class; ?>">
+        <div class="buttons-text-banner sund-kennsla-text-banner <?php if($post_id === 140) {echo 'buttons-text-banner-en';} ?>">
           <p><?php echo get_field($sundKennslaTexti, $post_id_buttons_latest); ?></p>
         </div>
       </div>
@@ -96,7 +95,7 @@
         <div class="selection-buttons-icon announcements-icon front-page-button">
           <?php get_template_part('assets/icons/inline', 'loudspeaker.svg'); ?>
         </div>
-        <div class="buttons-text-banner announcements-text-banner <?php echo $en_buttons_class; ?>">
+        <div class="buttons-text-banner announcements-text-banner <?php if($post_id === 140) {echo 'buttons-text-banner-en';} ?>">
           <p><?php echo get_field($announcements, $post_id_buttons_latest); ?></p>
         </div>
       </div>
