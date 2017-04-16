@@ -1,4 +1,18 @@
 /* #58B7E7 */
+
+/*
+Theme Name: Webpage for sundlaugar.is
+Theme URI: http://sundlaugar.is/
+Description: A custom WordPress information website for sundlaugar.is.
+Author: Steingrimur
+Author URI: http://740.is
+Version: 1.0
+Tags: clean, light, responsive, swimming, swim, pool
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
 li.opid,
 div.opid {
   border-left: 4px solid #3344B4;
@@ -85,18 +99,6 @@ li.stadsetningar:hover,
 .direction a:hover {
   transition: .7s; }
 
-/*
-Theme Name: Webpage for sundlaugar.is
-Theme URI: http://sundlaugar.is/
-Description: A custom WordPress information website for sundlaugar.is.
-Author: Steingrimur
-Author URI: http://740.is
-Version: 1.0
-Tags: clean, light, responsive, swimming, swim, pool
-
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
 * {
   box-sizing: border-box; }
 
@@ -116,8 +118,8 @@ input#s,
 input#searchsubmit {
   font-family: 'Raleway', arial, sans-serif;
   font-weight: 400;
-  font-size: .85rem;
-  margin-top: 0.9rem; }
+  font-size: .85em;
+  margin-top: 0.8em; }
 
 li {
   margin-top: 0.8em;
@@ -154,7 +156,7 @@ img {
 
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1rem; }
+    font-size: 1em; }
 
   h1 {
     font-size: 6.854em; }
@@ -166,10 +168,7 @@ img {
     font-size: 2.618em; }
 
   h4 {
-    font-size: 1.618em; }
-
-  .latest-post-excerpt {
-    margin-top: 1.4rem; } }
+    font-size: 1.618em; } }
 nav {
   position: fixed;
   top: 0;
@@ -206,8 +205,7 @@ nav {
 
 .menu-button:hover,
 .search:hover,
-.close-search-field:hover,
-#nav-close-icon:hover {
+.close-search-field:hover {
   cursor: pointer; }
 
 .middle-stripe {
@@ -401,7 +399,7 @@ input#s:focus {
 
   .search {
     position: relative;
-    right: 65px; }
+    right: 50px; }
 
   .mobile-flags-padding {
     padding: 0; }
@@ -422,16 +420,6 @@ input#s:focus {
 
   input#searchsubmit {
     padding: 5px 10px; } }
-/* WPML overwrite */
-.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
-  border-color: #ffffff; }
-
-.wpml-ls-statics-shortcode_actions {
-  background-color: #ffffff; }
-
-.wpml-ls-statics-shortcode_actions a:hover, .wpml-ls-statics-shortcode_actions a:focus {
-  background-color: #ffffff; }
-
 .wrapper {
   position: relative;
   min-height: calc(100vh - 150px);
@@ -559,7 +547,6 @@ div#selection-buttons-clearfix {
   display: block;
   justify-content: center;
   margin: 0 auto;
-  padding-bottom: 25px;
   z-index: 1; }
 
 .ads-banners-overflow-hidden,
@@ -576,18 +563,23 @@ div#selection-buttons-clearfix {
 .ads-cube-two-overflow-hidden {
   max-width: 310px; }
 
-.ads-cube-one-overflow-hidden {
-  margin-bottom: 30px; }
-
 .ads-banners,
-.ad-banner-one {
+.ad-banner-one,
+.ad-cube-one,
+.ad-cube-two {
   position: relative; }
 
-.ad-banner-one {
+.ad-banner-one,
+.ad-cube-one,
+.ad-cube-two {
   margin: 0 5px; }
 
 .ad-banner-one {
   padding-top: 33px; }
+
+.ad-cube-one,
+.ad-cube-two {
+  padding-bottom: 33px; }
 
 /* Latest posts section */
 .latest-posts,
@@ -639,21 +631,21 @@ div#selection-buttons-clearfix {
 .swp-opening-hours h4 {
   margin-top: 2em; }
 
-.latest-flex-container {
+.latest-flex-container,
+.search-results-flex-container {
   display: flex;
   flex-wrap: wrap; }
 
 .latest-flex-item,
 .search-results-flex-item {
-  flex: 1 220px; }
+  flex-grow: 1; }
 
 .latest-flex-container {
   justify-content: space-between; }
 
 .search-results-flex-container {
-  width: 100%;
-  margin: 0 auto;
-  display: inline-block; }
+  max-width: 34em;
+  margin: 0 auto; }
 
 .latest-posts ul,
 .mobile-menu-items ul,
@@ -711,8 +703,7 @@ li.stadsetningar:hover {
   text-decoration: none; }
 
 .latest-post-title {
-  font-size: 1.2em;
-  margin-top: 0.5em; }
+  font-size: 0.9em; }
 
 i.latest-post-date {
   display: block;
@@ -780,21 +771,12 @@ i.latest-post-date {
   .swimmer svg {
     width: 290px; }
 
-  .latest-flex-item:nth-child(2n) {
-    margin-right: 0; }
-
-  .latest-posts li:nth-of-type(2n) {
-    margin-left: 10px; }
-
   .ad-cubes-area-content {
     display: flex; }
 
   .ads-cube-one-overflow-hidden,
   .ads-cube-two-overflow-hidden {
-    max-width: 230px; }
-
-  .ads-cube-one-overflow-hidden {
-    margin-bottom: 0; } }
+    max-width: 230px; } }
 @media screen and (min-width: 640px) {
   .latest-posts, .region-buttons-area {
     padding: 180px 30px 200px; }
@@ -804,7 +786,11 @@ i.latest-post-date {
 
   .latest-flex-item {
     flex: 1 270px;
+    margin-right: 19px;
     margin-bottom: 9px; }
+
+  .latest-flex-item:nth-child(2n) {
+    margin-right: 0; }
 
   .swimmer {
     height: 230px; }
@@ -856,8 +842,7 @@ i.latest-post-date {
     padding: 15px 0 70px; }
 
   .latest-post-title {
-    font-size: 1.3rem;
-    margin-top: 0.4em; }
+    font-size: 1.3em; }
 
   .region-buttons-area,
   .hot-spring-area {
@@ -895,9 +880,6 @@ i.latest-post-date {
 
   .swimmer svg {
     width: 280px; } }
-.slick-track {
-  transform: translate3d(0px, 0px, 0px) !important; }
-
 .single-posts-area,
 .swp-single-posts-area {
   background: #f1f1f1;
@@ -908,14 +890,13 @@ i.latest-post-date {
 .single-post,
 .swp-single-post,
 .search-results-list {
-  position: relative;
   max-width: 34em;
   margin: 0 auto;
   padding: 7px 16px 30px; }
 
 .single-post h2 {
   font-size: 1.636em;
-  line-height: 1.35em;
+  line-height: 1.85em;
   margin-top: 1.15em;
   margin-bottom: 1.6em; }
 
@@ -1051,7 +1032,7 @@ img.size-thumbnail.alignright {
 
 .swp-opening-hours ul {
   margin-top: -5px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   list-style: none; }
 
 .swp-opeing-hours ul svg {
@@ -1061,8 +1042,7 @@ img.size-thumbnail.alignright {
   margin-bottom: 0px; }
 
 .swp-price-list table {
-  width: 100%;
-  font-size: 2.1vw; }
+  width: 100%; }
 
 .swp-price-list tbody,
 .swp-price-list tbody:last-of-type {
@@ -1081,19 +1061,12 @@ img.size-thumbnail.alignright {
 
 .swp-price-list th {
   font-size: 0.9em;
-  font-weight: 600;
-  color: #58b7e7; }
+  color: #555; }
 
 .swp-price-list td {
   font-size: 0.85em;
   padding: 5px;
   color: #777; }
-
-.swp-price-list td {
-  border-right: 1px solid; }
-
-.swp-price-list td:last-of-type {
-  border: 0; }
 
 .price-more-info {
   font-size: 0.85em;
@@ -1101,11 +1074,8 @@ img.size-thumbnail.alignright {
   margin-bottom: 60px; }
 
 .swp-images-mobile {
-  max-width: 164px;
-  height: 321px;
-  overflow: hidden;
   display: block;
-  margin: 60px auto; }
+  margin: 60px 0; }
 
 .swp-images-display {
   display: none; }
@@ -1157,34 +1127,16 @@ img.size-thumbnail.alignright {
   height: 82px;
   width: 82px; }
 
-.feature-image-begin-of-post img {
-  height: 84px;
-  width: 126px; }
-
-#frettir h2 {
-  margin-bottom: 0.7em; }
-
-#frettir .ad-cubes-area {
-  margin-top: 50px; }
+#frettir-ad-banner {
+  width: 100%; }
 
 .frettir-texti-tvo {
-  padding-top: 10px; }
+  padding-top: 50px; }
 
-@media screen and (min-width: 480px) {
-  .swp-images-mobile {
-    max-width: 344px;
-    height: 311px; } }
 @media screen and (min-width: 640px) {
   .feature-image img {
     height: 100px;
-    width: 100px; }
-
-  .feature-image-begin-of-post img {
-    height: 110px;
-    width: 165px; }
-
-  .swp-price-list table {
-    font-size: 0.8em; } }
+    width: 100px; } }
 @media screen and (min-width: 768px) {
   .single-post,
   .swp-single-post {
@@ -1192,7 +1144,7 @@ img.size-thumbnail.alignright {
 
   .single-post h2 {
     font-size: 2.636em;
-    line-height: 1.25em;
+    line-height: 1.85em;
     margin-top: 0.97em;
     margin-bottom: 2.3em; }
 
@@ -1205,14 +1157,11 @@ img.size-thumbnail.alignright {
     font-size: 0.85em;
     margin-bottom: 5px; }
 
-  .swp-opening-hours {
-    min-height: 328px; }
-
   .swp-price-list table {
-    width: 100%; }
+    width: 74%; }
 
   .single-post i {
-    margin-bottom: 0.8em; }
+    margin-bottom: 0.4em; }
 
   .announcements-bkg {
     padding: 30px 0; }
@@ -1231,7 +1180,6 @@ img.size-thumbnail.alignright {
     display: block; }
 
   .swp-single-post {
-    position: relative;
     max-width: 43em; }
 
   .swp-headlines {
@@ -1246,12 +1194,10 @@ img.size-thumbnail.alignright {
     margin-right: -11px; }
 
   .swp-images {
-    position: absolute;
-    overflow: hidden;
-    height: 520px;
-    width: 170px;
+    float: right;
     right: -30px;
-    margin: 0px 0 0px 20px; }
+    margin: 0px 0 0px 20px;
+    position: relative; }
 
   .swp-images img {
     margin-bottom: 15px; }
@@ -1264,15 +1210,7 @@ img.size-thumbnail.alignright {
 
   .feature-image img {
     height: 120px;
-    width: 120px; }
-
-  .feature-image-begin-of-post img {
-    height: 150px;
-    width: 225px; }
-
-  #frettir .ads-cube-one-overflow-hidden,
-  #frettir .ads-cube-two-overflow-hidden {
-    max-width: 256px; } }
+    width: 120px; } }
 @media screen and (min-width: 1024px) {
   .region-buttons,
   .region-buttons-content {
@@ -1340,10 +1278,6 @@ footer {
 
   .footer-menu-items {
     max-width: 250px; } }
-/* Gallery overwrite */
-.separator-doubled {
-  display: none; }
-
 #svg-capital {
   fill: #58b7e7;
   stroke-width: 2.5px;
@@ -1406,7 +1340,7 @@ div.wpcf7-mail-sent-ng {
 
 .language-selection-mobile {
   position: fixed;
-  top: 56px;
+  top: 61px;
   right: 0px;
   z-index: 1001; }
 
@@ -1441,8 +1375,8 @@ div#lang_sel_list ul {
   .language-selection {
     position: fixed;
     display: block;
-    top: 25px;
-    right: 30px;
+    top: 30px;
+    right: 15px;
     z-index: 1001; }
 
   .language-selection ul {

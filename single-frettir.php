@@ -29,7 +29,11 @@
               echo '</i>';
               include('swimmer.php');
               echo '<div class="feature-image feature-image-begin-of-post">';
-                echo the_post_thumbnail();
+                echo '<a href="';
+                  echo the_post_thumbnail_url();
+                echo '">';
+                  echo the_post_thumbnail();
+                echo '</a>';
               echo '</div>';
               echo the_content();
               echo '<div class="ad-cubes-area">';
