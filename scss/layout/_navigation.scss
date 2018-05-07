@@ -36,8 +36,7 @@ nav {
 
 .menu-button:hover,
 .search:hover,
-.close-search-field:hover,
-#nav-close-icon:hover {
+.close-search-field:hover {
   cursor: pointer;
 }
 
@@ -273,7 +272,7 @@ input#s:focus {
 
   .search {
     position: relative;
-    right: 65px;
+    right: 50px;
   }
 
   .mobile-flags-padding {
@@ -304,17 +303,4 @@ input#s:focus {
   input#searchsubmit {
     padding: 5px 10px;
   }
-}
-
-/* WPML overwrite */
-.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
-  border-color: #ffffff;
-}
-
-.wpml-ls-statics-shortcode_actions {
-  background-color: #ffffff;
-}
-
-.wpml-ls-statics-shortcode_actions a:hover, .wpml-ls-statics-shortcode_actions a:focus {
-    background-color: #ffffff;
 }

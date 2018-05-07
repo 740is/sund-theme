@@ -67,7 +67,7 @@ document.getElementById('menu-button').addEventListener('click', function() {
 });
 
 
-// Slick Slider hero image adjustments
+//Slick Slider hero image adjustments
 $(document).ready(function(){
   $('.hero-image').slick({
     autoplay: true,
@@ -81,9 +81,9 @@ $(document).ready(function(){
 
 // Slick Slider ad banners adjustments
 $(document).ready(function(){
-  $('.ads-banners-overflow-hidden').slick({
+  $('.ads-banners-overflow-hidden').not('.slick-initialized').slick({
     ltr: true,
-    autoplay: false,
+    autoplay: true,
     dots: false,
     infinite: true,
     autoplaySpeed: 7000
@@ -92,12 +92,12 @@ $(document).ready(function(){
 
 // Slick Slider ad cubes 1 adjustments
 $(document).ready(function(){
-  $('.ads-cube-one-overflow-hidden').slick();
+  $('.ads-cube-one-overflow-hidden').not('.slick-initialized').slick();
 });
 
 // Slick Slider ad cubes 2 adjustments
 $(document).ready(function(){
-  $('.ads-cube-two-overflow-hidden').slick();
+  $('.ads-cube-two-overflow-hidden').not('.slick-initialized').slick();
 });
 
 // Scroll effect for swimming pools address that takes user to map at bottom of page.

@@ -46,11 +46,18 @@
       ?>
       <?php $search_count++; ?>
       <?php endwhile; else: ?>
-
-          <?php echo '<h2>Leitin að&nbsp;<i>' . get_search_query() . '</i>&nbsp;skilaði engu.</h2>'; ?>
-            <p>Vinsamlegast athugaðu hvort þú hafir slegið rétt inn. Einnig getur þú prófað að leita eftir öðrum leitarskilyrðum.</p>
-
-      <?php endif; ?>
+        <?php
+          if(ICL_LANGUAGE_CODE === 'is') {
+            echo '<h2>Leitin að&nbsp;<i>' . get_search_query() . '</i>&nbsp;skilaði engu.</h2>';
+            echo '<p>Vinsamlegast athugaðu hvort þú hafir slegið rétt inn. Einnig getur þú prófað að leita eftir öðrum leitarskilyrðum.</p>';
+            echo '<p>Jafnframt er hægt að nota hluta af orðinu til að leita að fleiri útfærslum af orðinu. <strong>Dæmi: Egils í stað Egilsstaðir</strong></p>';
+          } else {
+            echo '<h2>Your search for&nbsp;<i>' . get_search_query() . '</i>&nbsp;did not return any hits.</h2>';
+            echo '<p>Please make sure you have typed the word correctly or search for other terms.</p>';
+            echo '<p>You can also use part of the search term to get more variations of the term. <strong>Example: Swim in stead of Swimmingpool</strong></p>';
+          }
+          endif;
+        ?>
     </ul>
   </div>
 </div>

@@ -153,7 +153,6 @@ div#selection-buttons-clearfix {
   display: block;
   justify-content: center;
   margin: 0 auto;
-  padding-bottom: 25px;
   z-index: 1;
 }
 
@@ -174,23 +173,26 @@ div#selection-buttons-clearfix {
   max-width: 310px;
 }
 
-.ads-cube-one-overflow-hidden {
-  margin-bottom: 30px;
-}
-
 .ads-banners,
 .ad-banner-one,
- {
+.ad-cube-one,
+.ad-cube-two {
   position: relative;
 }
 
 .ad-banner-one,
- {
+.ad-cube-one,
+.ad-cube-two {
   margin: 0 5px;
 }
 
 .ad-banner-one {
   padding-top: 33px;
+}
+
+.ad-cube-one,
+.ad-cube-two {
+  padding-bottom: 33px;
 }
 
 /* Latest posts section */
@@ -255,14 +257,15 @@ div#selection-buttons-clearfix {
   margin-top: 2em;
 }
 
-.latest-flex-container {
+.latest-flex-container,
+.search-results-flex-container {
   display: flex;
   flex-wrap: wrap;
 }
 
 .latest-flex-item,
 .search-results-flex-item {
-  flex: 1 220px;
+  flex-grow: 1;
 }
 
 .latest-flex-container {
@@ -270,9 +273,8 @@ div#selection-buttons-clearfix {
 }
 
 .search-results-flex-container {
-  width: 100%;
+  max-width: 34em;
   margin: 0 auto;
-  display: inline-block;
 }
 
 .latest-posts ul,
@@ -365,8 +367,7 @@ li.stadsetningar:hover {
 }
 
 .latest-post-title {
-  font-size: 1.2em;
-  margin-top: 0.5em;
+  font-size: 0.9em;
 }
 
 i.latest-post-date {
@@ -447,14 +448,6 @@ i.latest-post-date {
     width: 290px;
   }
 
-  .latest-flex-item:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .latest-posts li:nth-of-type(2n) {
-      margin-left: 10px;
-  }
-
   .ad-cubes-area-content {
     display: flex;
   }
@@ -462,10 +455,6 @@ i.latest-post-date {
   .ads-cube-one-overflow-hidden,
   .ads-cube-two-overflow-hidden {
     max-width: 230px;
-  }
-
-  .ads-cube-one-overflow-hidden {
-    margin-bottom: 0;
   }
 }
 
@@ -480,8 +469,12 @@ i.latest-post-date {
 
   .latest-flex-item {
     flex: 1 270px;
-    // margin-right: 19px;
+    margin-right: 19px;
     margin-bottom: 9px;
+  }
+
+  .latest-flex-item:nth-child(2n) {
+    margin-right: 0;
   }
 
   .swimmer {
@@ -549,8 +542,7 @@ i.latest-post-date {
   }
 
   .latest-post-title {
-    font-size: 1.3rem;
-    margin-top: 0.4em;
+    font-size: 1.3em;
   }
 
   .region-buttons-area,
@@ -599,9 +591,4 @@ i.latest-post-date {
   .swimmer svg {
     width: 280px;
   }
-}
-
-//Slick Slack tweak
-.slick-track {
-  transform: translate3d(0px, 0px, 0px) !important;
 }

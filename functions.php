@@ -4,8 +4,8 @@ add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails');
 /***** STYLES AND FONTS DECLARED *****/
 function theme_styles() {
-	wp_enqueue_style('googleFonts-Poiret-One','http://fonts.googleapis.com/css?family=Poiret+One');
-	wp_enqueue_style('googleFonts-Raleway','http://fonts.googleapis.com/css?family=Raleway:200,400,600');
+	wp_enqueue_style('googleFonts-Poiret-One','https://fonts.googleapis.com/css?family=Poiret+One');
+	wp_enqueue_style('googleFonts-Raleway','https://fonts.googleapis.com/css?family=Raleway:200,400,600');
 
 	wp_enqueue_style('normalize-theme-style', get_template_directory_uri(). '/css/normalize.css');
 	wp_enqueue_style('slick-slide', get_template_directory_uri() . '/slick/slick.css');

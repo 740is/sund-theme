@@ -6,7 +6,6 @@
   $webUrl = get_field('field_57f5620d0c57c');
   $priceInfo = get_field('field_5876825e43284');
 
-
   $phoneIcon = "phone-call.svg";
   $emailIcon = "email.svg";
   $webIcon = "worldwide.svg";
