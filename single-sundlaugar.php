@@ -19,7 +19,10 @@
       <div class="swp-headlines">
         <h2><?php the_field('field_57f40974fd4fa'); ?></h2>
         <a href="#google-map"><h4><?php get_template_part('assets/icons/inline', 'location-in-circle.svg'); ?><?php the_field('field_57f546e7798b8'); ?></h4></a>
+        <?php include('ad-banner-1.php'); ?>
       </div>
+
+      
 
       <div class="swp-images swp-images-display">
         <?php the_field('field_57f54ff01c83b'); ?>
@@ -159,6 +162,12 @@
 
         <?php the_field('field_57f409fefd4fc'); ?>
       </div>
+      <div class="ad-cubes-area">
+  <div class="ad-cubes-area-content">
+    <?php include('ad-cube-1.php'); ?>
+    <?php include('ad-cube-2.php'); ?>
+  </div>
+</div>
       <div id="google-map"></div>
 
     <?php endwhile; endif; ?>
@@ -166,5 +175,6 @@
   </div>
 
 <!-- </div> -->
+
 <?php include('google-map.php'); ?>
 <?php include('footer.php'); ?>

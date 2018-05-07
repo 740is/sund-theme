@@ -3,13 +3,13 @@
 <div id="hero-image" class="hero-image-area">
   <div class="hero-image">
     <div>
-      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero1.jpg" alt="Strákur að stökkva út í laug.">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero1.jpg" alt="">
     </div>
     <div>
-      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero2.jpg" alt="Strákur að stökkva út í laug.">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero2.jpg" alt="">
     </div>
     <div>
-      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero3.jpg" alt="Strákur að stökkva út í laug.">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/hero3.jpg" alt="">
     </div>
   </div>
 
